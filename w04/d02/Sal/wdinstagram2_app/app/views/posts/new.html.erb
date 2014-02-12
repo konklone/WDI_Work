@@ -1,0 +1,13 @@
+<div class="header">
+	<h1><a href="/posts">WDINSTAGRAM</a></h1>
+</div>
+<div class="container">
+	<h2>POST</h2>
+	<form action="/posts" method="post">
+		<input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+		<input type="text" placeholder="Author" name="author">
+		<input type="text" placeholder="Photo URL" name="photo_url">
+		<input type="date" placeholder="Date Taken" name="date_taken">
+		<button>Submit</button>
+	</form>
+</div>

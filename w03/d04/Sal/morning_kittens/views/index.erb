@@ -1,0 +1,14 @@
+<h1> Meow or Not Meow?</h1>
+
+<img src="<%= @url %>" alt="">
+
+<form method="POST" action="/vote/meow">
+	<input type="hidden" name="url" value="<%= @url %>" />
+	<button>Meow</button>
+</form>
+
+<form method="POST" action="/vote/not_meow">
+	<input type="hidden" name="url" value="<%= @url %>" />
+	<button>Not Meow</button>
+</form>
+

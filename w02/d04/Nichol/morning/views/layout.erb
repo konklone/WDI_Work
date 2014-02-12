@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>PICK ME UP</title>
+    <style>
+    body {background-color: <%= @color %>; font-family: helvetica; color: white; width: 900px; margin: 0 auto}
+    div {font: bold 72px helvetica; margin-top: 50px;}
+    
+    .btn {
+                width:auto;
+                border:0 none;
+                margin:0;
+                padding:0;
+                background:transparent;
+                overflow:visible;
+                font:14px arial, sans-serif;
+                #vertical-align:middle; 
+        }
+        
+
+    </style>
+
+  </head>
+  <body>
+    <h1>Emergency WDI Pickmeup</h1>
+    <%= yield %>
+  </body>
+</html>

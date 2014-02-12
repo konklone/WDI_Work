@@ -1,0 +1,17 @@
+<h1>Welcome to WDInstagram</h1>
+
+<a href="/photos/new">Share a photo!</a>
+
+<h3>Here are the guests who have been here:</h3>
+
+<ul>
+	<% @photos.each do |entry| %>
+		<li>Name: <%= entry.name %></a></li>
+		<br>
+		<img src="<%= entry.img_url %>">
+		<br>
+		<%= entry.date_taken %>
+	<% end %>
+</ul>
+
+

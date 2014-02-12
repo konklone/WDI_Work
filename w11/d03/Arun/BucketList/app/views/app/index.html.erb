@@ -1,0 +1,21 @@
+<div class="row">
+
+  <div class="large-8 large-centered columns">
+    <h1>My Bucket List</h1>
+
+    <form>
+      <label for="activity">
+        Activity:
+        <input type="text" name="activity" placeholder="Skydiving">
+      </label>
+
+      <button>List it!</button>
+    </form>
+    <ul>
+    </ul>
+    <script type="text/html">
+     <span class="<%%= done ? 'done' : '' %>"><%%= title %></span><input type="checkbox" <%%= done ? "checked" : '' %>  />
+     <span class="remove">&times;</span>
+    </script>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<a href="/entries">Home</a>
+<a href="/entries/new">Add A Picture</a>
+
+<h1>Please Add A New Photo</h1>
+
+<form action="/entries" method="get">
+   <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <p><input id="author" type="text" placeholder="Your Name" name="author"></p>
+  <p><input id="url" type="text" placeholder = "Your Photos URL" name="photos"></p>
+  <p><input type="date" name ="date"></p>
+  <button>Submit</button>
+</form>

@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Pirata One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pirata One'), local('PirataOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/pirataone/v1/klB4X8FTk9lmeK135Auxh73hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+body {
+  font-family: Garamond, serif;
+  text-align: center;
+}
+
+header {
+  width: 40em;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-family: 'Pirata One';
+  font-size: 3em;
+}
+
+header img.left-banner {
+  float: left;
+}
+
+header img.right-banner {
+  float: right;
+}
+
+body>h2 {
+  font-size: 3em;
+  color: gold;
+  background-color: green;
+  margin: 0;
+  padding: 15px;
+}
+
+ul {
+  font-size: 2em;
+  list-style-type: none;
+  max-width: 10em;
+  margin: 0 auto;
+}
+
+.believe {
+  font-size: 1.5em;
+  color: gold;
+  background-color: green;
+  border-radius: 1em;
+  margin-top: 5px;
+}
+
+#cash {
+  background: url('http://mindmillion.com/images/money/animated-dollar-gold.gif');
+  height: 200px;
+  width: 200px;
+}

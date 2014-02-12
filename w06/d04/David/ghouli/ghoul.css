@@ -1,0 +1,29 @@
+body {
+  background: goldenrod;
+  font-family: Creepster;
+  text-align: center;
+}
+
+label, input, button {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+
+}
+
+.container {
+  width: 50%;
+  height: 400px;
+  margin: 0 auto;
+  background: url('http://imgs.tuts.dragoart.com/how-to-draw-a-gravestone_1_000000013820_5.png');
+  background-size: cover;
+  border-radius: 40px 40px 0 0;
+}
+
+ul.containment-unit {
+  text-align: center;
+  list-style: none;
+  font-size: 36px;
+  color: orange;
+  text-shadow: 4px 4px #000;
+}

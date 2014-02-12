@@ -1,0 +1,12 @@
+<div class="logo">Arunstigram on RAILS</div>
+<span class="nav"><a href="/images">Home</a>||<a href="/images/new">Create new</a></span>
+<div class="container">
+	<section>
+<% @images.each do |image| %>
+<a href="images/<%= image.id %>"><img src="<%= image.photo_url %>"/></a>
+<br />
+<span>Author:<a href="images/<%= image.id %>"><%= image.author %></a>
+<%= image.date %></span>
+</section>
+<% end %>
+</div>

@@ -1,0 +1,15 @@
+<form action="/bands" method="post">
+  <div>
+    <label>Band Name:</label>
+    <input value='<%= @band['name'] if @band %>' type='text' name='band[name]' />
+  </div>
+  <div>
+    <label>Photo URL:</label>
+    <input value='<%= @band['img_url'] if @band %>' type='text' name='band[img_url]'/>
+  </div>
+  <div>
+    <label>Singer:</label>
+    <input value='<%= @band['singer'] if @band %>' type='date' name='band[singer]'/>
+  </div>
+  <button>"Create entry"</button>
+</form>

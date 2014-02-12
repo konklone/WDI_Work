@@ -1,0 +1,20 @@
+<form action="/receipts/specific" method="GET">
+	<input type="text" placeholder="ID" name="id">
+	<button type="submit">View Receipt</button>
+</form>
+
+<p>
+	<% receipts = File.new("receipts.txt", "r") %>
+	<% receipts.each do |line| %>
+		<% @array = line.split(",") %>
+		<%= "ID: #{@array[0]}" %>
+		<br>
+		<%= "Store: #{@array[1]}" %>
+		<br>
+		<%= "Product: #{@array[2]}" %>
+		<br>
+		<%= "Price: $#{@array[3]}" %>
+		<br>
+		<br>
+	<% end %>
+</p>

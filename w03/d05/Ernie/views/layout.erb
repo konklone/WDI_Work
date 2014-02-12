@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>W-DInstragram!</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/entries/new'>New Entry</a></li>
+        <li><a href='/entries'>All Entries</a></li>
+      </ul>
+      <div class="clear"></div>
+    </nav>
+
+    <div class="wrapper">
+      <%= yield %>
+    </div>
+
+  </body>
+</html>

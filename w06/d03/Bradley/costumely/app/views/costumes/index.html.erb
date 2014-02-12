@@ -1,0 +1,7 @@
+<% @costumes.each do |costume| %>
+  <h2><%= costume.name %></h2>
+  <img src=<%= costume.image %>>
+  <br/>
+  <%= link_to 'Edit', edit_costume_path(costume.id) %>
+  <%= link_to 'Delete', costume_path(costume.id), :method => :delete %>
+<% end %>

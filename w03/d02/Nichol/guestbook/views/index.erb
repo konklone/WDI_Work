@@ -1,0 +1,15 @@
+<h1> Welcome to Guest Book</h1>
+
+<a href="/guest_book/new">Write A New Entry </a>
+
+<h3>Here are the guests who've been here:</h3>
+
+<ul>
+    <% @entries.each do |entry| %>
+        <li> 
+            <p>Name: <a href=./guest_book/<%= entry.id %>><%= entry.name %></a> <p>
+            <p>Comments: <%= entry.comment %> <p>
+        </li>
+
+    <% end %>
+</ul>

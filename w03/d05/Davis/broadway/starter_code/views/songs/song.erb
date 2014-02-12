@@ -1,0 +1,8 @@
+<% Song.all.each do |song| %>
+	<% if song.show_id = @song_id %>
+		<%= song.title %>
+		<br>
+		<iframe src="http://www.youtube.com/embed/<%= song.embed_url %>" width="640" height="390"/>
+		<br>
+	<% end %>
+<% end %>

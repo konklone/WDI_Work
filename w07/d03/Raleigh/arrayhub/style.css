@@ -1,0 +1,36 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
+
+
+body {
+  padding: 0 100px;
+  font-family: Raleway Dots;
+}
+
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+h2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+img {
+  display: inline-block;
+  border-radius: 50%;
+  margin: 20px;
+  vertical-align: middle;
+  height: 100px;
+  width: 100px;
+}
+
+form {
+  text-align: center;
+}
+
+.user {
+  width: 380px;
+  display: inline-block;
+}

@@ -1,0 +1,10 @@
+<h1>Projectio</h1>
+
+  <%= debug @all%>
+
+<%for students in @all %>
+  <a href="/students/<%= students.id %>"><h2><%= students.name %></h2></a>
+ <p><%= students.project_description%></p>
+  <h4><%= students.github_link%></h4>
+  <%end%>
+  <a href="/students/new">Add a Student</a>

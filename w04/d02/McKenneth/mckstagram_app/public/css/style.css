@@ -1,0 +1,76 @@
+div.container{
+  background-color: rgba(94, 227, 196, 1);
+  width: 960px;
+  padding-bottom: 50px;
+}
+div.top{
+  width:960px;
+  height:250px;
+  background: url(http://farm6.staticflickr.com/5496/10299811483_e02f690cd3_o.jpg);
+}
+a.nav{
+  font-family: 'PT Mono', sans-serif;
+  font-weight: bold;
+  color: rgba(240, 87, 87, 1);
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 430px;
+}
+div.pics{
+  width: 740px;
+  height: 740px;
+  border:white 14px ridge; 
+  background-color: rgba(240, 87, 87, 1);
+  margin:20px auto;
+}
+img.entry{
+  margin: 10px 50px 50px 50px;
+  border: 5px white groove;
+}
+h1, h3{
+  display: inline-block;
+  float:left;
+  font-family: 'PT Mono', sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+}
+h1{
+  font-size: 50px;
+  color:rgba(115, 91, 250, 1);
+}
+h3{
+  font-size:15px;
+  color:rgba(219, 250, 91, 1);
+  margin-left: 330px;
+}
+div.form{
+  width: 740px;
+  height: 740px;
+  border:white 14px ridge; 
+  background-color: rgba(240, 87, 87, 1);
+  margin: 0 auto;
+}
+input{
+  font-family: 'PT Mono', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  width:640px;
+  height:100px;
+  background-color:rgba(121,118,118,.5);
+  color:rgba(219, 250, 91, 1);
+  margin-top: 60px;
+  margin-left: 50px;
+  text-align: center;
+}
+button{
+  width: 200px;
+  height:100px;
+  background-color: white;
+  color:rgba(94, 227, 199, 1);
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 280px;
+  margin-top: 75px;
+}
+
+

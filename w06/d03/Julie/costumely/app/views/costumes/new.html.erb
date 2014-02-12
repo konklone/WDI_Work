@@ -1,0 +1,11 @@
+
+<h3>Submit New Costume Idea</h3>
+
+
+<%= form_for @costume do |f| %>
+  <%= f.label :name %>
+  <%= f.text_area :name %>
+  <%= f.label :photo_url %>
+  <%= f.text_area :photo_url %>
+  <%= f.submit %>
+<% end %>

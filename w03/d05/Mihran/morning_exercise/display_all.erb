@@ -1,0 +1,8 @@
+<h1> Tripped up </h1>
+
+<% @all_people.each do |person| %>
+
+<h3> <%= person.name.upcase %>  : <%= person.num_trips %> trips </h3>
+
+<% end %>
+

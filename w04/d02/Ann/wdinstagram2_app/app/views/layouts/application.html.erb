@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wdinstagram2App</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+<style>
+
+body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+  .header {
+    background-color: #f0f0f2;
+    margin: 30px auto;
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+  }
+
+  .submit{
+    background-color: green;
+    margin: 5px left;
+    padding: 5px;
+  }
+  
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 1em;
+    }
+
+    #form{
+       width: 600px;
+        margin: 5em auto;
+        padding: 50px;
+        background-color: #fff;
+        border-radius: 1em;
+    }
+
+
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+
+    @media (max-width: 700px) {
+        body {
+            background-color: #03030;
+        }
+    }
+
+</style> 
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

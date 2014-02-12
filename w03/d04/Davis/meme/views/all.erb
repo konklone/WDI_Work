@@ -1,0 +1,6 @@
+<% MemeSet.all.each do |meme_set| %>
+	<img src="<%= meme_set.pic_url %>" alt="">
+	<h1>One does not simply <%= meme_set.meme %></h1>
+	<br>
+<% end %>
+

@@ -1,0 +1,22 @@
+.wrapper{
+  text-align: center;
+}
+
+.center {
+  width: 500px;
+  margin: 0 auto;
+}
+
+img {
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+h1 {
+  font-family: 'Helvetica';
+  font-size: 2em;
+}
+
+h2{
+  font-family: 'Helvetica'
+}

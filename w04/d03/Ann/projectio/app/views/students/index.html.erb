@@ -1,0 +1,11 @@
+<h1>Welcome to the Student Project App!</h1> 
+<h2><a href="/students/new">Add me to this site</a></h2>
+
+
+  <% @students.each do |student| %>
+  <div>
+    <p> <a href="/students/<%=student.id %>"><%= student.name %></a></p>
+    <p> <%= student.project_description %></p>
+    <p> <%= student.github_link %></p> 
+    </div>
+    <% end %> 

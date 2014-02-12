@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @costume.name %>
+</p>
+
+<p>
+  <strong>Img url:</strong>
+  <%= @costume.img_url %>
+</p>
+
+<p>
+  <img src="<%=@costume.img_url%>">
+</p>
+
+<%= link_to 'Edit', edit_costume_path(@costume) %> |
+<%= link_to 'Index', costumes_path %>

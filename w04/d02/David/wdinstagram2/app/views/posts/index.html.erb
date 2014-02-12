@@ -1,0 +1,14 @@
+<h1>All Posts</h1>
+
+
+  <% @posts.each do |post| %>
+  <div class="polaroids">
+    <ul>
+  <li><img src="<%= post.photo_url %>" alt=""></li>
+  <div class="title">
+    <li><%= post.name %></li>
+   <li><%=  post.date_taken %></li>
+  </div>
+  </ul>
+</div>
+  <% end %>

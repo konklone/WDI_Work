@@ -1,0 +1,12 @@
+<h1>Here are the entries in our database.</h1>
+
+<ul>
+  <% @entries.each do |entry| %>
+    <li><a href= "entries/<%= entry.id %>"><%= entry.author %></li>
+    <li><img src="<%= entry.photo_url %>"><a/></li>
+    <li><%= entry.date_taken %></li>
+  <% end %>
+</ul>
+
+
+

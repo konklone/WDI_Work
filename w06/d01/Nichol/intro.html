@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intro to Javascript!</title>
+
+
+  <script type="text/javascript">
+
+    window.onload = console.log ("hello world!")
+    window.onload = console.log ("goodbye world!")
+
+
+    function add(value1, value2) {
+      result = value1 + value2;
+      return result;
+    };
+    
+    function sub(value1, value2) {
+      result = value1 - value2;
+      return result;
+    };
+
+    function mult(value1, value2) {
+      result = value1 * value2;
+      return result;
+    };
+
+    function divide(value1, value2) {
+      result = value1 / value2;
+      return result;
+    };
+
+    function mod(value1, value2) {
+      result = value1 % value2;
+      return result;
+    };
+
+    function exp(base, power) {
+      result = base;
+      for (var i=1; i<power; i++)
+        result = result*base;
+      return result;
+    };
+
+    function square(base) {
+      return exp(base, 2);
+    };
+
+    // function pythag(xy1, xy2) {
+    //   //c = sqrt(a^2 plus b^2)
+    //   a = xy1[0] - xy2[0];
+    //   b = xy1[1] - xy2[1];
+    //   c = sqrrt(square(a) + square(b));
+    //   return c;
+    // }
+
+function srt( val ) {
+  var i = 0;
+
+  while(i <= val) {
+    if(val / i === i) {
+      return i;
+    };
+
+    i ++;
+  };
+}
+
+    function factorial(number) {
+      if (number <= 1) {
+        return 1;
+      } else {
+        return (number * factorial(number - 1));
+      }
+    }
+ 
+    // console.log(add(5,2)) 
+    // console.log(sub(5,2))
+    // console.log(mult(5,2))
+    // console.log(divide(5,2))
+    // console.log(mod(5,2))
+    // console.log(exp(3,2))
+    console.log(factorial(10))
+
+
+function hello() {
+
+  function goodbye() {
+    console.log("goodbye")
+  }
+
+  function hello() {
+    console.log("hello")
+  }
+
+  goodbye()
+
+}
+
+function init()
+{
+  var tester = 'alert("test");';
+
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.text = tester;
+  document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+window.onload = init;
+
+  </script>
+
+
+</head>
+<body>
+  add(5,2)
+</body>
+</html>

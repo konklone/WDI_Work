@@ -1,0 +1,6 @@
+<h1>All Movies</h1>
+
+<% @movie_info.each do |movies| %>
+<%  @movie_info = movies.split(",") %>
+<%= erb :movie  %>
+<% end %>

@@ -1,0 +1,62 @@
+1) vincent = Artist.new(name: 'Vincent van Gogh', nationality: 'Dutch', dob: 'March 30th, 1853')
+vincent.save
+
+2)starry_night = Painting.new(title: 'Starry Night', year: 1889, img: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSr-Wp2BdXRRHKXIjyulnLULEOCTXd79HYEbJYV2ZOwpxR883H4', artist_id: 1)
+starry_night.save
+
+3)Artist.all
+=> [#<Artist id: 1, name: "Vincent van Gogh", nationality: "Dutch", dob: "March 30th, 1853">,
+ #<Artist id: 2, name: "Pablo Picasso", nationality: "Spanish", dob: "October 25th, 1881">,
+ #<Artist id: 3, name: "Amedeo Modigliani", nationality: "Italian", dob: "July 12th, 1884">]
+
+4)Painting.all
+=> [#<Painting id: 1, title: "Starry Night", year: 1889, img: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd...", artist_id: 1>,
+ #<Painting id: 2, title: "Sunflowers", year: 1888, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd...", artist_id: 1>,
+ #<Painting id: 3, title: "Guernica", year: 1937, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd...", artist_id: 2>,
+ #<Painting id: 4, title: "Studentin", year: 1910, img: "http://upload.wikimedia.org/wikipedia/en/3/34/Pablo...", artist_id: 2>,
+ #<Painting id: 5, title: "Gypsy Woman with Baby", year: 1919, img: "http://upload.wikimedia.org/wikipedia/en/3/34/Pablo...", artist_id: 3>,
+ #<Painting id: 6, title: "Dedie Hayden", year: 1918, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd...", artist_id: 3>]
+
+ 5)Artist.find(2)
+=> #<Artist id: 2, name: "Pablo Picasso", nationality: "Spanish", dob: "October 25th, 1881">
+
+6)Artist.find_by name: 'Vincent van Gogh'
+=> #<Artist id: 1, name: "Vincent van Gogh", nationality: "Dutch", dob: "March 30th, 1853">
+
+7)Artist.where(nationality: 'Spanish')
+=> [#<Artist id: 2, name: "Pablo Picasso", nationality: "Spanish", dob: "October 25th, 1881">,
+ #<Artist id: 4, name: "Gaston Orellana", nationality: "Spanish", dob: "July 18, 1933">]
+
+8)Painting.find(1)
+=> #<Painting id: 1, title: "Starry Night", year: 1889, img: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd...", artist_id: 1>
+
+9)Painting.find_by title: 'Guernica'
+=> #<Painting id: 3, title: "Guernica", year: 1937, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd...", artist_id: 2>
+
+10)Painting.where(title: 'Starry Night').pluck(:img)
+=> ["https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSr-Wp2BdXRRHKXIjyulnLULEOCTXd79HYEbJYV2ZOwpxR883H4"]
+
+11)Painting.where(artist_id: 2)
+=> [#<Painting id: 3, title: "Guernica", year: 1937, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd...", artist_id: 2>,
+ #<Painting id: 4, title: "Studentin", year: 1910, img: "http://upload.wikimedia.org/wikipedia/en/3/34/Pablo...", artist_id: 2>]
+
+ 12)img_arr = []
+=> []
+[67] pry(main)> img_arr << Painting.where(artist_id: 2).pluck(:img)
+=> [["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZwe9NkAxskj8FlnaL_ZKDqalu-d5FmQ4BpOZEFfyuOKden9Z",
+  "http://upload.wikimedia.org/wikipedia/en/3/34/Pablo_Picasso,_c.1910,_Studentin,_photo_Kahnweiler,_Paris.jpg"]]
+
+13)picasso_id = Painting.where(title: 'Guernica').pluck(:artist_id)
+=> [2]
+[79] pry(main)> Artist.find(picasso_id)
+=> [#<Artist id: 2, name: "Pablo Picasso", nationality: "Spanish", dob: "October 25th, 1881">]
+
+14)Artist.update(1, :nationality => 'American')
+=> #<Artist id: 1, name: "Vincent van Gogh", nationality: "American", dob: "March 30th, 1853">
+
+15)Painting.update(1, :artist_id => 2)
+=> #<Painting id: 1, title: "Starry Night", year: 1889, img: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd...", artist_id: 2>
+
+
+
+<% show_id = @show.id%>

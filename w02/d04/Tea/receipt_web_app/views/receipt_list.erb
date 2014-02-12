@@ -1,0 +1,14 @@
+<% file = File.new("receipts.txt", "r") %>
+
+<% file.each do |line|%>
+  <% item = line.split(", ")%>
+  <ul>
+    <li><%=  "ID#: #{item[0]}"%></li>
+    <li><%=  "Store: #{item[1]}"%></li>
+    <li><%=  "Product: #{item[2]}"%></li>
+    <li><%=  "Price: #{item[3]}"%></li>
+    <li><%=  "\n-----------------\n"%></li>
+  </ul>
+<% end %>
+
+<% file.close %>

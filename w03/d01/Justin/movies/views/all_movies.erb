@@ -1,0 +1,9 @@
+<% @movies_array.each do |index| %>
+	<ul>
+	<li>Title:  <%= "#{@movies_array[index]['title']}" %> </li>
+	<%= "<li>Released: #{@movies_array[index]['year']} </li>" %>
+	<%= "<li><img src= '#{@movies_array[index]['poster_url']}'></li>" %>
+	<%= "</ul>" %>
+
+<% end %>
+@

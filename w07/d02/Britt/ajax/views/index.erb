@@ -1,0 +1,20 @@
+<form>
+  <label>
+    Title:
+    <input type="text" name="title">  
+  </label>
+
+  <label>
+    Content:
+    <textarea name="content"></textarea>
+  </label>
+
+  <button>Save</button>
+</form>
+
+<h4>Posts</h4>
+<ul>
+  <% @posts.each do |post| %>
+  <%= "Title: #{post.title}, Content: #{post.content}" %>
+  <% end %>
+</ul>

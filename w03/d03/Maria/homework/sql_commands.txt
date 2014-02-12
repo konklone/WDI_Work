@@ -1,0 +1,38 @@
+1. All columns for all players from the New York Knicks (NYK)
+
+sandbox=# SELECT * FROM players WHERE team = 'NYK';
+
+Why am I getting that error?
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+ id  |       name        | age | team | games | points 
+-----+-------------------+-----+------+-------+--------
+  17 | Carmelo Anthony   |  27 | NYK  |    55 |   1245
+  26 | Renaldo Balkman   |  27 | NYK  |    14 |     42
+  42 | Mike Bibby        |  33 | NYK  |    39 |    103
+  85 | Tyson Chandler    |  29 | NYK  |    62 |    699
+ 105 | Baron Davis       |  32 | NYK  |    29 |    178
+ 119 | Toney Douglas     |  25 | NYK  |    38 |    237
+ 144 | Landry Fields     |  23 | NYK  |    66 |    580
+ 155 | Dan Gadzuric      |  33 | NYK  |     2 |      0
+ 189 | Josh Harrellson   |  22 | NYK  |    37 |    162
+ 237 | Jared Jeffries    |  30 | NYK  |    39 |    170
+ 257 | Jerome Jordan     |  25 | NYK  |    21 |     42
+ 278 | Jeremy Lin        |  23 | NYK  |    35 |    512
+ 331 | Carmelo Anthony   |  27 | NYK  |    55 |   1245
+ 340 | Renaldo Balkman   |  27 | NYK  |    14 |     42
+ 356 | Mike Bibby        |  33 | NYK  |    39 |    103
+etc...
+
+ 2. All columns for all players from the Indiana Packers (IND) who are under 26 years old
+
+ SELECT * FROM players WHERE age < 26;
+
+3. All columns for all players, ordered from least points scored to most points scored
+
+
+Average points for all players:
+ sandbox=# SELECT AVG(points) FROM players;
+         avg          
+----------------------
+ 394.7411616161616162
+(1 row)

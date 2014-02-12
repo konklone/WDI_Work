@@ -1,0 +1,20 @@
+.board {
+}
+
+.cell {
+  height: 150px;
+  width: 150px;
+  background-color: #F30;
+}
+
+.tic {
+  height: 150px;
+  width: 150px;
+  background:url(images/ttt_o.png);
+}
+
+.tac {
+  height: 150px;
+  width: 150px;
+  background:url(images/ttt_x.png);
+}

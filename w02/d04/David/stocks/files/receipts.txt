@@ -1,0 +1,4 @@
+Barnes and noble,Book,16.95
+Mcdonals,Burger,8.95
+Hello,Kittens,11
+Shopping,Backstreet boys,156

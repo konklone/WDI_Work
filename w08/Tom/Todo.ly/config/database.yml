@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: todo_ly_development
+  pool: 5
+  host: localhost
+  username: thomasbrennan
+  password:

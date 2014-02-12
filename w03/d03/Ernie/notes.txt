@@ -1,0 +1,70 @@
+DATABASES
+Database server (DBMS/RDBMS)
+Postgres
+
+DB itself is one of many accessible thru DBMS
+
+clients that interface with postgres (PSQL & PG)
+
+PSQL is a command line tool
+
+While PG is a ruby gem
+
+Data modeling and DB arch
+
+Schema
+entities = tables
+attributes = coloums
+demons = data
+realations/mutilple tables
+
+SQL the language 
+CREATE/DROP tables
+INSERT new data (create) POST
+SELECT data (read) GET
+UPDATE table SET number_of_item (update) PUT
+DELETE  (delete) Delete
+Active Record - ORM object relation mapper = ruby framework
+coventions withn active_record
+
+
+SELECT (arrtibutes); for one table
+
+to do more than one selection from one table you add a CLAUSE like (FROM)
+
+i.e SELECT * FROM
+
+clauses = INTO, VALUES, FROM, WHERE,IN,Order by,LIMIT #,GROUPBY
+
+WHERE clauses evalute to true or false using computer operators = < > <= >= !=
+you can also chain them together with boolean operator such as AND,OR but no (&&,||)
+LIMIT goes by in order of insertion
+
+GROUPBY = its a function that queries the attributes and removes all duplica
+tes and returns all unique values
+As = as always follows an attribute and renames it a new name before (Attribute AS Attribute)
+
+SELECT * FROM receipts WHERE store IN ('sears','macy''s','Toys R us'); 
+SELECT * FROM receipts WHERE store IN ('Borders','JC Penny''s','macy''s') ORDERBY price (DESC);
+SELECT * FROM receipts LIMIT 5; 
+SELECT * FROM receipts GROUP BY store;
+SELECT COUNT (*) FROM receipts;
+SELECT COUNT (item) FROM receipts WHERE store = 'JC Penny''s';
+SELECT COUNT (*) FROM receipts WHERE store = 'JC Penny''s';
+SELECT SUM(number_ofitem) FROM receipts WHERE store = 'JC Penny''s';
+
+
+Aggregrate Functions
+SUM = adds 
+COUNT = counts elements or instance but does not them
+AVG()
+
+IF your in a SET clause it equals assignment
+
+ALTER = the ablity to alter the schema 
+
+Normalizing - to take all data for a project and break it up into entities that have attributes and relationships between those entities in terms of zero, one or many.
+
+1:1 relationships
+1:many relationships
+many:many relationships = although this makes sense logically you do don't want this in terms of a database its much more efficent to add another table with a join

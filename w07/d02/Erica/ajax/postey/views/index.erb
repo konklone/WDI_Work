@@ -1,0 +1,22 @@
+<h1>POSTEY!</h1>
+
+<form method="POST">
+  <label>
+    Title:
+    <input name="title" type="text" />
+  </label>
+
+  <label>
+    Content:
+  <textarea name="content"></textarea>
+  </label>
+
+  <button> Save </button>
+</form>
+
+<h4>Posts</h4>
+<ul>
+ <% @posts.each do |post| %>
+  <li>Title: <%= post[:title] %>, Content: <%= post[:content] %></li>
+  <% end %>
+</ul>

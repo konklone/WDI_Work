@@ -1,0 +1,42 @@
+.container { 
+  /*deleted div.container {}*/
+  border: 3px solid blue;
+}
+div {
+  /*deleted div.box {}*/
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center; /*centers */
+}
+
+
+
+.background-cyan {
+  background-color: cyan;
+  padding: 15px;
+  float: left;
+  
+}
+
+.background-gray {
+  background-color: gray;
+  margin: 15px;
+  float: right;
+}
+
+.box {
+  width: 100px;
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+}
+
+p {
+  display: inline-block; /*paragrahs are automatically blocks*/
+}
+
+div.second-div {
+  height: 100px; /*we need to use height in this case because there is not text, and it's initial height would be zero*/
+  background-color: red;
+  clear: both;
+}

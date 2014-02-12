@@ -1,0 +1,9 @@
+
+<% @results.each do |row| %>
+<h3><%= @title = "#{row['title']}" %></h3>
+<br>
+<h3><%= @year = "#{row['year']}" %></h3>
+<br>
+<img src="<%= @poster = "#{row['img']}" %>" />
+<% end %>
+

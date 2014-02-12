@@ -1,0 +1,10 @@
+
+<ol>
+<%for task in @tasks%>
+<li data-todo-id= "<%= task.id %>" class="<%= task.completed ? 'completed' : '' %>" style="font-family: helvetica; font-size: 30px;">
+  <%= task.tasks %>
+  <%= check_box_tag(:completed, 'yes', task.completed) %>
+</li>
+
+<%end%>
+</ol>

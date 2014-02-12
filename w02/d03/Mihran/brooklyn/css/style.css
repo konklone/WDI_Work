@@ -1,0 +1,50 @@
+/* 
+
+Link Hover Color = #20222a
+
+*/
+
+#container {
+  font-family: Times New Roman;
+  font-size: 12px;
+  line-height: 17px;
+  color: #656565;
+  margin: 70px auto;
+  width:980px;
+  display: block;
+<<<<<<< HEAD
+=======
+
+>>>>>>> w2d4
+}
+
+.logo {
+  float: left;
+  padding: 10px;
+}
+
+.big-images {
+  padding: 0px 15px 0px 15px;
+}
+
+<<<<<<< HEAD
+=======
+  .big-image { 
+    ;
+  }
+
+.press-section
+
+>>>>>>> w2d4
+a:hover {
+  color: #20222a;
+}
+
+.press-section {
+  width:960px;
+  text-align: justify;
+}
+
+img.press-image {
+    border: 5px solid grey
+  }

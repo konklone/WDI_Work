@@ -1,0 +1,8 @@
+<% painting = Painting.where(title: @title)[0] %>
+
+<%= painting.title %>
+<br>
+<%= painting.year %>
+<br>
+<img src="<%= painting.image_url %>" alt="" width="300">
+<br>

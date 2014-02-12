@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <title>Kitteh-nder</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <h1>Welcome to Kitteh-nder</h1>
+  <h3>Where you vote meow or me-OUCH!!!</h3>
+
+  <form action="/vote/meow" method ="POST">
+  <button name="meow">MEOW!</button>
+  <input name="meow" type="hidden" value="<%= @url %>">
+  </form>
+  <form action="/vote/meouch" method="POST">
+  <button name="meouch">ME-OUCH!!</button>
+  <input name="meouch" type="hidden" value="<%= @url %>">
+  </form>
+  <img src="<%= @url %>">
+
+</body>
+</html>

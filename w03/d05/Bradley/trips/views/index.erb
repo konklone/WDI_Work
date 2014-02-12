@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+  <% @people.each do |person| %>
+    <h1><%= person.name %></h1>
+    <p>Number of trips : <%= person.num_trips %>
+    <form action="/<%= person.name %>" method="POST">
+      <button>HAHA TRIPPED!</button>
+    </form>
+  <% end %>
+</body>

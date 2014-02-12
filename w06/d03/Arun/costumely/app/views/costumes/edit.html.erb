@@ -1,0 +1,15 @@
+<h1>Editing Posts</h1>
+
+<% form_for(@costumes) do |f| %>
+	<%= f.error_messages %>
+
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :image %><br />
+		<%= f.text_field :image %>
+	</p>
+	<%= f.submit "update" %>
+<% end %>

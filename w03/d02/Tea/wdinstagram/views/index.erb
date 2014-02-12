@@ -1,0 +1,11 @@
+  <ul>
+    <% @photos.each do |photo| %>
+      <div class="single-image">
+      <li><a href="/<%=photo.id%>"><img class="display" src="<%= photo.photo_url %>"/></a></li>
+      <li class="author">by <%= photo.author %></li>
+      <li class="author">taken on <%= photo.date_taken %></li>
+      </div>
+    <% end %>
+  </ul>
+
+

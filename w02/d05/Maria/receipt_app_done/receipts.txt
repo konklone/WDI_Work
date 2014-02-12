@@ -1,0 +1,5 @@
+1,best buy,laptop,100
+2,target,mug,5
+3,walmart,hat,1
+4,Auto Emporium,Ferrari,340,000
+5,Puppies R Us,Bulldog,1300

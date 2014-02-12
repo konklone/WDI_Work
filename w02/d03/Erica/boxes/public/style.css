@@ -1,0 +1,43 @@
+.container  {
+  border: 3px solid blue;
+  text-align: center;
+ /* border-radius: 5px;*/ 
+/* no need to mention it again because .container is in the class Div
+*/}
+
+/*.box { 
+  border: 1px solid black;
+  border-radius: 5px;
+}*/
+
+.background-cyan {
+  background-color: cyan;
+  padding: 15px;
+ /* margin: 15px;*/
+ float: left;
+}
+
+.background-gray {
+  background-color: gray;
+  margin: 15px;
+ /* margin: auto;*/
+  float: right;
+}
+.box {
+  width: 100px;
+  margin: 15px auto;
+  display: inline-block;
+  text-align: center;
+}
+
+p {
+  display: inline-block;
+}
+
+div.second-div {
+  height: 100px; 
+  background-color: red;
+  clear: left;
+}
+/*  you have to give it an explicit height if you need one because it normally only has a width 
+*/

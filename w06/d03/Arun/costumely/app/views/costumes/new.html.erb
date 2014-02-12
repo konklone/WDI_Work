@@ -1,0 +1,7 @@
+<h1>Add a Costume</h1>
+<form action="/costumes" method="POST">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+	<input type="text" name="name" placeholder="Costume Name" />
+	<input type="url" name="image" placeholder="add image" />
+	<button>enter</button>
+</form>

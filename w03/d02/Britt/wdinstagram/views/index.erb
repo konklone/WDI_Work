@@ -1,0 +1,19 @@
+<!-- Displays all entries; home page -->
+<h1>WDInstagr.am</h1>
+
+<ul>
+	<% @entries.each do |entry| %>
+	<p>
+		<% if is_instagram_user?(entry.author) %>
+			<li>
+				<a href="http://instagram.com/<%= strip_at(entry.author) %>"><%= entry.author %></a>
+				<li>
+		<% else %>
+			<li><%= entry.author %></li>
+		<% end %>
+		<li><%= entry.date_taken %></li>
+		<img src="<%= entry.photo_url %>">
+		<br/>
+	</p>
+	<% end %>
+</ul>

@@ -1,0 +1,6 @@
+<% Song.all.each do |song| %>
+	<% if song.show_id = @id %>
+		<a href="/shows/<%= @id %>/songs/<%= song.id %>"><%= song.title %></a>
+		<br>
+	<% end %>
+<% end %>

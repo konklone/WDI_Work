@@ -1,0 +1,22 @@
+<p>Click a movie poster to see info for that individual movie!</p>
+
+<!-- 
+	Enumerates through @all_movies. For each line:
+	* splits it into an array
+	* displays each value except the id (title, year, poster_image)
+		to html thru erb
+	* makes the image a link to view the individual movie's info
+	-->
+<% @all_movies.each do |movie_hash| %>
+	<div class="movie_info">
+		<a href="/movies/<%= movie_hash['id'] %>">
+			<img src="<%= movie_hash['poster_link'] %>" />
+		</a>
+		<p>
+			Title: <%= movie_hash['title'] %> <br/>
+			Year: <%= movie_hash['year'] %> <br/>
+		</p>
+	</div>
+<% end %>
+
+<p><a href="/">Go home</a></p>

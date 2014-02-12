@@ -1,0 +1,46 @@
+Creating and saving Artists to the moma_db in pry:
+
+artist_van = Artist.new(name: 'Vincent van Gogh', nationality: 'Dutch', date_of_birth: '1853/03/30')
+artist_van.save
+
+artist_pablo = Artist.new(name: 'Pablo Picaso', nationality: 'Spanish', date_of_birth: '1881/10/25')
+artist_pablo.save
+
+artist_andy = Artist.new(name: 'Andy Warhol', nationality: 'American', date_of_birth: '1928/08/28')
+artist_andy.save
+
+
+painting_starry = Painting.new(title: 'Starry Night', year: '1878', image_url: 'http://uploads2.wikipaintings.org/images/vincent-van-gogh/the-starry-night-1889(1).jpg')
+painting_starry.save
+
+painting_campbell = Painting.new(title: 'Campbell Soup', year: '1968', image_url: 'http://cache2.allpostersimages.com/p/LRG/8/838/I8YY000Z/posters/warhol-andy-campbell-s-soup-i-1968.jpg')
+painting_campbell.save
+
+painting_cubism = Painting.new(title: 'cubism', year: '1907', image_url: 'http://pablo-picasso.paintings.name/images/picasso-femme-en-pleurs.jpg')
+painting_cubism.save
+
+painting_guernica = Painting.new(title: 'Guernica', year: '1907', image_url: 'http://www.pablopicasso.org/images/paintings/guernica.jpg')
+painting_guernica.save
+
+
+3. Artist.all
+4. Painter.all
+
+5. Artist.find_by(id: 2)
+6. Artist.find_by(name: "Vincent van Gogh")
+7. Artist.find_by(nationality: "Spanish")
+
+8. Painting.find_by(id: 1)
+9. Painting.find_by(title: "Guernica")
+10.
+11
+
+
+
+
+
+
+
+
+
+

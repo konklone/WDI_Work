@@ -1,0 +1,13 @@
+<h1>Welcome to WDInstaGram!</h1>
+
+<a href="/wdinstagram/new">New Entry</a>
+
+<h3>Here are all of your wdinstagrams!</h3>
+
+<div class="box"><% @instagram.each do |list| %>
+	<p>Author: <%= list.author %></p>
+	<img src="<%= list.url %>"/>
+	<p>Date: <%= list.date %></p>
+
+	<% end %>
+</div>

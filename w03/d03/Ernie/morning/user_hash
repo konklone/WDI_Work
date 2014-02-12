@@ -1,0 +1,13 @@
+require_relative 'user'
+require "faker"
+
+user_hash = Hash.new 
+
+(1..50).each do |n|
+  id = n
+  name = Faker::Name.name
+  street = Faker::Address.address
+  email = Faker::Internet.email
+  user_object = User.new(id, name, street,email)
+  user_hash[id] = user_object
+end

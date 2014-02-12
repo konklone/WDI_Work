@@ -1,0 +1,26 @@
+<div> <h1>Submit a new photo!</h1> 
+
+  <a href="/../entries"><h2> View all photos</h2> </a>
+
+  <form action="/entries" method="POST"> 
+    <input name="authenticity_token" type="hidden" value="<%=form_authenticity_token%>"/>
+
+<p>
+    <label>Author's name
+  <input type="text" placeholder="Enter author's name" name="author" /></label>
+</p>
+
+<p>
+  <label>Photo URL<input type="text" placeholder="Enter photo url" name="photo_url" /></label>
+</p>
+
+<p>
+  <label>Date taken <input type="date" placeholder="Enter date taken" name="date_taken" /></label>
+</p>
+
+<p>
+  <button>Submit! </button>
+</p>
+  </form>
+
+</div>

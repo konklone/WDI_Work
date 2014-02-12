@@ -1,0 +1,10 @@
+<h1>My Costume Options!</h1>
+
+<p><%= link_to "Add a costume option!", new_costume_path %></p>
+
+<% @costumes.each do |costume| %>
+  <div class="single-costume">
+    <h2><%= link_to costume.name, costume_path(costume) %></h2>
+    <a href="<%= costume_path costume %>"><img src="<%= costume.image %>"></a>
+  </div>
+<% end %>

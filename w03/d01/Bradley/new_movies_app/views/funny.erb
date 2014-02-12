@@ -1,0 +1,16 @@
+<center><div class="movies">
+  <% @comedies.each do |row| %>
+    <div class="movie">
+      <div class="poster">
+        <img src="<%= "#{row['poster']}" %>" />
+      </div>
+      <div class="info">
+        <p><strong>Title :</strong> <%= "#{row['title']}" %></p>
+        <p><strong>Year :</strong> <%= "#{row['year']}" %></p>
+        <p><strong>Rated :</strong> <%= "#{row['rated']}" %></p>
+        <p><strong>Genre :</strong> <%= "#{row['genre']}" %></p>
+        <p><strong>IMDB Rating :</strong> <%= "#{row['imdb']}" %></p>
+      </div>
+    </div>
+  <% end %>
+</div></center>

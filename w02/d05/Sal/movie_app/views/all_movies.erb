@@ -1,0 +1,15 @@
+<div class="container">
+	<h1> All Movies: </h1> 
+</div>
+
+<% @all_movies.each do |movie| %>
+  <% @movie_info = movie.split(",") %>
+  <%= erb :movie %>
+<% end %>
+
+
+
+
+
+
+

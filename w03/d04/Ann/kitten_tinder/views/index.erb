@@ -1,0 +1,13 @@
+<h1>Welcome to Kitty Tender!</h1>
+
+<form action="/vote/meow" method="POST">
+    <input type="hidden" name="url" value="<%= @kittens %>" /> 
+    <button>Meow</button>
+  </form>
+
+<form action="/vote/not_meow" method="POST">
+    <input type="hidden" name="url" value="<%= @kittens %>" /> 
+    <button>Not Meow</button>
+  </form> 
+
+<div><img src="<%=@kittens.sample %>"></div> 

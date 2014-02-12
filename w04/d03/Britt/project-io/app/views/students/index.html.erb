@@ -1,0 +1,20 @@
+<h1>All Student Projects</h1>
+
+<% @students.each do |student| %>
+<ul>
+  <li>Student: <a href="/students/<%= student.id %>"><%= student.name %></a></li>
+  <li>Project Description: <br/>
+    <%= student.project_description %></li>
+ <% if student.github_link != "" %>
+    <li>
+      Check it out on <a href="<%= student.github_link %>">Github</a>
+    </li>
+  <% else %>
+    <li>
+      There is no github link for this project. ...yet.
+    </li>
+  <% end %>
+<% end %>
+</ul>
+
+<a href="/students/new">Add a new Student</a>

@@ -1,0 +1,8 @@
+<h1>COSTUMES</h1>
+
+<% @costumes.each do |x| %>
+	<ul>
+		<li><a href="costumes/<%= x.id %>"><%= x.name %></a></li>
+		<li><img src="<%= x.image %>"></li>
+	</ul>
+	<% end %>

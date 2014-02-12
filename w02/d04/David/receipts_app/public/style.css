@@ -1,0 +1,101 @@
+.hm-btn {
+  background: red;
+  border-radius: 10px;
+  padding: 30px;
+  display: inline-block;
+  position: relative;
+  left: 677px;
+  top: -53px;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+body {
+  background: url('http://thechive.files.wordpress.com/2011/06/amazing-funny-wallpapers-13.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1, h2 {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box; 
+  padding: 100px;
+  width: 50%;
+  background: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: rgba(256, 256, 256, 0.7)
+}
+
+ul li {
+  display: block;
+  list-style: none;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box; 
+  float: left;
+  width: 33.3333%;
+  padding: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 20px rgba(255, 255, 255, 1);
+-moz-box-shadow:    0px 3px 20px rgba(255, 255, 255, 1);
+box-shadow:         0px 3px 20px rgba(255, 255, 255, 1);
+-webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+
+ul li:hover {
+  background: rgba(0, 0, 0, 0.4)
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+a:hover {
+  color: #000000;
+}
+
+h1 a:hover {
+  font-size: 38px;
+}
+
+ul li a:hover {
+    font-size: 24px;
+}
+
+form {
+  width: 70%;
+  margin: 100px auto;
+}
+
+input {
+  padding: 20px;
+border-radius: 10px;
+text-align: center;
+}

@@ -1,0 +1,18 @@
+<h1><%= @student.name %>'s Project</h1>
+
+<ul>
+  <li>Project description:<br/>
+    <%= @student.project_description %>
+  </li>
+  <% if !@student.github_link.nil? %>
+    <li>
+      Check it out on <a href="<%= @student.github_link %>">Github</a>
+    </li>
+  <% else %>
+    <li>
+      There is no github link for this project. ...yet.
+    </li>
+  <% end %>
+</ul>
+
+<a href="/students">Back to all students</a>

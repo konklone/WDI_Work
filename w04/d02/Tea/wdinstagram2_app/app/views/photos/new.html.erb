@@ -1,0 +1,19 @@
+<form action="/photos" method="post">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <label class="author">
+    Author
+    <input type="text" name="author" placeholder="Username"/>
+  </label class="author">
+
+  <label class="author">
+    Photo Url
+    <input type="url" name="photo_url" placeholder="http://"/>
+  </label class="author">
+
+  <label class="author">
+    Date Taken
+    <input type="date" name="date_taken"  />
+  </label class="author">
+
+  <button>Upload</button>
+</form>

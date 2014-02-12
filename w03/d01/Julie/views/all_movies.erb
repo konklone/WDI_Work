@@ -1,0 +1,17 @@
+ <!-- for each hash of the results array print the individual values -->
+ <body id="movie">
+  
+   
+ <% @results.each do |row| %>
+ <section>
+ <h2><a href="/movies/<%= row["id"]%>">Entry:</a></h2>
+    <ul>
+      <li>Year: <%= row["year"] %></li>
+      <li><img src="<%= row["poster"]%>"></li>
+      <li>Title: <%= row["title"] %></li>
+    </ul>
+  </section>
+</body>
+<% end %>
+
+  

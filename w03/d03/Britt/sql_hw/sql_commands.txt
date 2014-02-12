@@ -1,0 +1,30 @@
+1. All cols for all players on NYK
+=> SELECT * FROM players WHERE team = 'NYK';
+
+2. All cols for all players from IND < 26 y/o
+=> SELECT * FROM players WHERE team = 'IND' AND age < 26;
+
+3. All cols for all players ordered from least points to most
+=> SELECT * FROM players ORDER BY points DESC;
+
+4. Name & PPG for top 20 PPG
+=> SELECT name, AVG(points/games) FROM players GROUP BY name ORDER BY avg DESC LIMIT 20;
+
+5. Avg age of all players
+=> SELECT AVG(age) FROM players;
+
+6. Avg age of all players on OKC
+=> SELECT AVG(age) FROM players WHERE team = 'OKC';
+
+7. Avg age of all players who played > 40 games
+=> SELECT AVG(age) FROM players WHERE games > 40;
+
+8. Team & total team pts, descending by team pts
+=> SELECT team, SUM(points) AS team_points FROM players GROUP BY team ORDER BY team_points DESC;
+
+#### BONUS ####
+1. Age & avg PPG for each age, from youngest to oldest
+=> SELECT age, AVG(points/games) FROM players GROUP BY age ORDER BY age;
+
+2. Team & num players on that team w/ PPG > 12, from most to least players
+=> SELECT team, COUNT((points/games) > 12) AS players_with_ppg_over_12 FROM players GROUP BY team ORDER BY players_with_ppg_over_12 DESC;

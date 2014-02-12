@@ -1,0 +1,46 @@
+body {
+	width: 100%;
+  background-image:url('../img/wavegrid.png');
+}
+
+#main_container {
+	margin: 10px auto;
+	width: 800px;
+}
+
+.heading {
+  text-align: center;
+  font-family: 'Finger Paint', cursive;
+  font-size: 50px;
+}
+
+table {
+  margin: 0px auto;
+}
+
+.box_cell {
+  border: 2px solid black;
+  width: 175px;
+  height: 175px;
+  border-radius: 75px;
+  opacity: .85;
+  box-shadow: 2px 2px 0px #888888;
+  background-color: #aaa;
+  transition: 500;
+}
+
+.box_cell:hover {
+  opacity: 0.5;
+  transition: 500;
+}
+
+.black{
+  box-shadow: 2px 2px 0px black;
+  background: url("http://25.media.tumblr.com/d186e6fe2fa1c39a0ba3d7b5980fd598/tumblr_ml1d4eUJFj1s7itpyo1_400.gif");
+  background-size: 130%;
+}
+.red{
+  box-shadow: 2px 2px 0px red;
+  background: url("http://media.tumblr.com/tumblr_lvcm3ftozF1qbunx5.gif");
+  background-size: 130%;
+}

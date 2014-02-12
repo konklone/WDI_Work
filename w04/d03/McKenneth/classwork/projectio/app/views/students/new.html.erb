@@ -1,0 +1,11 @@
+<h1>Projectio</h1>
+
+<form action="/students" method="post">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"/>
+  <input type="text" placeholder="Name" name="name">
+  <input type="text" placeholder="Description" name="project">
+  <input type="text" placeholder="Github link" name="github">
+  <button>Project.me</button>
+</form>
+
+<!-- can put all 'name' s into a hash student['names']  -->

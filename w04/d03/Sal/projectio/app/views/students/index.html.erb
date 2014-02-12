@@ -1,0 +1,12 @@
+<h1><a href="/">PROJECT.IO</a></h1>
+<h2><a href="/students/new">NEW</a></h2>
+
+	<% @students.each do |student| %>
+	<section>
+		<h2><a href="/students/<%= student.id %>"><%= student.name %></a></h2>
+		<p><%= student.project_description %></p>
+		<a href="<%= student.github_link %>">GitHub Link</a>
+	<section>
+	<% end %>
+</div>
+

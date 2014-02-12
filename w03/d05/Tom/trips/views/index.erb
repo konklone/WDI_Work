@@ -1,0 +1,9 @@
+<h1>Trip Leaderboard</h1>
+
+<% @people.each do |person| %>
+<h3><%= person.name.upcase %> : <%= person.num_trips %> trips </h3>
+
+  <form action="/<%= person.name %> method="POST">
+    <button>Hey you tripped!</button>
+  </form>
+  <% end %>

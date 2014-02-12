@@ -1,0 +1,10 @@
+<h1>All of the people who trip</h1>
+<!-- <form action="/:trip" method="POST">
+	<button name="increment">plust 1</button> -->
+<% @person.each do |individual| %>
+<h3><%= individual.name.upcase %> : <%= individual.num_trips %> trips</h3>
+<form action="/<%= individual.name %>" method="POST">
+	<button>Trip again</button>
+
+</form>
+<% end %>

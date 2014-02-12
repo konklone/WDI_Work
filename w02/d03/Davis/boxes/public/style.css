@@ -1,0 +1,52 @@
+div {
+	border: 1px solid black;
+}
+
+/* .container has more specificity than div element
+selector */
+div.container {
+	border: 3px solid blue;
+	/*.container applied text-align to boxes inside*/
+	text-align: center;
+}
+
+.background-cyan {
+	background-color: cyan;
+	padding: 15px;
+	/*t r b l*/
+	margin: 15px;
+}
+
+.background-gray {
+	background-color: grey;
+}
+
+.box {
+	/*with is auto width of screen*/
+	/*height is "strechy"*/
+	with: 100px;
+
+	/*centering*/
+	margin: 15px auto;
+	display: inline-block;
+	/*align inline elements and applys to children
+	NOT self*/
+	text-align: center;
+}
+
+p {
+	display: inline-block;
+}
+
+/*element div of class second div*/
+div.second-div {
+	height: 100px;
+	background-color: red;
+	/*previously not specified float property so
+	overlaying now    need to clear below*/
+	clear: both; /*lear says dont ignore floats*/
+	/*left right or both*/
+}
+
+/*CMD+OPT+I can click CSS to turn off*/
+

@@ -1,0 +1,14 @@
+<!-- Display a single entry -->
+
+<section>
+  <img src='<%= @entry.photo %>'>
+  <% if is_instagram_user?(@entry.author) %>
+      <h3> Shot by 
+        <a href="http://instagram.com/<%= strip_at(@entry.author) %>">
+          <%= @entry.author %>
+        </a>
+      on <%= @entry.post_date %></h3>
+    <% else %>
+      <h3>Shot by <%= @entry.author %> on <%= @entry.post_date %></h3>
+    <% end %>
+</section>

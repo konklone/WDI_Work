@@ -1,0 +1,178 @@
+class Shelter 
+  def initialize(name)
+    @name = name
+    @animals = [ ]
+    @clients = [ ]
+    @adoption_database = {}  #populated by client/animal key/values
+  end
+
+  def display_animals
+    puts "#{@animals.join(", ")} lives here"
+  end 
+
+  def display_clients
+    puts "#{@clients.join(", ")} are our clients"
+  end
+  #writes animal paramenter string into animal array
+  def animal_add(animal)
+    @animals << animal
+  end
+#writes client paramenter string into client array
+  def clients_add(client)
+    @clients << client
+  end
+  
+  def adopt(client, animal)
+     @adoption_database[client] = animal
+  end
+
+  def remove(client)
+    @adoption_database.delete(client)
+  end
+
+  def adoption_database_reader
+     @adoption_database
+  end
+  
+  def to_s
+    return "Our name is #{@name} we have #{@clients.count} clients and  #{@animals.count} animals"
+  end
+
+  def print
+    puts self.to_s
+  end
+
+end
+
+class Animal
+
+  def initialize(name, species)
+    @name = name
+    @species = species
+    @toys = []# this will be a array
+  end
+
+  def to_s
+    return "This is #{@name}. It's a #{@species}. These are its toys: #{@toys.join(", ")}."
+  end
+
+   def name
+    @name
+  end
+
+  def species
+    @species
+  end
+
+  def toys
+    @toys
+  end
+
+  def add_toys(x)
+    @toys.push(x) 
+  end
+
+
+end
+
+class Client
+
+  def initialize(name, age)
+    @name = name
+    @age = age
+    @pets_list = []
+  end
+
+
+  #string conversion method definition
+  def to_s
+    "The clients name is #{@name}, they are #{@age} years old and have, #{@pets_list.count}"
+  end
+
+
+  #Add pet to pet list method
+  def add_pet(pet)
+    @pets_list << pet
+  end
+
+  #binding.pry
+  #client name reader method
+  def name
+    @name
+  end
+
+
+  #client age reader method
+  def age
+    @age
+  end
+
+
+  #pets list reader method
+  def pets
+    @pets_list
+  end
+end
+
+first_shelter = Shelter.new("WDISPCA")
+
+def menu
+  puts "***Welcome to the Animal Shelter***"
+  puts "Would you like to:\n 
+  (1)Create an animal\n
+  (2)Create a client\n
+  (3)Display all animals\n
+  (4)Display all clients\n
+  (5)Adopt\n
+  (6)Return\n
+  (Q) Quit the program"
+  gets.chomp.downcase
+end
+
+response = menu
+ 
+# This process will continue until the user selects a quit option from the menu
+while response != "q"
+  case response
+    when "1"
+      puts "What is the animal's name?"
+      name = gets.chomp
+
+      puts "What type of animal is it?"
+      species = gets.chomp
+
+      animal_obj = Animal.new(name, species)
+
+      puts "How many toys does your animal have?"
+      num_toys = gets.chomp.to_i
+
+
+
+      while num_toys > 0
+        puts "enter toy:"
+        toy_name = gets.chomp
+        animal_obj.add_toy(toy_name)
+        num_toys -= 1
+      end
+      
+      first_shelter.animal_add(animal_obj)
+
+      menu
+
+    when "2"
+
+    when "3"
+
+    else
+      puts "Please enter a menu option"
+
+    end
+
+
+
+ 
+
+
+
+
+end

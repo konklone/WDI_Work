@@ -1,0 +1,8 @@
+<h1>Here Are The Photos In Our Database</h1>
+
+<ul>
+	<% @photos.each do |photo| %>
+	<li><a href= "photos/<%= photo.id%>"><%= photo.author %></a></li>
+	<% end %>
+	
+</ul>

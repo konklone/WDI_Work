@@ -1,0 +1,17 @@
+<!-- write new w/ SQL -->
+<p>
+	<% @result.values.each do |array| %>
+		<%= "ID: #{array[0]}" %>
+		<br>
+		<%= "Title: #{array[1]}" %>
+		<br>
+		<%= "Year: #{array[2]}" %>
+		<br>
+		<%= "Genre: #{array[3]}" %>
+		<br>
+		<%= "IMDB: #{array[4]}" %>
+		<br>
+		<img src="<%="#{array[5]}"%>" alt="">
+		<br>
+	<% end %>
+</p>

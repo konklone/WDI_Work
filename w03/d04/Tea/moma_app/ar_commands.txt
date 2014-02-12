@@ -1,0 +1,55 @@
+Write the commands that you would enter in pry to do the following:
+Save the pry commands to a file called `ar_commands.txt`
+
+1. Create a new Artist (Vincent Van Gogh) and save him to your database
+vg = Artist.new(name: "Vincent Van Gogh", nationality: "Dutch", dob: "1853-03-30")
+
+2. Create a new Painting (Starry Night) and save it to your database
+
+sn = Painting.new(title: "Starry Night", image_url: "http://uploads2.wikipaintings.org/images/vincent-van-gogh/the-starry-night-1889(1).jpg", year: "1889-06-01")
+sn.save
+
+3. Return all Artists
+Artist.all
+
+4. Return all Paintings
+Painting.all
+
+5. Return the artist with an id of 2
+Artist.find_by(id: 2)
+
+6. Return the artist with a name of "Vincent Van Gogh"
+Artist.find_by(name: "Vincent Van Gogh")
+
+7. Return all the artists from "Spain"
+Artist.all.where(nationality: "Spanish")
+
+8. Return the painting with an id of 1
+Painting.find_by(id: 1)
+
+9. Return the painting with a name of "Guernica"
+Painting.find_by(title: "Guernica")
+
+10. Return the image url for the painting with title "Starry Night"
+Painting.find_by(title: "Starry Night").image_url
+
+11. Return all the paintings that "Pablo Picasso" painted
+pablo_id = Artist.find_by(name: "Pablo Picasso").id
+Painting.where(artist_id: pablo_id).pluck
+
+
+12. Return the image urls for all the paintings that "Pablo Picasso" painted in an array
+
+pablo_id = Artist.find_by(name: "Pablo Picasso").id
+Painting.where(artist_id: pablo_id).pluck(:image_url)
+
+
+13. Return the artist of "Guernica"
+Artist.find_by(id: Painting.find_by(title:"Guernica").artist_id).name
+
+
+14. Change Vincent Van Gogh's nationality to USA
+Artist.find_by(name: "Vincent Van Gogh").nationality = "USA"
+
+15. Change "Starry Night" to be one of Pablo Picasso's paintings
+Artist.find_by(name: "Pablo Picasso").paintings << Painting.find_by(title: "Starry Night")

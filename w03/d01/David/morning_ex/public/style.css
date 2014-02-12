@@ -1,0 +1,16 @@
+.square {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  float: left;
+  margin: 10px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px; 
+  background: blue;
+  float: left;
+  margin: 10px;
+}

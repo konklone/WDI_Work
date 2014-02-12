@@ -1,0 +1,15 @@
+1 - SELECT * FROM players WHERE team = 'NYK';
+
+ 2 - SELECT * FROM players WHERE team = 'IND' AND age < 26;
+
+ 3 - SELECT * FROM players ORDER BY points DESC;
+
+ 4 - SELECT name, (points/games) AS avg FROM players ORDER BY avg DESC LIMIT 20;  
+
+ 5 - SELECT AVG(age) FROM players;
+
+ 6 - SELECT AVG(age) FROM players WHERE team = 'OKC';
+
+ 7 - SELECT AVG(age) FROM players WHERE games > 40;
+
+ 8 - RAN OUTTA TIME!!!

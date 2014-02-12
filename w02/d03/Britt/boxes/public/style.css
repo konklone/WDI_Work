@@ -1,0 +1,59 @@
+/*
+selector: property;
+*/
+
+/*
+selector: top right bottom left;
+selector: t&b r&l;
+selector: t&r&b&l;
+*/
+
+/*
+
+border: width type color;
+border-radius: radius;
+background-color: color;
+padding: width width width width;
+margin: width width width width;
+overflow: width width width width;
+display: block, inline, or inline-block;
+text-align: applies to children, ** NOT self! **;
+float: ;
+clear: both; ** don't ignore floats **
+
+*/
+
+.container {
+	border: 3px solid blue;
+	text-align: center;
+}
+
+div {
+	border-radius: 5px;
+}
+div.box {
+	border: 1px solid black;
+}
+
+.box {
+	width: 100px;
+	margin: 15px auto;
+	display: inline-block;
+	text-align: center;
+}
+.background-green {
+	background-color: green;
+	padding: 15px;
+	float: left;
+}
+.background-gray {
+	background-color: gray;
+	float: right;
+	margin: 15px;
+}
+
+div.second-div {
+	height: 100px;
+	background-color: red;
+	clear: both;
+}

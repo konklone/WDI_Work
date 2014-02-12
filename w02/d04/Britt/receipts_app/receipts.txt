@@ -1,0 +1,2 @@
+1,Apple,iPhone 5s,400
+2,Duane Reade,Doublemint gum,1.00

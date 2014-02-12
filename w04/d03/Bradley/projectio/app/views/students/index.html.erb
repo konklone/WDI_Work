@@ -1,0 +1,10 @@
+<h2>List of students</h2>
+  <% @students.each do |student| %>
+  <ul>
+    <li><%= student.name %></li>
+    <li><%= student.project_descrilition %></li>
+    <li><%= student.github_link %></li>
+    <li><%= student.update_at %></li>
+  </ul>
+  <% end %>
+

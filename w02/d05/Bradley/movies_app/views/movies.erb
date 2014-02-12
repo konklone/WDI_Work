@@ -1,0 +1,20 @@
+  <div class="movies">
+    <% file = File.new("movies.txt", "a+") %>
+
+  <% file.each do |line| %>
+    <div class="movie">
+      <% values = line.split(",") %>
+      <div class="poster">
+        <img src="<%= "#{values[3]}" %>" />
+      </div>
+      <div class="info">
+        <p><strong>Title :</strong> <%= "#{values[1]}" %></p>
+        <p><strong>Year :</strong> <%= "#{values[2]}" %></p>
+        <p><strong>Rated :</strong> <%= "#{values[4]}" %></p>
+        <p><strong>IMDB Rating :</strong> <%= "#{values[5]}" %></p>
+      </div>
+    </div>
+  <% end %>
+
+  <% file.close %>
+</div>  

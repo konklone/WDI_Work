@@ -1,0 +1,20 @@
+Rest = not files
+
+Http = "strings"
+
+http has two parts request and response 
+
+request and response has two parts head and body
+
+the head contains http verbs and paths 
+
+puppies = ["patches",]
+
+resources = everything in a restful architecture in consider a resource
+
+body contains
+
+request = path, verb, query params>HEAD
+request = body = params (hash)
+
+persistant storage = storage of files after the application is quitted

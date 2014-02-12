@@ -1,0 +1,24 @@
+body {
+	background-image: url("http://upload.wikimedia.org/wikipedia/commons/6/64/LevittownPA.jpg");
+	background-size: 100%;
+}	
+
+.container {
+	background-color: rgba(0, 0, 0, 0.4);
+	color:white;
+	font-style: bold;
+	font-size: 5em;
+	font-family: Helvetica;
+	margin: 100px auto;
+	opacity: 1;
+}
+
+.box {
+	color:white;
+	font-size: .8em;
+	font-family: Helvetica;
+	padding-left: 50px;
+	font-style: bold;
+	margin: 0, auto;
+}
+

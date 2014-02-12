@@ -1,0 +1,22 @@
+Pair programming bot
+
+Have a test for that?===<<<<<<<<==\\
+||								||							 \\
+yes								no								\\	
+||  							\\=write a test. ==||
+||								//								  \\
+does the test pass?										 \\====<<<<<<<====\\
+||						 ||  \\																		||
+yes						 no   \\====<<<<<<<<<<<<<<<======\\				||
+||						 \\    														\\			||
+||						 write justenough for it to pass==||			||
+||																							//			||
+||																			 //=>>=//				||
+need to refactor?										 	  //							||
+||					||												 //								||
+no					yes									 	 	  //								||
+||					\\								  		 //									||
+||					refactor the code.=>>>>=||									||
+||																	 										||
+||																	  									||
+select a new feature to implement.===>>>>>>>>>>>>>>>>===||

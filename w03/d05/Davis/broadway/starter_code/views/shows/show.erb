@@ -1,0 +1,17 @@
+<br>
+<a href="/shows/<%= @id %>/songs/new">Add Song</a>
+<br>
+<br>
+
+<% Show.all.each do |show| %>
+	<% if show.id = @id %>
+		<%= show.title %>
+		<br>
+		<%= show.year %>
+		<br>
+		<%= show.composer %>
+		<br>
+		<img src="<%= show.img_url %>" alt="">
+		<br>
+	<% end %>
+<% end %>

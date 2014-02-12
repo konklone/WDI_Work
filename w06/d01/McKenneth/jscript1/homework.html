@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Javascript</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+  var rate_british = 1.6136;
+  var rate_american = .6196;
+
+  function convert_to_pounds( dollar ){
+    var exchange = rate_british * dollar;
+    console.log("$"+dollar.toFixed(2)+ " in pounds is £" + exchange.toFixed(2));
+  }
+  function convert_to_dollars( pounds ){
+    var exchange = rate_american * pounds;
+    console.log("£"+ pounds.toFixed(2) + " in dollars is $" + exchange.toFixed(2));
+  }
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+* title
+* year
+* composer
+* img_url
+
+A song has:
+
+* title
+* embed_url
+
+"Little Shop of Horrors", "1982", "Alan Menken", "http://static.guim.co.uk/sys-images/Arts/Arts_/Pictures/2011/11/25/1322221103019/Audrey-II-in-Little-Shop--007.jpg"
+
+"Cabaret", "John Kander", 1966, "http://1.bp.blogspot.com/-rAwnw1SUmnU/TnrSMNNC8lI/AAAAAAAAAKc/IiogZLn7rUE/s640/cabaret+image.jpg"
+
+"A Chorus Line", "Marvin Hamlisch", "1975", "http://makemusicals.com/wp-content/uploads/2011/02/ChorusLine.jpg"
+
+
+
+"Suddenly Seymour", "http://www.youtube.com/watch?v=b66p8dLLwf8"
+"Dentist!", "http://www.youtube.com/watch?v=bOtMizMQ6oM"
+"Suppertime", "http://www.youtube.com/watch?v=6RRh-g-CC8g"
+
+
+Song.create(:song_title => "Cabaret", :embed_url =>  "http://www.youtube.com/watch?v=moOamKxW844")
+
+Song.create(:song_title => "Tomorrow Belongs to Me", :embed_url =>  "http://www.youtube.com/watch?v=29Mg6Gfh9Co")
+
+Song.create(:song_title =>"The Money Song", :embed_url =>"http://www.youtube.com/watch?v=I8P80A8vy9I")
+
+
+Song.create(:song_title =>"One", :embed_url =>"http://www.youtube.com/watch?v=tyZeGOsR9IA")
+
+Song.create(:song_title =>"Dance: Ten; Looks: Three", :embed_url => "http://www.youtube.com/watch?v=Q-yjj6_LBCs")
+
+Song.create(:song_title =>"What I Did for Love", :embed_url => "http://www.youtube.com/watch?v=-h7ehLC6aAk")
+

@@ -1,0 +1,8 @@
+<h1>Costumes:</h1>
+<ul>
+	<% costumes.each do |costume| %>
+		<li><%= link_to costume.name, costume_path(costume) %></li>
+		<li><%= link_to costume.image, costume_path(costume) %></li>
+	<% end %>
+
+</ul>

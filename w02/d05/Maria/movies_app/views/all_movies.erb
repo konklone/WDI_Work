@@ -1,0 +1,4 @@
+<% @all_movies.each do |line| %>
+  <% @all_movies = line.split(",") %>
+  <%= erb :movies_show %>
+<% end %>

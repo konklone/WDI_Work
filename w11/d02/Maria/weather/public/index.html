@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Backbone Router</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="http://underscorejs.org/underscore-min.js"></script>
+  <script src="http://backbonejs.org/backbone-min.js"></script>
+</head>
+<body>
+  <form>
+    <input type="text" name="city" placeholder="Sleepy Hollow">
+    <input type="text" name="state" placeholder="New York">
+    <button>Submit</button>
+  </form>
+  <script type="text/html">
+    <h2><%= this.city %>, <%= this.state %></h2>
+    <p>The temperature is: <%= this.temperature %></p>
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<h1>Enter the new dependency information below</h1>
+
+<form action="/students/<%= @student.id %>/dependencies/" method="POST">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+
+  <label>Name</label>
+  <input type="text" name="depend[name]" placeholder="Dependency Name" />
+
+  <label>Dependency Type</label>
+  <input type="radio" name="depend[dep_type]" value="API">API<br>
+  <input type="radio" name="depend[dep_type]" value="library">library<br>
+
+  <label>Gem</label>
+  <input type="radio" name="depend[is_gem]" value="true">Is a Ruby Gem<br>
+  <input type="radio" name="depend[is_gem]" value="false">Is NOT a Ruby Gem<br>
+
+  <label>Documentation Link</label>
+  <input type="text" name="depend[documentation_link]" placeholder="http://doc.link.io"/>
+
+  <label>Other Link</label>
+  <input type="text" name="depend[other_link]" placeholder="http://doc.link2.ly"/>
+
+  <button>Save!</button>
+
+</form>
+
+<p><a href="/students/<%= @student.id %>">Return to student</a></p>

@@ -1,0 +1,27 @@
+<h1>Update the new student project information below</h1>
+
+<form action="/students/<%= @student.id %>" method="POST">
+  <input type="hidden" name="_method" value="put" />
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+
+  <label>Name</label>
+  <input type="text" name="student[name]" placeholder="Student Name" value="<%= @student.name %>"/>
+
+  <label>Project Description</label>
+  <textarea name="student[project_description]" placeholder="My idea..."><%= @student.project_description %></textarea>
+
+  <label>GitHub Link</label>
+  <input type="text" name="student[github_link]" value="<%= @student.github_link %>"/>
+
+  <button>Update!</button>
+
+</form>
+
+<form action="/students/<%= @student.id %>" method="POST">
+  <input type="hidden" name="_method" value="delete" />
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <input type="hidden" name="student_id" value="<%= @student.id %>" />
+  <button>Delete!</button>
+</form>
+
+<p><a href="/students/<%= @student.id %>">Return to student</a></p>

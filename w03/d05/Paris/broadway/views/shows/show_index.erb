@@ -1,0 +1,11 @@
+<h3>Shows</h3>
+
+<ul>
+  <% @shows.each do |show| %>
+  <li><a href="<%= "/shows/#{show.id}"%>"><img src= '<%= show.img_url %>'></a></li>
+  <li>Id: <%= show.id  %></li>
+  <li>Name: <%= show.title %></li>
+  <li>Year: <%= show.year %></li>
+  <li>Composer: <%= show.composer %></li>
+    <% end %>
+</ul>

@@ -1,0 +1,6 @@
+<form action="/shows/<%= @id %>/songs" method="POST">
+	<input type="text" name="title" placeholder="Title">
+	<input type="text" name="embed_url" placeholder="Youtube Video ID">
+	<input type="hidden" name="id" value="<%= @id %>">
+	<button>Add Song</button>
+</form>

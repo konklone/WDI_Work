@@ -1,0 +1,9 @@
+<h1>Add New Student</h1>
+
+<form action="/students" method="POST">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="text" placeholder="Student Name" name="student[name]">
+  <textarea placeholder="Project Description" name="student[project_description]"></textarea>
+  <input type="text" placeholder="GitHub" name="student[github_link]">
+  <button>Submit</button>
+</form>

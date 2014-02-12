@@ -1,0 +1,8 @@
+<% @movies_hash.each_key do |key, value| %>
+	<%= "<ul>" %>
+	<%= "<li>Title:  #{@movies_hash[key][1]} </li>" %>
+	<%= "<li>Released: #{@movies_hash[key][2]} </li>" %>
+	<%= "<li><img src= '#{@movies_hash[key][3]}'></li>" %>
+	<%= "</ul>" %>
+
+<% end %>

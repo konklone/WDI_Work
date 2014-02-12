@@ -1,0 +1,28 @@
+Phase 1
+
+One line functionality
+Assume that the N line is the only subway line first.
+The user should be given a list of all the stops on the N line
+The user should be able to enter the stop that they want to get on at
+The user should be able to enter the stop that they want to get off at
+The user should be told the number of stops for their trip
+
+___________________________________________________________________________
+
+print out list of stops for user
+	create array
+	loop over array and print out as it loops
+
+ask user what stop they get on
+	gets answer into variable
+
+ask user what stop they get off
+	gets answer into variable
+
+give how many stops they have left (which would be stopOFF in index of array minus stopOn in array)
+
+
+
+
+
+

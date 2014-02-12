@@ -1,0 +1,19 @@
+<<<<<<< HEAD
+<!-- <ul>
+  <li><a href="/plan/l_train">L Train</a></li>
+  <li><a href="/plan/g_train">G Train</a></li>
+  <li><a href="/plan/n_train">N Train</a></li>
+</ul> -->
+
+
+<ul>
+  <% @mta.each do |line,stops| %>
+  <li><a href="/plan/<%= line.to_s%>"><%= line.to_s  %></a></li>
+  <% end %>
+=======
+<ul>
+  <li><a href="/plan/l_train">L Train</a></li>
+  <li><a href="/plan/g_train">G Train</a></li>
+  <li><a href="/plan/n_train">N Train</a></li>
+>>>>>>> w2d4
+</ul>

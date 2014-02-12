@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: todolly_development
+  pool: 5
+  username: Paris
+  password:
+
+

@@ -1,0 +1,33 @@
+Rental App
+
+it has:   people, apts and buildings
+
+when you run it it will:  
+
+	create 1 bld for you
+
+	show us a menu:
+
+	Create person    Create apt     List apartments   List people in 1 apt    Quit
+
+
+	create a person:
+	make a person class
+	and inside get person info to initialize
+
+						(pass params to initialize :  def initialize (param1)
+									@tables = param1
+								  end              )
+
+then
+	create new person
+
+
+
+	apartment in a hash  key: apt  value: person
+
+	to_s method   for person
+
+	sal.to_s it should say "I am ______ and I am ____years old"
+
+	turning data into a human readable

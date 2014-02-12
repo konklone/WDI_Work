@@ -1,0 +1,50 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-color: #e99000;
+}
+
+.header {
+	background-color: #3216dc;
+	font-family: Lobster, cursive;
+	font-size: 32px;
+	margin: 0;
+	padding: 0;
+	line-height: 200px;
+}
+
+h1 {
+	margin: 0 auto;
+	padding: 0 0 0 50px;
+}
+
+.container {
+	font-family: Source Sans Pro, Helvetica, sans-serif;
+	background-color: #f30c3b;
+	font-weight: 300;
+	color: white;
+	width: 900px;
+	height: 100%;
+	margin: 0 auto;
+}
+.container p {
+	margin: 0;
+	padding: 12px 0;
+}
+.movie_info {
+	margin: 0 auto;
+	text-align: center;
+}
+
+a {
+	color: #0cf3d7;
+}
+
+a:visited {
+	color: #0cf3d7;
+}
+
+a:hover {
+	color: #cb51cb;
+	font-weight: 400;
+}

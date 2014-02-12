@@ -1,0 +1,9 @@
+<div class="logo">Arunstigram on RAILS</div>
+<span class="nav"><a href="/images">Home</a>||<a href="/images/new">Create new</a></span>
+<form method="POST" action="/images">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+	<input type="text" name="author" placeholder="Author Name" />
+	<input type="url" name="photo_url" placeholder="image url" />
+	<input type="date" name="date" />
+	<button>Submit</button>
+</form>

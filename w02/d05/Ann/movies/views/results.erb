@@ -1,0 +1,8 @@
+<h1>Here are all the movies people have searched!</h1>
+
+<% @movie_list_array.each do |sub_array| %>
+<%    @title = sub_array[1] %>
+<%      @poster = sub_array[2] %>
+<%      @year = sub_array[3] %>
+                <%= erb :partial %>
+<% end %>

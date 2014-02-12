@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I &hearts; UIs</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+
+    <script src="ui.js"></script>
+
+    <style>
+      body {
+        text-align: center;
+      }
+      h1 {
+        display: block;
+        cursor: pointer;
+        margin: 0 auto;
+      }
+      #first-example {
+        background: blanchedalmond;
+        margin-top: 20px;
+        padding: 10px;
+      }
+      .animate-line {
+        width: 100px;
+        height: 4px;
+        border-radius: 4px;
+        background: black;
+        position: relative;
+        margin: 0 auto;
+      }
+
+      .ui-slider {
+        font-size:8px;
+        width: 300px;
+        margin: 20px auto;
+      }
+
+      #cats {
+        height: 320px;
+        width: 320px;
+        border-radius: 10px;
+        margin: 10px auto;
+        border: 3px solid gold;
+        background: lavenderblush;
+      }
+
+      #cats img {
+        border-radius: 50%;
+        display: block;
+        margin: auto auto;
+      }
+
+      .ui-sortable {
+        font-size: 12px;
+        list-style-type: none;
+        padding-left: 0;
+        width: 200px;
+        margin: 0 auto;
+      }
+
+      .ui-sortable li {
+        border-radius: 2px;
+        height: 1.5em;
+        margin: 4px auto;
+        padding-left: 1em;
+        text-align: left;
+      }
+
+      .ui-progressbar {
+        font-size: 8px;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 12px;
+        position: relative;
+      }
+
+      .progress-label {
+        position: absolute;
+        text-align: center;
+        width: 50px;
+        left: 50%;
+        margin-left: -25px;
+        font-weight: bold;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="animate-line"></div>
+  
+    <h1>I &hearts; UIs.</h1>
+
+    <div class="animate-line"></div>
+
+    <canvas id="circle"></canvas>
+
+
+    <div id="third-example" class="hideable">
+      <div id="progressbar">
+        <div class="progress-label"></div>
+      </div>
+      <button>Start</button>
+    </div>
+
+    
+    <div id="second-example" class="hideable">
+      <ul id="sortable" class="ui-sortable">
+        <li class="ui-state-default" data-val="ruby" data-name="RUUUUBBBYYY" data-ui="240">Ruby</li>
+        <li class="ui-state-default" data-val="html">HTML &amp; CSS</li>
+        <li class="ui-state-default" data-val="rails">Rails</li>
+        <li class="ui-state-default" data-val="javascript">Javascript</li>
+        <li class="ui-state-default" data-val="agile">Agile</li>
+        <li class="ui-state-default" data-val="databases">RDBMS</li>
+        <li class="ui-state-default" data-val="backbone">Backbone</li>
+      </ul>
+    </div>
+    <div id="first-example">
+      <div id="slider"></div>
+      <div id="cats">
+        <img src="http://placekitten.com/g/300/300" alt="cat image" style="margin-top:10px;">
+      </div>
+    </div>
+
+
+  </body>
+</html>

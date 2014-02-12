@@ -1,0 +1,7 @@
+### HW Features
+
+1. Appointments can't overlap for the same room.
+
+2. A user is charged for a room. (Hourly rate of room * number of hours). 
+  - This will require an extra model/table -> Account. It should have a balance. 
+  - A user cannot rent a room without enough money in their balance to pay for it.

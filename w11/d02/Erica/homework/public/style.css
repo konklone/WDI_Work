@@ -1,0 +1,17 @@
+
+
+body{
+  padding:50px 100px;
+  background: goldenrod;
+  font-family: Helvetica;
+}
+
+.up {
+  color: green;
+}
+
+.down {
+  color: red;
+}
+
+

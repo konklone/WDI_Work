@@ -1,0 +1,150 @@
+@media (max-width: 700px) {
+    body {
+    background-color: white;
+    }
+}  
+
+.body {
+    font-family: sans-serif;
+}
+
+/*CONTAINERS*/
+.container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.movies-container {
+    height: 900px;
+    width:  max;
+    margin-left: -1em;
+    margin-top: -2em;
+    background-position: absolute;
+    background-attachment: fixed;
+    background-color: #EBEBEB;
+}
+
+.form-container {
+    background-image: url("http://www.doctormacro.com/Images/Grant,%20Cary/Annex/Annex%20-%20Grant,%20Cary%20(North%20by%20Northwest)_01.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 900px;
+    margin-left: -1.5em;
+    margin-right: -1em;
+    margin-top: -3em;
+    text-align: center;
+}
+
+/*FORMS STYLE*/
+
+.form {
+    float: left;
+    display: inline-block;
+    /*background-color: gray;*/
+    padding-top: 10px;
+    margin-top: 80px;
+    background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+    background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+    width:1000px;
+    height:200px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #09C;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    opacity: .8;
+    }
+
+input    {
+    margin-left: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 50px;
+    margin-top: 20px;
+    width: 800px;
+    display: inline;
+    border: 1px solid #999;
+    height: 100px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    margin-right: 10px;
+    text-align: center;
+}
+
+#button {
+    margin-left: 10px;
+    background: orange;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    font-family: arial;
+    height:60px;
+    width: 60px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    border: 2px solid #999;
+}
+
+/*INDEX, ALLMOVIES AND SINGLEMOVIE STYLE*/
+
+h1 {
+  text-align: center;
+  line-height: 100px;
+  display: block;
+  padding-top: 25px;
+  color: #ffffff;
+  font-size: 115px;
+}
+
+h2 {
+    margin-top: 80px;
+    padding-left: 80px;
+    float: left;
+    font-size: 80px;
+    color: white;
+}
+
+img {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    border: 4px solid gray;
+    border-radius: 10px;
+}
+
+a:link, a:visited {
+    color: #38488f;
+    text-decoration: none;
+}
+
+ul {
+    padding-top: 80px;
+    font-family: sans-serif;
+}
+
+li {
+    font-family: sans-serif;
+    padding: 15px;
+    color: gray;
+    font-size: 60px;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    margin-left: 0 auto;
+    margin-right: o auto;
+    text-align: center;
+}
+
+div.mural {
+    background-image: url("http://www.scriptgodsmustdie.com/wp-content/uploads/2013/01/moonrise-kingdom-04.jpg");
+    background-repeat:no-repeat;
+    height: 950px;
+    width:  max;
+    margin-left: -2.5em;
+    margin-top: -3em;
+    background-position: absolute;
+    background-attachment: fixed;
+}   

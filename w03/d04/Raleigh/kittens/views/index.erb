@@ -1,0 +1,11 @@
+<p><img src="<%= @url_gen %>" alt="Image of kitten" /></p>
+
+<form action="/vote/meow" method="POST">
+   <input type="hidden" name="url" value="<%= @url_gen %>" />
+   <button>Meowwww</button>
+</form>
+
+<form action="/vote/not_meow" method="POST">
+   <input type="hidden" name="url" value="<%= @url_gen %>" />
+   <button>Not Meow</button>
+</form>

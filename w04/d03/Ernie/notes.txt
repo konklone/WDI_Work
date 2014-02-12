@@ -1,0 +1,57 @@
+Project Tracker= Project.io
+
+It allows students to put there information up
+
+First step is map it out
+Planning = drawing schema,psuedo code,route mapping,flowchart
+
+_________________________________________________
+Three Things You Can Do to Show That you've planned
+
+First Thing We do is think about our data
+DATA MODEL+= ERD
+ERD = Entity Relationship Data
+
+For This App 
+Table = Students , Dependecies
+Columns = name,description,dependencies,dates
+
+in the one to many realationship the many primary goes into the one table
+_____________________________________________________
+Second Thing is The STATE DIAGRAM
+
+Models embodies a States and our action connects states together
+
+State one = Welcome one action is take me to all the students or one
+
+___________________________________________________
+Lastly is WIREFRAMING
+
+
+
+
+Initalize our app rails new project.io -d postgresql
+____________________________________________
+git init
+create the DB
+____________________________________________
+BUILD THE MODEL
+Schema = DB migration
+Create Class Models
+_____________________________________________
+DEFINE THE ROUTES
+_____________________________________________
+WRITE THE CONTROLLERS && VIEWS
+going back and forth for each controller action and rendering the view template
+
+first is index
+second is new
+third is create
+forth is show
+fifth is edit
+sixth is delete
+
+_________________________
+STYLE
+_________________________
+SHOW!!!

@@ -1,0 +1,62 @@
+1.
+
+gogh = Artist.new
+gogh.name = "Vincent Van Gogh"
+gogh.nationality = "The Netherlands"
+gogh.date_of_birth = "1853-03-30"
+gogh.save
+
+2.
+
+starry = Painting.new
+starry.title = "Starry Night"
+starry.year = 1889
+starry.image_url = "http://www.vangoghgallery.com/catalog/image/0612/Starry-Night.jpg"
+id = Artist.find_by(name: "Vincent Van Gogh").id
+starry.artist_id = id
+starry.save
+
+3. Artist.all
+4. Painting.all
+
+5. Artist.find_by(id: 2)
+6. Artist.find_by(name: "Vincent Van Gogh")
+7. Artist.find_by(nationality: "Spain")
+
+8. Painting.find_by(id: 1)
+9. Painting.find_by(title: "Guernica")
+10. Painting.find_by(title: "Starry Night").image_url
+
+11. 
+
+picasso = Artist.find_by(name: "Pablo Picasso")
+picasso.paintings
+
+12. 
+
+painting_urls = []
+picasso.paintings.each { |painting| painting_urls << painting.image_url }
+painting_urls
+
+13.
+
+guernica = Painting.find_by(title: "Guernica")
+guernica.artist.name
+
+14.
+
+gogh = Artist.find_by(name: "Vincent Van Gogh")
+gogh.nationality = "USA"
+
+15.
+
+new_id = Artist.find_by(name: "Pablo Picasso").id
+starry_night = Painting.find_by(name: "Starry Night")
+starry_night.artist_id = new_id
+
+
+
+
+
+
+

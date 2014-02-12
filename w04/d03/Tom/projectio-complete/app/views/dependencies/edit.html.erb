@@ -1,0 +1,34 @@
+<h1>Update the new dependency information below</h1>
+
+<form action="/students/<%= @student.id %>/dependencies/<%= @depend.id %>" method="POST">
+  <input type="hidden" name="_method" value="put" />
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+
+  <label>Name</label>
+  <input type="text" name="depend[name]" placeholder="Dependency Name" value="<%= @depend.name %>"/>
+
+  <label>Dependency Type</label>
+  <input type="radio" name="depend[dep_type]" value="API" <%= @depend.dep_type == "API" ? "checked='checked'" : "" %>>API<br>
+  <input type="radio" name="depend[dep_type]" value="library" <%= @depend.dep_type == "library" ? "checked='checked'" : "" %>>library<br>
+
+  <label>Gem</label>
+  <input type="radio" name="depend[is_gem]" value="true" <%= @depend.is_gem ? "checked='checked'" : "" %>>Is a Ruby Gem<br>
+  <input type="radio" name="depend[is_gem]" value="false" <%= !@depend.is_gem ? "checked='checked'" : "" %>>Is NOT a Ruby Gem<br>
+
+  <label>Documentation Link</label>
+  <input type="text" name="depend[documentation_link]" placeholder="http://doc.link.io" value="<%= @depend.documentation_link %>"/>
+
+  <label>Other Link</label>
+  <input type="text" name="depend[other_link]" placeholder="http://doc.link2.ly" value="<%= @depend.other_link %>"/>
+
+  <button>Update!</button>
+
+</form>
+
+<form action="/students/<%= @student.id %>/dependencies/<%= @depend.id %>" method="POST">
+  <input type="hidden" name="_method" value="delete" />
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <button>Remove!</button>
+</form>
+
+<p><a href="/students/<%= @student.id %>/dependencies/<%= @depend.id %>">Return to dependency</a></p>

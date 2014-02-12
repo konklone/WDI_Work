@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+  </script>
+  <script src="http://underscorejs.org/underscore-min.js"></script>
+  <script src="http://backbonejs.org/backbone-min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"></script>
+</head>
+<body>
+  <h1>The world's most advanced stock search engine.</h1>
+  <form>
+    <input type="text" name="symbol" placeholder="Stock Symbol">
+    <button>Submit</button>
+  </form>
+  <script type="text/html" id="1"> 
+  <h2><%= this.company %> (<%= this.symbol %>), Current Price:  $<%= this.price %></h2>
+  <p> Opening value: $<%= this.openingValue %>, Price change this year: $<%= this.delta %></p>
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>

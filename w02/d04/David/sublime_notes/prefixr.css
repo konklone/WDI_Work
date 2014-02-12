@@ -1,0 +1,22 @@
+.vendor {
+  opacity: .5;
+}
+
+.prefixes {
+    /*auto updates referencing canIuse.com*/
+    box-shadow: 20px;
+    -moz-transition: -moz-box-shadow 2s;
+    -webkite-border-radius: 4px;
+    animation: slide 1s alternate;
+    background: linear-gradient(top, #e3e3e3 10%, white);
+    display: -moz-box;
+
+}
+
+/*sets necessary keyframes*/
+@keyframes "slide" {
+  0% {left: 0; box-shadow: 10px 10px 10px black;}
+100% {left:50px: box-shadow: 5px 5px 5px black;}
+}
+
+/*will not work with a single property, but cursor can be within the property*/

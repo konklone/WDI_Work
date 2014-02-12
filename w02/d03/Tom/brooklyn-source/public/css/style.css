@@ -1,0 +1,30 @@
+/*
+
+## Style Hints:
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+
+#model-image {
+  margin: 10px;
+  display: inline-block;
+
+}
+
+#rings-image {
+  margin: 10px;
+  display: inline-block;
+
+}
+
+.bottom-boxes {
+  margin: 10px;
+  display: inline-block;
+
+}

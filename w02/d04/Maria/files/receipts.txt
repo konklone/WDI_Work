@@ -1,0 +1,2 @@
+my store, bananas, 40.00
+barnes and noble, harry potter, 34.00

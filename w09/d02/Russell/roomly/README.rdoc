@@ -1,0 +1,37 @@
+### HW Features
+
+1. Appointments can't overlap for the same room.
+
+2. A user is charged for a room. (Hourly rate of room * number of hours). 
+  - This will require an extra model/table -> Account. It should have a balance. 
+  - A user cannot rent a room without enough money in their balance to pay for it.
+
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+

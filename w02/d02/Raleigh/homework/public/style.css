@@ -1,0 +1,74 @@
+/* Engineering Stylesheet */
+
+html {
+   background: blue;
+}
+div#wrapper {
+   margin: 30px auto;
+   padding: 30px;
+   background: #ffffff;
+   width: 500px;
+   -m-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   border-radius: 20px;
+   text-align: center;
+}
+h1 {
+
+}
+p {
+   font-family: helvetica, sans-serif;
+   font-size: 32px;
+   margin-top: 50px;
+}
+a {
+   background: red;
+   padding: 10px 20px 10px 20px;
+   margin: 20px 20px;
+   font-family: helvetica, sans-serif;
+    font-size: 18px;
+   -m-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+a:link {
+   color: #000000;
+   text-decoration: none;
+}
+a:visited {
+   color: #000000;
+}
+a:hover {
+   color: #ffffff;
+   background: orange;
+}
+a:active {
+   color: #ffffff;
+   background: orange;
+}
+a.back {
+   background: none;
+   padding: 10px 20px 10px 20px;
+   margin: 0;
+   float: right;
+   font-family: helvetica, sans-serif;
+    font-size: 14px;
+   -m-border-radius: 0;
+   -webkit-border-radius: 0;
+   border-radius: 0;
+}
+a.back:link {
+   color: #000000;
+   text-decoration: none;
+}
+a.back:visited {
+   color: #000000;
+}
+a.back:hover {
+   color: red;
+   text-decoration: underline;
+}
+a.back:active {
+   color: red;
+   text-decoration: underline;
+}

@@ -1,0 +1,11 @@
+<img src="<%= @kitten_pic %>"/>
+
+<form action="/vote/meow" method="POST">
+  <input type="hidden" name="url" value="<%= @kitten_pic %>"/>
+  <button>Meeeeeow!</button>
+</form>
+
+<form action="/vote/not_meow" method="POST">
+  <input type="hidden" name="url" value="<%= @kitten_pic %>"/>
+  <button>Hiss</button>
+</form>

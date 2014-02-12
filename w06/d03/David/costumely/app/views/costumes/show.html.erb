@@ -1,0 +1,9 @@
+<%= link_to("See All Costumes", costumes_path) %>
+
+<ul>
+  <li><%= @costume.name %> </li>
+  <li><%= image_tag(@costume.image) %></li>
+</ul>
+
+<%= link_to("Edit Your Costume", edit_costume_path(@costume)) %>
+<%= link_to("Delete This Costume", costume_path(@costume), method: :delete) %>

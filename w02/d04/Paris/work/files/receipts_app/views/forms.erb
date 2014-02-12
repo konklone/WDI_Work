@@ -1,0 +1,15 @@
+  <div>
+    <h1>Menu</h1>
+    <ul>
+      <li><a href="<%= @make %>">Make a receipt!</a></li>
+      <li><a href="<%= @print_one %>">Print one of your receipts.</a></li>
+      <li><a href="<%= @print_all %>">Print all of your receipts.</a></li>
+  </ul>
+    <h2><%= @receipt_text %></h2>
+    <form action="/receipts" method="POST">
+        <input type="text" placeholder="what store?" name="store">
+        <input type="text" placeholder="what product?" name="product">
+        <input type="text" placeholder="what price?" name="price">
+        <button>Make my receipt!</button>
+    </form>
+</div>

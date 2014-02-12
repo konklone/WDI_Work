@@ -1,0 +1,45 @@
+body {
+	background-color: #42b4e6;
+	text-align: center;
+}
+
+h1 {
+	color: #fe4042;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+	box-shadow: 0 0 5px 5px #95defe;
+	width: 30%;
+}
+
+a.menu_link {
+	text-decoration: none;
+	color: white;
+	border: 3px solid gray;
+	border-radius: 10px;
+	border-style: outset;
+	padding: 5px;
+	margin: 0;
+}
+
+a.menu_link:hover {
+	background-color: #95defe;
+	color: black;
+}
+
+a.menu_link:active {
+	border-style: inset;
+}
+
+a.name_link {
+	text-decoration: none;
+	color: white;
+}
+
+a.name_link:hover {
+	color: #fe4042;
+}

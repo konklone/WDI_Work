@@ -1,0 +1,18 @@
+1. van_gogh = Artist.new(name: "Vincent Van Gogh", nationality: "Dutch", dob: "October 25, 1881");
+2. starry_night = Painting.new(title: "Starry Night", year: 1889, image_url:"http://uploads2.wikipaintings.org/images/vincent-van-gogh/the-starry-night-1889%281%29.jpg");
+3. Artist.all
+4. Painting.all
+5. Artist.find_by(id: 2) 
+6. Artist.find_by(name: "Vincent Van Gogh") 
+7. Artist.find_by(nationality: "Spanish") 
+8. Painting.find_by(id: 1) 
+9. Painting.find_by(title: "Guernica") 
+10.Painting.find_by(title: "Starry Night").img_url 
+11.Artist.find_by(name: "Pablo Picasso").paintings 
+12.Painting.all.pluck(artist_id: 2) 
+13.Painting.all.pluck(artist_id: 2) 
+14.Artist.find_by(name: "Vincent Van Gogh").nationality = "USA" 
+15.Painting.find_by(title: "Starry Night) << Artist.find_by(name: "Pablo Picasso");
+
+
+

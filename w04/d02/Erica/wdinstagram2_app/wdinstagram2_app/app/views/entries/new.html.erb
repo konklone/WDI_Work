@@ -1,0 +1,10 @@
+<div id = "container">
+<center><h1>Add a photo:</h1></center>
+<form action="/entries" method="POST">
+<input type="text" name="author" placeholder="Taken by:"/>
+<input type="url" name="photo_url" placeholder="Image URL" />
+<input type="date" name="date_taken" placeholder="Date Taken"/> 
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+<button class= "button">Submit</button>
+</form>
+</div>

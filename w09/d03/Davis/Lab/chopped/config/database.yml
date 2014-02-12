@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: chopped_development
+  pool: 5
+  username: daviskoh
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: chopped_test
+  pool: 5
+  username: daviskoh
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: chopped_production
+  pool: 5
+  username: daviskoh
+  password:

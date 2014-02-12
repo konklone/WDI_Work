@@ -1,0 +1,16 @@
+<div class="container">
+
+<a href="/entries"><div class="top"></div></a>
+ 
+  <div class="form">
+    <form action="/entries" method="post">
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"/>
+      <input name="author" placeholder="Author" type="text" />
+      <input name="date" type="date" />
+      <input name="image" placeholder="Image URL" type="text" />
+      <button>Gr.am Me</button>
+    </form>
+  </div>
+
+<h3 class="footer">Product of Skunkmaster Industries</h3>
+</div>

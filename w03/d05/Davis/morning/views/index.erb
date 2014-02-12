@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GA Trips</title>
+</head>
+<body>
+	
+	<% @people.each do |person| %>
+		<%= person.name %>
+		<form action="/<%= person.name %>" method="POST">
+			<input type="hidden" name="name" value="<%= person.name %>">
+			<button>Haha Tripped!</button>
+		</form>
+		<br>
+		<%= person.num_trips %>
+		<br>
+	<% end %>
+
+</body>
+</html>

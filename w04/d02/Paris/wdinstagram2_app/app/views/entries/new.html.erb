@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Create a new entry:</h1>
+  <div class="form">
+    <form action="/entries" method="post">
+          <input name="authenticity_token" type="hidden" value="<%=  form_authenticity_token %>" />
+          <p><input type="text" placeholder="author's name" name="author"></p>
+          <p><input type="url" placeholder="photo url" name="photo_url"></p>
+          <p><input type="text" placeholder="date taken" name="date_taken"></p>
+          <div id="button">
+            <button id="button">Go!</button>
+          </div>  
+    </form>
+  </div>  
+</div>  

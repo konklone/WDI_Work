@@ -1,0 +1,16 @@
+<a href="/students">Home</a>
+
+
+<h1>Please Add A New Student</h1>
+
+<form action="/students" method="POST">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  
+  <p><input id="author" type="text" placeholder="Your Name" name="student[name]"></p>
+  
+  <p><input type="text" name ="student[github_link]" placeholder="Github Handle?"></p>
+
+  <p><textarea id="text" placeholder = "Your Project is ?" name="student[project_description]" ></textarea></p>
+  
+  <button>Submit</button>
+</form>

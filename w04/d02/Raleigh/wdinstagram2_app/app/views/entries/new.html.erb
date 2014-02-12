@@ -1,0 +1,19 @@
+<h1>Add a New Instagram Entry</h1>
+
+<div class="content">
+<form action="/entries" method="POST">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <p>Instagram author:
+   <input type="text" name="author" placeholder="" /></p>
+
+  <p>Photo url:
+   <input type="url" name="photo_url" placeholder="http://" /></p>
+
+  <p>Date taken:
+   <input type="date" name="date_taken" placeholder="" /></p>
+
+  <button>Save</button>
+</form>
+
+<p class="right"><a href="/entries">Home</a></p>
+</div>

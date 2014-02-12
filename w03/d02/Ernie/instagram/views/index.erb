@@ -1,0 +1,10 @@
+<h3>Here are our dope Pics</h3>
+<div><a href="/">Home</a></div>
+
+<ul>
+<% @entries.each do |entry| %>
+  <li><a href="/gram<%= entry.id %>"><%= entry.author %></a></li>
+  <li><img width ="400px" height="400px" src="<%= entry.photos %>"></li>
+  <li><%= entry.my_date %></li>
+<% end %>    
+</ul>

@@ -1,0 +1,9 @@
+  <h2>All Costumes</h2>
+    <% @costumes.each do |costume| %>
+    <ul>
+       <li><%=  "#{costume.name}" %></li>
+       <li><img src="<%=  "#{costume.photo_url}" %>" width="600px" height="400px"></li>
+     </ul>   
+    <% end %>
+    
+ 

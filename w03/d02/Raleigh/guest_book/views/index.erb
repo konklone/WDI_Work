@@ -1,0 +1,9 @@
+   <a href="/guest_book/new">Leave and Entry</a>
+
+<h3>Past Guests:</h3>
+
+   <ul>
+   <% @entries.each do |entry| %>
+      <li>Name: <a href="/guest_book/<%= entry.id %>"><%= entry.name %></a></li>
+   <% end %>
+   </ul>

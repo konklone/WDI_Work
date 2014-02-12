@@ -1,0 +1,24 @@
+<div class="movies-container">
+  <ul>
+    <li><img src=<%= @puts_movie[0]["poster"]%>></li>
+    <li>Year: <%= @puts_movie[0]["year"]%></li>
+    <li>Title: <%= @puts_movie[0]["title"]%></li>
+  </ul>
+</div>
+
+<!-- 
+
+result.max
+=> {"id"=>"1",
+ "year"=>"1985",
+ "poster"=>"http://twitter.parislia.com",
+ "title"=>"back to the future"}
+
+
+result[0]
+=> {"id"=>"1",
+ "year"=>"1985",
+ "poster"=>"http://twitter.parislia.com",
+ "title"=>"back to the future"}
+[16] pry(main)> result[0]["id"]
+=> "1" -->

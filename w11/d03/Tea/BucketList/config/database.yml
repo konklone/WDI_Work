@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: bucketlist_development
+  pool: 5
+  username: T-Virus
+  password:

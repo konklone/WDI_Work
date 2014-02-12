@@ -1,0 +1,19 @@
+plan schema -> create db -> test db (psql) -> refactor code
+
+-- -- -- -- -- 
+id
+
+
+title not null
+year integer default 2001
+genre varchar(50)
+imdb integer default 5
+poster_link
+-- -- -- -- -- 
+
+result.values.each do |array|
+	"ID: "
+	"Title: "
+	"Year: "
+	<img src="<%="#{}"%>" alt="">
+end

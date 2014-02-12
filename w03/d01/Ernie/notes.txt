@@ -1,0 +1,78 @@
+Databases
+
+SQL: Postgresql
+Active Record
+Joins
+
+Vocab
+RDBMS = Orcale,MySql,PostgreSQL
+ACID = http://en.wikipedia.org/wiki/ACID
+
+A DBMS is a server
+pssql -h localhost is starting a server
+
+Database is an organized collection of information i.e models
+
+models describe how we want to interact with said data
+
+Schema descirbe how that information is inputed and outputed at the most basic level the schema is a description of tables in the database.
+
+Tables = colums describes data rows are instances of the data
+
+first thing you do on a project is model the data which turns into a schema
+
+the tables dont only describe the model the also describe the entity and the entity's have realationships and example of an entity is (User)
+
+SQL = Structed/Server Query Langauge
+
+PostgreSQL Data Types
+http://www.postgresql.org/docs/8.4/static/datatype.html
+
+integers 
+strings varchar(n) n= number of character that will be alloted in memory for this string
+
+serial = creation of a unique Id (serial #)
+price = money
+date = date
+date
+boolean
+arrays
+
+
+databases need a unique value from which to access all data points. They usually use an id which is a uniqe key and cannot be null or NOT NULL the id is usally referred to as the primary key
+
+SQL command should always be in capital and end with semicolon
+
+The way you always interact with POSTGRESQL is with text String request between the client and the server
+
+using defaults for your attributes 
+
+SQL COMMANDS
+CREATE DATABASE name;
+DROP DATABASE name; -remove
+DROP TABLE (table_name);
+INSERT INTO Table Name (colums) VALUES (DATA);
+SELECT * FROM table name
+
+INSERT = CREATE in HTTP = POST
+SELECT = READING in HTTP = GET
+          UPDATE in HTTP = PUT
+          DELETE in HTTP = DELETE
+
+PSQL COMMAND
+\c (DATABASE NAME)- connect to database changes the user and its a psql command
+\d Tbname
+
+
+PSQL is a program that runs on the command line like pry
+
+if it starts with a \ the command line assumes its psql
+
+http://deveiate.org/code/pg/    
+
+
+For Homework
+PLAN Schema
+Create DB
+Test DB with (psql)
+Refactor Your Code

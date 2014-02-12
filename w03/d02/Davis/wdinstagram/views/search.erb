@@ -1,0 +1,12 @@
+<form action="/searchby/:type/view" method="get">
+	
+	<% if @type == "id" %>
+		<input type="number" name="id" placeholder="ID">
+	<% elsif @type == "author" %>
+		<input type="text" name="author" placeholder="Name">
+	<% else #by date %>
+		<input type="date" name="date" placeholder="Date Taken">
+	<% end %>
+
+	<button>Search</button>
+</form>

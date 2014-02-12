@@ -1,0 +1,15 @@
+<form action="/entries" method="post">
+  <div>
+    <label>Author:</label>
+    <input value='<%= @entry['author'] if @entry %>' type='text' name='entry[author]' />
+  </div>
+  <div>
+    <label>Photo URL:</label>
+    <input value='<%= @entry['photo'] if @entry %>' type='text' name='entry[photo]'/>
+  </div>
+  <div>
+    <label>Post Date:</label>
+    <input value='<%= @entry['post_date'] if @entry %>' type='date' name='entry[post_date]'/>
+  </div>
+  <button>"Create entry"</button>
+</form>

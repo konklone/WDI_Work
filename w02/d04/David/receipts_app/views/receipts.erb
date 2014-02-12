@@ -1,0 +1,22 @@
+<% if @receipt_by_id != nil %>
+  <ul>
+    <li>Store: <%= @receipt_by_id[0] %></li>
+    <li>Product: <%= @receipt_by_id[1] %></li>
+    <li>Price: $<%= @receipt_by_id[2] %></li>
+  </ul>
+<% else%>
+  <ul>
+    <%  file = File.new("receipts.txt", "r") %>
+    <%  file.each do |line| %>
+      <%  info = line.split(",") %>
+      <li><%=  "Store: #{info[0]}" %></li>
+      <li><%=   "Product: #{info[1]}" %></li>
+      <li><%=   "Price: $#{info[2]}" %></li>
+      <%= "\n" %>
+    <% end %>
+    <%  file.close %>
+    </ul>
+<% end %>
+
+
+

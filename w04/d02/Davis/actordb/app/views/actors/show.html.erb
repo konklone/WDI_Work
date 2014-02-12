@@ -1,0 +1,8 @@
+<h1>Here is the actor you are looking for:</h1>
+
+<% Actor.all.each do |actor| %>
+	<% if actor.id = @id %>
+		<%= actor.birth_date %>
+		<br>
+	<% end %>
+<% end %>

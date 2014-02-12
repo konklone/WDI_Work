@@ -1,0 +1,9 @@
+<div class="movies-container">
+  <% @all_movies.each do |movie| %>
+    <% @movies_array = movie.split(",") %>
+    <%= erb :singlemovie %>
+  <% end %>
+</div>
+
+
+

@@ -1,0 +1,24 @@
+
+<div class="movies">
+<% unless @movie_by_id.nil? %>
+<%= "<ul>" %>
+    <%= "<li>Title: #{@movie_by_id[1]}</li>" %>
+    <%= "<li>Year: #{@movie_by_id[2]}</li>" %>
+    <%= "<li><img src=\"#{@movie_by_id[3]}\" alt=></li>" %>
+<%= "</ul>" %>
+<div class="movies-btn"><a href="/movies">All Movies</a></div>
+<% else %>
+<div class="movies-container">
+<%= "<ul>" %>
+<% @all_movies.each do |key,movie| %>
+    <%= "<li>Title: #{movie[1]}</li>" %>
+    <%= "<li>Year: #{movie[2]}</li>" %>
+    <%= "<li><img src=\"#{movie[3]}\" alt=></li>" %>
+  <% end %>
+  <%= "</ul>" %>
+</div>
+<% end %>
+</div>
+
+
+

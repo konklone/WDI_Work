@@ -1,0 +1,11 @@
+<img src="http://imgur.com/e35y0QQ"/>
+
+<h1 class="nav_bar">All Entries</h1><h2 class = "nav_bar2`"><a href="/entries/new">Add more photos</a></h2>
+<div id = "container">
+
+  <% @entries.each do |entry| %>
+<img src="<%= entry.photo_url %>" class="image" />
+<%= entry.author %> | <%= entry.date_taken %>
+<% end %> 
+</div>
+ 

@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: chopped_development
+  pool: 5
+  username: ezpawn
+  password: 1234
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: chopped_test
+  pool: 5
+  username: ezpawn
+  password: 1234
+  host: localhost

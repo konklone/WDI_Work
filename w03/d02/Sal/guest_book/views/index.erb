@@ -1,0 +1,12 @@
+<h1>Welcome to Guestbook.io.ly</h1>
+
+<a href="/guest_book/new">Leave an Entry</a>
+
+<h3>Here are the guests who've been here:</h3>
+
+<ul>
+	<% @entries.each do |entry| %>
+	<li>Name: <a href="/guest_book/<%= entry.id %>"><%= entry.name %></a></li>
+	<li>Comment: <%= entry.comment %></li>
+	<% end %>
+</ul>

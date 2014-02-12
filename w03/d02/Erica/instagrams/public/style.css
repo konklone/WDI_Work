@@ -1,0 +1,24 @@
+body
+{
+  background-color: black;
+  padding: 25px;
+}
+
+header
+{
+  color: white;  
+}
+
+h1 
+{ 
+  color: white;
+}
+
+img {
+    border: 10px solid white;
+}
+
+a {
+  color: white;
+  
+}

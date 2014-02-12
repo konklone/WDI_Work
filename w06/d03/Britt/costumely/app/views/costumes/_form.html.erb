@@ -1,0 +1,9 @@
+<%= form_for @costume do |f| %>
+  <li><%= f.label :name %></li>
+  <li><%= f.text_field :name %></li>
+
+  <li><%= f.label :image %></li>
+  <li><%= f.url_field :image %></li>
+
+  <li><%= f.submit %></li>
+<% end %>

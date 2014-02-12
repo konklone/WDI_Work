@@ -1,0 +1,32 @@
+Ruby On Rails
+-Scable -Architure
+-Framework
+-Startups
+-efficent
+-Restful
+-MVC
+
+
+Libary = gems
+You call it (pry,active_recored)
+
+Ruby is the bricks, Rails is the house, and we furnish it as programmers
+
+Framework = gems 
+It calls you
+collection of libarays (sinatra)
+
+get '/'do
+(our code)
+end
+
+when someone makes a get request sinarta call your code
+Thats when the say a rails app,sinatra app etc....
+
+Framworks evolve to slove common problems they do the work that doesnt change between App to App
+
+scales good in turns of volumes but scales really well in term of teams
+
+frameworks often embed best practices (MVC,REST,Security)
+
+Convention over Configuartion

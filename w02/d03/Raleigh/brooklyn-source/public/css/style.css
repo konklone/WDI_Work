@@ -1,0 +1,48 @@
+/*** Brook & Lyn Stylesheet ***/
+
+body {
+   background: #ffffff;
+   font-family: "Times New Roman", Times, serif;
+   font-size: 14px;
+   line-height: 17px;
+   color: #656565;
+}
+div#container {
+   margin: 0 auto;
+   width: 960px;
+}
+h1 {
+   background: url(../images/brook-and-lyn-logo.gif) no-repeat; 
+   text-indent: -9999px;
+   height: 30px;
+   margin-top: 40px;
+}
+h2 {
+   color: #676767;
+}
+/* Links */
+a:link {
+   color: #4791c6;
+   text-decoration: none;
+}
+a:visited {
+   color: #4791c6;
+}
+a:hover {
+   color: #20222a;
+}
+a:active {
+   color: #20222a;
+}
+div.press {
+   margin-top: 20px;
+}
+div.press img {
+   display: inline;
+   border: solid 4px #c5c5c5;
+   margin-right: 3px;
+   padding: 1px;
+}
+footer {
+   margin: 20px 0;
+}

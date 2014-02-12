@@ -1,0 +1,35 @@
+<h1>Receipt.io, yo!</h1>
+
+<!-- Instantiates new read-only File object -->
+<% file = File.new("receipts.txt", "r") %>
+
+<!-- iterates through each line of receipts.txt.
+	For each line: 
+	* increases the iterator, functioning as 
+	a running count of lines in receipts.txt -->
+<% i = 0 %>
+<% file.each do |line| %>
+<% 	i += 1 %>
+<% 	i	%>
+<% end %>
+
+<!-- closes the instance of the File object-->
+<% file.close %>
+
+<!-- Adds the ID to the front of the item_info array -->
+<!-- ID == total number of lines + 1 -->
+<% @item_info.unshift(i + 1) %>
+<!-- joins the items into a string, and sets it to a var -->
+<% item_string = @item_info.join(",") %>
+
+<!-- instantiates new write-only File object,
+	starting from the end of the file -->
+<% file = File.new("receipts.txt", "a") %>
+<!-- writes the receipt string to receipts.txt 
+	& closes the instance of the File object -->
+<% file.puts item_string %>
+<% file.close %>
+
+<h2>Success!</h2>
+
+<p><a href="/">Go home.io, yo!</a><p>

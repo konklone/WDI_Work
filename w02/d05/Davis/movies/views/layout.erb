@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movies.io</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+	<h1><%= @h1 %></h1>
+
+	<%= '<a href="/movies/search">Search a Movie</a>' unless @h1 == "Search A Title" %>
+
+	<%= '<a href="/movies">List All Movies</a>' unless @h1 == "All Movies Below!" %>
+
+	<%= yield %>
+</body>
+</html>
+

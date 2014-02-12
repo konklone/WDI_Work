@@ -1,0 +1,42 @@
+body {
+	background-color: maroon;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	border: 1px solid white;
+	padding: 1px;
+	border-style: outset;
+}
+a:hover {
+	background-color: white;
+	color: black;
+}
+a:active {
+	border-style: inset;
+}
+a:visited {
+	text-decoration: none;
+}
+
+h1 {
+	color: white;
+}
+
+.meme {
+	position: fixed;
+}
+
+img {
+	margin-top: 5px;
+	width: 800px;
+	position: fixed;
+}
+
+#words {
+	position: fixed;
+	color: white;
+	margin-top: 430px;
+	margin-left: 20px;
+}

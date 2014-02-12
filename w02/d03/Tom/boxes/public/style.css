@@ -1,0 +1,36 @@
+.container {
+  border: 3px solid blue;
+  border-radius: 5px;
+  text-align: center; /* works on the children not the parent */
+}
+
+div {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.background-cyan {
+  background-color: cyan;
+  padding: 15px 15px 15px 15px;  /* a value for each side */
+  margin: 20px; /*  this defaults to all 4 values top, right, bottom, left */
+  float: left;
+}
+
+.background-gray {
+  background-color: gray;
+  margin-top: 20px;
+  float: right; /*  a little bit of strage concept */
+}
+
+.box {
+  width: 100px;
+  margin: 0 auto; /* computes the width of the parent box content with it's own content and centers them relative to the page and each other */
+  display: inline-block;
+  text-align: center;  /* works on the children not the parent */
+}
+
+div.second-div {
+  height: 100px;
+  background-color: red;
+  clear: both;
+}

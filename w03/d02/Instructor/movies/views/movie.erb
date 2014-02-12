@@ -1,0 +1,14 @@
+<div class="movie_container">
+  <section>
+    <a href="/movies/">
+      <img src='<%= @movie_array['poster'] %>'>
+    </a>
+  </section>
+
+  <section>
+    <ul>
+      <li><a target='_blank' href='https://www.google.com/search?q=<%= @movie_array['title'] %>'><%= @movie_array['title'] %></a></li>
+      <li>Year: <%= @movie_array['year'] %></li>
+    </ul>
+  </section>
+</div>

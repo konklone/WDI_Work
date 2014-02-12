@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome to Backbone</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+
+<style>
+ 
+ body {text-align: center;
+
+ }
+
+</style>
+
+
+  <script src="javascript/jquery-2.0.0.js"></script>
+  <script src="javascript/underscore.js"></script>
+  <script src="javascript/backbone.js"></script>
+</head>
+
+<body>
+  <div id="container">
+  </div>
+
+  <script type="text/javascript">
+  // the below is prototypal inheritance using .extend syntax. View is the base class name.
+    WelcomeView = Backbone.View.extend({
+      // el: $("<div>"),
+
+      // the below defines the div inside the container div
+      className: "welcome",
+      id: "the-welcome-view",
+
+      initialize: function(){
+        this.$el.appendTo( $("#container"));
+        // The above will create an empty div to which Welcome is appended.
+        // this and self work the same in backbone.
+        this.$el.append( $("<h1>Welcome!</h1>") );
+        // this.listenTo(item, "eventName", callback);
+      },
+      events: {
+        // eventName: the function 
+        "click h1": "render",
+        "click p": "feelings"
+      },
+      render: function(){
+        // alert("hover");
+        this.$el.after( $("<p>").text("click"));
+      },
+
+      feelings: function(){
+        alert("I need a nap.");
+      }, 
+      
+      remove: function(){}
+    });
+
+    window.onload = function(){
+      // this is an instance or a prototype of the object WelcomeView
+      // el represents that div. or the jquery object if it's wrapped in a $.
+      var intro = new WelcomeView();
+    };
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+<h2>List of dogs:</h2>
+<% @dogs.each do |dog| %>
+<ul>
+  <li>Dog ID: <%= dog.id %></a></li>
+  <li>Dog Name: <%=  dog.name %></li>
+  <li>Dog Breed: <%= dog.breed %></li>
+</ul>
+<% end %>
+
+<a href="/dogs/new">Add your dog</a>
+<a href="/"> Back to home </a>

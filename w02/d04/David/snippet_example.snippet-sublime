@@ -1,0 +1,27 @@
+<snippet>
+  <content><![CDATA[
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>$0</title>
+</head>
+<body>
+  
+</body>
+</html>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>html5</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
+
+
+1: enter code between square bracket that you want to execute
+2: uncomment the "tabTrigger and give it a name"
+3: $0 is a placeholder for cursor
+4: save in user folder inside library>application support>sublime>packages>user
+--got to sublime menu>preferences>browse packages
+--must save with .sublime-snippet as extension
+5: when in file can go to view>syntax or cmd p to look at snippets

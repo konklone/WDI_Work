@@ -1,0 +1,10 @@
+1,Barnes and Noble,tom clancey,1000
+2,chiptole,burrito ,500
+3,chipotle,burrito ,100
+4,american apparael,shirt,400
+5,hi,hi,hi
+6,hey,hey,hey
+7,heya,heya,heya
+8,move,move,move
+9,3,3,3
+10,get,get,get

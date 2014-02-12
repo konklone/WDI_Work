@@ -1,0 +1,21 @@
+<div> <h1> Welcome to WDInstagram </h1> 
+
+<a href="entries/new"><h2> Add a new photo </h2> </a>
+</div>
+
+
+
+
+<% @entries.each do |entry| %>
+
+<div>
+
+<p>  <h3><%= entry.date_taken %> </h3> </p>
+
+<p> <a href="/../entries/<%=entry.id %>"><img src="<%= entry.photo_url %>" > </a> </p>
+
+<p>  <h3> Author: </h3> @<%= entry.author %> </p>
+</div>
+
+<% end %>
+

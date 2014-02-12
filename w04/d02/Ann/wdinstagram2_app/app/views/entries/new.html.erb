@@ -1,0 +1,14 @@
+<h1>Submit a new photo!</h1> 
+
+<div id="form">
+<form action="/entries" method="POST"> 
+<input name="authenticity_token" type="hidden" value="<%=form_authenticity_token %>" />
+
+  <label>Name 
+<input type="text" placeholder="Enter name" name="name" /></label>
+<label>Photo URL<input type="text" placeholder="Enter photo url" name="photo_url" /></label>
+ <label>Date Taken<input type="date" placeholder="Enter Date Taken" name="date_taken" /></label>
+
+<button>Submit! </button>
+</form>
+</div> 

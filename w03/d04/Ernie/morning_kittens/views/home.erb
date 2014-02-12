@@ -1,0 +1,11 @@
+<h1>kitteh-ndr</h1> 
+<form action="/vote/meow" method="POST">
+  <input type="hidden" name="url" value=<%= @random_kitty %>>
+</form>
+<button>Meowwww</button>
+
+<form action="/vote/not_meow" method="POST"></form>
+<input type="hidden" name="url" value=<%= @random_kitty %>>
+<button>Meowtch LOL</button>
+
+<img src="<%= @random_kitty %>">

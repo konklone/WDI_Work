@@ -1,0 +1,45 @@
+
+div {
+font-size:12px;
+line-height: 17px;
+font-family: Times, serif,;
+text-decoration: #656565;
+}
+
+#container {
+ width: 1200px;
+}
+
+.logo {
+  display: inline-block;
+  clear: both;
+}
+
+.hero {
+ display: inline-block;
+ vertical-align: middle;
+ clear: both;
+}
+
+.rings {
+ display: inline-block;
+ vertical-align: middle;
+ padding: 5px;
+}
+
+a {
+  color: #20222a;
+  text-decoration: none;
+}
+
+.lucky, .huff, .marie, .nbc {
+  margin: auto;
+  border: 3px solid gray;
+  padding: 3px;
+}
+
+p {
+  text-align: left;
+}
+
+

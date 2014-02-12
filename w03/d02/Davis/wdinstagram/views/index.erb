@@ -1,0 +1,8 @@
+<ul>
+	<% @insta_entries.each do |entry| %>
+	<li>ID: <%= entry.id %></li>
+	<li>Name: <a href="/clicksearch/<%= entry.author %>" class="name_link"><%= entry.author %></a></li>
+	<li>Date: <%= entry.date_taken %></li>
+	<li><img src="<%= entry.photo_url %>"></li>
+	<% end %>
+</ul>

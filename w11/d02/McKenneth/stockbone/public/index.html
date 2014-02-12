@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Backbone Router</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="http://underscorejs.org/underscore-min.js"></script>
+  <script src="http://backbonejs.org/backbone-min.js"></script>
+
+  <style type="text/css">
+  h2{
+    font-size: 50px;
+  }
+  p{
+    font-size: 30px;
+  }
+  span{
+    font-size: 20px;
+  }
+  .green{
+    color: lime;
+  }
+  .red{
+    color: indianred;
+  }
+  </style>
+</head>
+<body>
+  <form>
+    <input type="text" name="symbol" placeholder="Stock Symbol">
+    <button>Submit</button>
+  </form>
+
+  <script type="text/html">
+  <h2>Stock Price for <%= this.symbol %></h2>
+  <p> <%= this.corp %></p>
+  <span class='poop <%= colour %>'><%= this.price %></span>
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+html:5
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+ul#nav>li.item$*4>a{Item $}
+<ul id="nav">
+  <li class="item1"><a href="">Item 1</a></li>
+  <li class="item2"><a href="">Item 2</a></li>
+  <li class="item3"><a href="">Item 3</a></li>
+  <li class="item4"><a href="">Item 4</a></li>
+</ul>
+
+<!-- tab through
+ctrl + alt + arrow right or left
+cmd + d
+#up arrow to select the next oject doesn't work for me
+cmd /  -->
+body>div#nav+h1{title text}>ul>li*4>a[href=#]
+<body>
+  <div id="nav"></div>
+  <h1>title text
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </h1>
+</body>
+
+
+<!-- use ^ to go up one level -->
+header>h1^h1
+<header>
+  <h1></h1>
+</header>
+<h1></h1>
+
+lorem200
+lorem20
+
+<!-- implicit tags -->
+
+ul>.implicit-list-items*3
+<ul>
+  <li class="implicit-list-items"></li>
+  <li class="implicit-list-items"></li>
+  <li class="implicit-list-items"></li>
+</ul>
+
+<!-- Chain Abbreviations With DOM Navigation
+> child
++ sibling
+^ climb-up -->
+em>.hello
+<em><span class="hello"></span></em>
+
+.outer>.inner>h1+p
+<div class="outer">
+  <div class="inner">
+    <h1></h1>
+    <p></p>
+  </div>
+</div>
+
+<!-- Climbing Up -->
+.wrap>p>a^p
+<div class="wrap">
+  <p><a href=""></a></p>
+  <p></p>
+</div>
+<!-- As you can see here, we dug into the first paragraph and tossed in an anchor tag, but then needed to climb back up and add another paragraph on the same level as the previous one. The “^” symbol allowed us to accomplish this. -->
+
+.wrap>p>em>a^^p
+<div class="wrap">
+  <p><em><a href=""></a></em></p>
+  <p></p>
+</div>
+<!-- To make this feature even more useful, you can chain these symbols together to climb back multiple levels. For instance, if we added an em element to our previous abbreviation, we’d have to climb up two levels to place our next paragraph on the same level as the first. -->
+
+<!-- text attributes -->
+h1{Heading 1}+p{paragraph}
+<h1>Heading 1</h1>
+<p>paragraph</p>
+
+<!-- grouping -->
+(.one>h1)+(.two>h1)
+<div class="one">
+  <h1></h1>
+</div>
+<div class="two">
+  <h1></h1>
+</div>
+
+(section>.wrap.h1>p>a)+(section>.wrap>p>p)
+<section>
+  <div class="wrap h1">
+    <p><a href=""></a></p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <p>
+      <p></p>
+    </p>
+  </div>
+</section>
+
+<!-- multiple classes  -->
+.one.two.three
+<div class="one two three"></div>
+
+<section>
+  <div class="wrap"></div>
+</section>
+<section>
+  <div class="wrap"></div>
+</section>
+
+<!-- auto numbering -->
+ul>li.item${item $$}*3
+<ul>
+  <li class="item1">item 01</li>
+  <li class="item2">item 02</li>
+  <li class="item3">item 03</li>
+</ul>

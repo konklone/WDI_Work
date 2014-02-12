@@ -1,0 +1,38 @@
+div.box {
+	border: 
+		3px solid black;
+		border-radius: 5px;
+}
+
+.container {
+	border: 3px solid blue;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.background-cyan {
+	background-color: cyan;
+	padding: 15px;
+	float: left;
+	
+}
+
+.background-gray {
+	background-color: gray;
+	margin: 15px;
+	float: right;
+}
+
+.box {
+	width: 100px;
+	margin: 15px auto;
+	text-align: center;
+	display: inline-block;
+}
+
+div.second-div {
+	height: 100px;
+	background-color: red;
+}
+	/* putting 0 puts a margin of 0 above and below, and auto left/right /*
+}

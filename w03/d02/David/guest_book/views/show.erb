@@ -1,0 +1,6 @@
+<h1><%= @entry.name %></h1>
+<% if @entry.comments.nil? %>
+  <p>How Mean!!! They didn't say anything....</p>
+<% else %>
+  <p><%= @entry.comments %></p>
+<% end %>

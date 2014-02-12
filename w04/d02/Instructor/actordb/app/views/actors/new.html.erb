@@ -1,0 +1,30 @@
+<!-- 
+POST /actors actor_data
+  name
+  photo_url
+  birth_date 
+
+Make the form!
+-->
+
+<h1>Create a new actor:</h1>
+
+<form action="/actors" method="post">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <label>
+    Name
+    <input type="text" name="name" />
+  </label>
+
+  <label>
+    Photo Url
+    <input type="url" name="photo_url" />
+  </label>
+
+  <label>
+    Birth Date
+    <input type="date" name="birth_date" />
+  </label>
+
+  <button>Save!</button>
+</form>

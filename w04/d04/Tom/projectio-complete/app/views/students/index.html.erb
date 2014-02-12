@@ -1,0 +1,17 @@
+<h1>List of student projects</h1>
+<% @students.each do |student| %>
+<ul>
+  <li><a href="/students/<%= "#{ student.id }" %>"><%= student.name %></a></li>
+  <li><strong>Project Description:</strong><br>
+      <%=  student.project_description %></li>
+  <li><strong>Project Dependencies:</strong>
+      <!-- ACCESS the related records via student.dependencies !!!! -->
+      <%= (c = student.dependencies.count) == 0 ? " none" : " (#{c}:)" %>
+      <%= student.dependencies.map{ |row| row.name }.join(", ") %></li>
+  <% unless student.github_link.empty? %>
+    <li><a href="<%= student.github_link %>">GitHub Link</a></li>
+  <% end %>
+</ul>
+<% end %>
+
+<p><a href="/">Return to home</a></p>

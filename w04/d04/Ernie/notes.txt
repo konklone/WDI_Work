@@ -1,0 +1,17 @@
+Tunr App 
+
+Its like Itunes 
+Market Place For Songs
+Users - purchase songs && make playlist
+Artist-Songs
+
+First Step When thingk about an application is Domain Modeling (schema)
+
+For tunr we have Artist and songs
+
+Schema
+Artist = name NOT NULL
+Songs = name NOT NULL,spotify NOT NULL,artist_id NOT NULL-foreign key,Price NOT NULL default 99f
+
+Artist + songs added as seeds/console
+only one artist per song everything is a single

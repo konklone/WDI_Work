@@ -1,0 +1,4 @@
+Apple,iPhone 5s,399.0
+Quiznos,Mesquite Chicken sub,10.0
+Duane Reade,Tic Tacs,1.5
+Mophie,Juice Pack Air Black,99.0

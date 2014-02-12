@@ -1,0 +1,17 @@
+<% if !@painting.nil? %>
+<ul>
+  <li><%= @painting.artist.name %></li>
+<li><%= @painting.title %></li>
+<li><%= @painting.year %></li>
+<li><img src="<%= @painting.image_url %>" alt=""></li>
+</ul>
+<% else  %>
+<ul>
+<% @paintings.each do |painting| %>
+<li><%= painting.artist.name %></li>
+<li><%= painting.title %></li>
+<li><%= painting.year %></li>
+<li><img src="<%= painting.image_url %>" alt=""></li>
+<% end %>
+</ul> 
+<% end %>

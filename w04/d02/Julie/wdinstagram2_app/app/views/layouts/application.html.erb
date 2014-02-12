@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wdinstagram2App</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class='header'><p>WDInstagram</p></div>
+
+<%= yield %>
+
+</body>
+</html>

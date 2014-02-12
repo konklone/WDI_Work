@@ -1,0 +1,27 @@
+<h1><%= @student.name %></h1>
+
+<h2>Project Description</h2>
+<p><%= @student.project_description %></p>
+
+<h2>GitHub Link</h2>
+<% if @student.github_link.empty? %>
+  <p>none entered yet</p>
+<% else %>
+  <p><a href="<%= @student.github_link %>"><%= @student.github_link %></a></p>
+<% end %>
+
+<h2>Dependencies <a href="/students/<%= @student.id %>/dependencies/new">(create new)</a></h2>
+<% if @student.dependencies.empty? %>
+  <p>None</p>
+<% else %>
+  <ul>
+  <% @student.dependencies.each do |d| %>
+    <li><strong><a href="/students/<%= @student.id %>/dependencies/<%= d.id %>"><%= d.name %><%= d.is_gem ? " [Gem]" : "" %></a></strong></li>
+  <% end %>
+  </ul>
+<% end %>
+
+
+<p><a href="/students/<%= @student.id %>/edit">Edit this student project</a></p>
+
+<p><a href="/students">Return to all students</a></p>

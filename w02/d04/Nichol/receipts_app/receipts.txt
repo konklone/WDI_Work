@@ -1,0 +1,9 @@
+johnny's, beer, 45
+johnnys, vodka, 115
+soda, rum punch, 19
+Big Box Store,Widget,99.00Big Box Store,Widget,99.00
+Big Box Store,Widget,99.00
+asdf,edef32f3f32f,213123
+efwf,sadf,1234
+asdf,asdf,234
+asdf,asdf,123

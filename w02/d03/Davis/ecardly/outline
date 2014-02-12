@@ -1,0 +1,12 @@
+HTML
+	
+	HEAD
+
+	BODY
+		DIV.body wrapper
+			Div.logo
+			Div.box
+				H2.card-header
+				IMG.card-img
+				P.card-text
+					A

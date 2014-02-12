@@ -1,0 +1,25 @@
+<h1>Here's your Receipt.io, yo!</h1>
+
+<!-- Instantiates new read-only File object -->
+<% file = File.new("receipts.txt", "r") %>
+
+<!-- enumerates through receipts.txt.
+	For each line:
+	* checks to see if the id matches the user-requested id
+	* when it finds a match, it is added to an array
+	* after checking the document, it returns the array
+	 -->
+<% item_string_array = file.select {|line| line.split(",")[0] == @id} %>
+
+<!-- closes the instance of the File object -->
+<% file.close %>
+
+<% item_info = item_string_array[0].split(",") %>
+<p>
+ID: <%=	item_info[0] %> <br/>
+Store: <%= item_info[1] %> <br/>
+Product: <%= {item_info[2] %> <br/>
+Price: <%= {item_info[3] %>
+</p>
+
+<p><a href="/">Go home.io, yo!</a><p>

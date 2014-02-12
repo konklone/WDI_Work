@@ -1,0 +1,6 @@
+<h1>My <%= @costume.name %> Costume option!</h1>
+
+<img src="<%= @costume.image %>">
+
+<p><%= link_to "Edit this costume", edit_costume_path(@costume) %></p>
+<p><%= link_to "Back to Costume list", costumes_path %></p>

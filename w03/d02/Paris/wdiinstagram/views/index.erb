@@ -1,0 +1,11 @@
+<h1>Welcome to WDI Instagram Aoli! Woot! Snap! Yum!</h1>
+
+<h3>Here are all the entries:</h3>
+
+<ul>
+  <% @entries.each do |entry| %>
+  <li><img src='<%= entry.photo %>' height="400"></li>
+  <li><%= entry.author %></li>
+  <li><%= entry.date_taken %></li>
+    <% end %>
+</ul>

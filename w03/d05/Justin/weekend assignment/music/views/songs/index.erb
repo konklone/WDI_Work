@@ -1,0 +1,8 @@
+<h1><%= @band.name %></h1>
+<ul>
+	<% @songs.each do |song| %>
+	<li><a href="<%="/bands/#{song.show_id}/songs/#{song.id}"%>"><%= song.title %></a>
+	(<%= song.year %>)</li>
+	<% end %>
+</ul>
+<p>setup the route for inidvidual songs</p>

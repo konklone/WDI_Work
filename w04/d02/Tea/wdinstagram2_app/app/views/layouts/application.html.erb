@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+  <title>WDInstagram</title>
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/styles.css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+  <div class="body-wrapper">
+    <header>
+      <a href="/photos"><h1 class="header">WDInstagram</h1></a>
+    </header>
+
+    <a class="boxify" href="/photos/new">Upload</a>
+    <div class="all-images">
+    <%= yield %>
+    </div>
+  </div>
+</body>
+</html>
+

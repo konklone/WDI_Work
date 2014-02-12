@@ -1,0 +1,11 @@
+<p>Band: <a href="<%="/bands/#{@band.id}"%>"><%= @band.name %></a><br>
+		Singer: <%= @band.singer %></p>
+
+<ul>
+	<% @songs.each do |song| %>
+	<li><a href="<%="/bands/#{song.show_id}/songs/#{song.id}"%>"><%= song.title %></a>
+	(<%= song.year %>)</li>
+	<% end %>
+</ul>
+		
+<p>What should really be here is a list of songs with links to the songs and a form to add song </p>

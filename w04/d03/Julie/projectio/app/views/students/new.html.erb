@@ -1,0 +1,12 @@
+<h1>Post a new Project:</h1>
+ <form action="/students" method="POST">
+  <input type="text" placeholder="enter name" name="student[name]">
+<!-- name will grab a parameter that can be assigned with param[:num] -->
+  <textarea type="text" placeholder="project description" name="student[project_description]"></textarea>
+   <input placeholder="Git Hub directory" name="student[github_link">
+   <input name="authenticity_token" type='hidden' value="<%= form_authenticity_token%>" />
+
+
+  <button>Submit</button>
+
+</form>

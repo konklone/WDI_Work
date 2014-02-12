@@ -1,0 +1,23 @@
+<div class= "upper"><h1>The Movie Monster</h1>
+<a class="top" href="/">Home</a>
+<a class="top" href="/movies">View All</a>
+<a class="top" href="/movies/search">Search</a>
+</div>
+<div>
+       
+        <% @the_movie.each do |row| %>
+        <% if @id == nil%>
+
+        <h4><%= @movie_title = "#{row['title']}" %></h4>
+        <h4><%= @year_released = "#{row['year']}"%></h4>
+        <a href="movies/<%= @which = "#{row['id']}" %>"><img src="<%= @poster = "#{row['poster']}"%>" /></a>
+
+        <% elsif @id == row['id'] %>
+
+      <h4><%= @movie_title = "#{row['title']}" %></h4>
+      <h4><%= @year_released = "#{row['year']}"%></h4>
+      <img src="<%= @poster = "#{row['poster']}"%>" />
+      <% end %>
+      <% end %>
+       
+</div>

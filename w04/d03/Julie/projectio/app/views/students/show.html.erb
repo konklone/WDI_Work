@@ -1,0 +1,16 @@
+<section>
+ <h3><%= @student.name %></h3> 
+<p>Project Description: <%= @student.project_description %></p>
+  <ul>
+      <li>Git HUB link: <%= @student.github_link %></li>
+      <li>Created: <%= @student.created_at %></li>
+      <li>Last Updated: <%= @student.updated_at %></li>
+    </ul>
+</section>
+
+<nav>
+  <ul>
+    <li><a href="/students">See all Students</a></li>
+    <li><a href="/students/new">Post a Project</a></li>
+  </ul>
+</nav>

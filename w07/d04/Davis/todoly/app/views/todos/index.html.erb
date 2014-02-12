@@ -1,0 +1,11 @@
+<h1>Todo.ly</h1>
+
+<ol>
+  <% @todos.each do |todo| %>
+    <li data-todo-id="<%= todo.id %>" class="<%= todo.completed ? "completed" : "" %>">
+      <%= todo.task %>
+      <!-- check_box_tag id&name, value, options {display todo.completed status} -->
+      <%= check_box_tag :completed, 'yes', todo.completed %>
+    </li>
+  <% end %>
+</ol>

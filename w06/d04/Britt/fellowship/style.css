@@ -1,0 +1,13 @@
+.ring {
+  transition: 1s;
+  -webkit-transition: 1s;
+  color: gold; 
+  text-shadow: 3px 3px rgba(0,0,0, .8);
+  font-size: 30px;
+}
+
+#frodo {
+  transition: 1s;
+  -webkit-transition: 1s;
+
+}

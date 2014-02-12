@@ -1,0 +1,11 @@
+<h1 style="font-family:Helvetica;font-size:60px;">Costumely</h1>
+
+
+<% for costume in @costume do%>
+ <h3><%= costume.name %></h3>
+<img src="<%= costume.image %>"/>
+<%= link_to 'View', costume_path(costume.id)%>
+<%end%>
+
+
+<%= link_to 'Add Costume', new_costume_path %>

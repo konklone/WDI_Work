@@ -1,0 +1,11 @@
+<h1> WELCOME TO WDInstagram </h1>
+
+<a href= "/photos/new"> Add a photo </a>
+
+<h2> Look at all these pretty photos: </h2>
+
+<% @photos.each do |photo| %>
+
+  <li> Name: <%= photo.author %> </li>
+
+  <% end %>

@@ -1,0 +1,71 @@
+1. Create a new Artist (Vincent Van Gogh) and save him to your database
+
+    van_gogh = Artist.new(name: 'Vincent Van Gogh', nationality: 'Dutch', dob: 'March 30 1853')
+ 
+    van_gogh.save
+
+2. Create a new Painting (Starry Night) and save it to your database
+
+    starry_night = Painting.new(title: 'Starry Night', year: 1889, image_url: 'http://uploads2.wikipaintings.org/images/vincent-van-gogh/the-starry-night-1889(1).jpg')
+
+    starry_night.save
+
+3. Return all Artists
+
+    Artist.all
+
+4. Return all Paintings
+
+    Painting.all
+
+5. Return the artist with an id of 2
+
+    Artist.find_by(id: 2)
+
+6. Return the artist with a name of "Vincent Van Gogh"
+
+    Artist.find_by(name: 'Vincent Van Gogh')
+
+7. Return all the artists from "Spain"
+
+    Artist.where(nationality: 'Spanish')
+
+8. Return the painting with an id of 1
+
+    Painting.first
+
+9. Return the painting with a name of "Guernica"
+
+    Painting.find_by(title: 'Guernica') 
+
+10. Return the image url for the painting with title "Starry Night"
+
+    Painting.select(image_url:).where(title: 'Starry Night')
+
+11. Return all the paintings that "Pablo Picasso" painted
+
+    p = Artist.find_by(name: 'Pablo Picasso').paintings
+    or
+    Painting.where(artist_id: 2)
+
+12. Return the image urls for all the paintings that "Pablo Picasso" painted in an array
+
+    Painting.select(image_url).where(artist_id: 2).to_a
+    
+
+13. Return the artist of "Guernica"
+
+      Painting.where(title: 'Guernica')
+      Artist.where(id: 2)
+
+14. Change Vincent Van Gogh's nationality to USA
+
+      v = Artist.find_by(nationality: 'Dutch')
+      v.nationality = 'USA'
+      v.save
+
+15. Change "Starry Night" to be one of Pablo Picasso's paintings
+
+      s = Painting.select(title: 'Starry Night')
+      s.artist_id = 2
+      s.save

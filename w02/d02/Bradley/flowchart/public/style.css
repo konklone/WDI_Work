@@ -1,0 +1,74 @@
+body {
+      font-family: 'Source Sans Pro', sans-serif;
+      background-color: #F8F8F8 ;
+      color: #757575;
+    }
+
+.happy-or-sad{
+  font-size:40px;
+  margin-top: 10px;
+}
+
+.happy-or-sad p {
+  width: 90%;
+  padding-bottom: 10px;
+  border-bottom: 3px solid red;
+}
+
+.happy-pup, .sad-pup, .box {
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+
+.happy-pup {
+  background-image: url('/happy-puppy.jpg');
+  float: left;
+  margin-left: 100px;
+  margin-top: 5px;
+}
+
+.happy-pup .box {
+  float:left;
+}
+
+.sad-pup {
+  background-image: url('/sad-puppy.jpg');
+  float: right;
+  margin-right: 100px;
+  margin-top: 5px;
+}
+
+.sad-pup .box {
+  float: right;
+}
+
+.box:hover {
+  background-color: rgba(104, 104, 104, 0.8);
+}
+
+.box h1{
+  margin-top: auto;
+  padding-top: 155px;
+  padding-bottom: 200px;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0);
+}
+
+.box h1:hover{
+  color: rgba(255, 255, 255, 1);
+}
+
+.keepon p {
+font-size: 80px;
+}
+
+.wanthappiness .happy-pup {
+  background-image: url('/yes-puppy.jpg');
+}
+
+.wanthappiness .sad-pup {
+  background-image: url('/no-cat.jpg');
+}
+
+

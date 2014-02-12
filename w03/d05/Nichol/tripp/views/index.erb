@@ -1,0 +1,9 @@
+<h1> Leader Board </h1>
+
+<% @all.count.times do |x| %>
+    <p> <%= "#{@all[x].name}" %> has tripped: <%= "#{@all[x].num_trips}" %> times. </p>
+
+    <form action="/<%=@all[x].name%>" method="POST">
+    <button>Ha Ha</button>
+    </form>
+<% end %>

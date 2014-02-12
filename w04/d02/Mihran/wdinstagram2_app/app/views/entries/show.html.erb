@@ -1,0 +1,12 @@
+<div> 
+  <h1> Welcome to WDInstagram </h1> 
+  <a href="/../entries"><h2> View all photos</h2> </a> 
+  <a href="/entries/new"><h2> Add a new photo </h2> </a>
+</div>
+
+<div>
+  <p>  <h3><%= @entry.date_taken %> </h3> </p>
+  <p> <img src="<%= @entry.photo_url %>" > </p>
+  <p>  <h3> Author: </h3> @<%= @entry.author %> </p>
+</div>
+

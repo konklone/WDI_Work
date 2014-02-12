@@ -1,0 +1,12 @@
+<% @students.each do |student| %>
+    <section>
+    <a href="<%="/students/#{student.id}"%>"><%= student.name %></a>
+    <p>Project Description: <%= student.project_description %></p>
+    <ul>
+      <li>Git HUB link: <%= student.github_link %></li>
+      <li>Created: <%= student.created_at %></li>
+      <li>Last Updated: <%= student.updated_at %></li>
+    </ul>
+ </section>
+  <% end %>
+

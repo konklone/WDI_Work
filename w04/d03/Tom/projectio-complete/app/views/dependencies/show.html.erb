@@ -1,0 +1,12 @@
+<h1><%= @depend.name %></h1>
+<h2><%= @depend.dep_type %><%= @depend.is_gem ? " [Gem]" : "" %></h2>
+
+<% unless @depend.documentation_link.empty? %>
+  <p>Documentation: <a href="<%= @depend.documentation_link %>"><%= @depend.documentation_link %></a></p>
+<% end %>
+<% unless @depend.other_link.empty? %>
+  <p>Link: <a href="<%= @depend.other_link %>"><%= @depend.other_link %></a></p>
+<% end %>
+
+<p><a href="/students/<%= @student.id %>/dependencies/<%= @depend.id %>/edit">Edit this dependency</a></p>
+<p><a href="/students/<%= @student.id %>">Return to student</a></p>

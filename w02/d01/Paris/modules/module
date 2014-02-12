@@ -1,0 +1,22 @@
+#call a module in a class file to encapsulate to be able to reuse this bheavior. 
+
+module Borrowable
+  
+   def borrow(name)
+    @borrowed_by = name
+    @borrowed = true
+    "congrats, you have borrowed this #{self.make}"
+  end
+
+  def can_borrow?
+    !@borrowed
+
+  def give_back
+    @borrowed = false 
+
+  def make
+    @make
+  end
+
+
+end

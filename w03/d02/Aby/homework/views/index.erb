@@ -1,0 +1,14 @@
+<h1>Welcome to WDInstagram</h1>
+
+<a href="/wdinstagram/new"></a>
+<h3>Here are the pictures searched:</h3>
+
+<ul>
+
+  <% @entries.each do |entry| %>
+	<li><a href="<%= entry.id %>"> <%= entry.id %> </a> 
+		<a href="<%= entry.name %>"> <%= entry.name %> </a> 
+		<a href="<%= entry.url %>"> <%= entry.url %> </a>
+		<a href="<%= entry.date_taken %>"> <%= entry.date_taken %> </a></li>
+  <% end %>
+</ul>

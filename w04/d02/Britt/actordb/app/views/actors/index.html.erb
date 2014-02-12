@@ -1,0 +1,9 @@
+<h1>HERE ARE ALL OF TEH ACTORS</h1>
+
+<ul>
+<% @actors.each do |actor|%>
+    <li><a href="/actors/<%= actor.id %>"><%= actor.name %></a></li>
+<% end %>
+</ul>
+
+<p>Add a <a href="/actors/new">new actor</a></p>

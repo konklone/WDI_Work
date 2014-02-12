@@ -1,0 +1,24 @@
+/*** Stylesheet for index.erb for boxes ***/
+
+/* HTML Selectors */
+html {
+
+}
+body {
+
+}
+p {
+
+}
+
+/* ID Selectors */
+
+
+/* Class Selectors */
+div.container {
+   border: solid 2px red;
+}
+
+div.box {
+   border: solid 2px blue;
+}

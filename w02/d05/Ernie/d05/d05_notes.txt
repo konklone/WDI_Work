@@ -1,0 +1,14 @@
+Web
+
+HTTP -requests  >headers
+         -response >body
+         -verbs
+         -paths
+
+REST 
+      -Resources
+
+Cookies + Sessions
+Cookies go inside the header of the response
+
+HTML/CSS

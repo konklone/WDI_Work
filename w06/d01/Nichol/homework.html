@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+
+  <script>
+
+    gbp = 1.6139;
+
+    function convertToGbp (dollars) {
+      return parseFloat(dollars * gbp).toFixed(2);
+    }
+
+    function convertToDollars (poundsSterling) {
+      return parseFloat(poundsSterling / gbp).toFixed(2)
+    }
+
+  </script>
+
+</head>
+<body>
+
+<pre>
+    gbp = 1.6139;
+
+    function convertToGbp (dollars) {
+      //gbp = 1.6139;
+
+      return parseFloat(dollars * gbp).toFixed(2);
+    }
+
+    function convertToDollars (poundsSterling) {
+      //gbp = 1.6139;
+
+      return parseFloat(poundsSterling / gbp).toFixed(2)
+    }
+</pre>
+
+</body>
+</html>
+

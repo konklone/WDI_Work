@@ -1,0 +1,20 @@
+<a style="text-decoration:none;" href="/moma"><h1 style="font-family:helvetica; font-size: 80px; color: red;">Welcome to the Mo.ma</h1></a>
+
+
+    <% for individuals in @the_artist do %>
+     <div class = "artists">
+     <p> <a style="font-family:helvetica; font-size: 40px; color: blue;" href="/moma/artists/<%= individuals.id %>"><%= @artist_name = individuals.name %></a></p>
+    <p style="font-family:helvetica; font-size: 20px; color: blue;" ><%= @artist_dob = individuals.dob %></p>
+       <p style="font-family:helvetica; font-size: 20px; color: red;"><%= @artist_from = individuals.nationality %></p> 
+     </div> 
+   <% end %>
+
+<div>
+<form  action="/moma/artists" method="post">
+<input style="font-family:helvetica; font-size: 16px; color: red;" type="text" placeholder="Artist Name" name="artist"/>
+<input  style="font-family:helvetica; font-size: 16px; color: red;" type="text" placeholder="Title" name="title"/>
+<input style="font-family:helvetica; font-size: 16px; color: red;" type="text" placeholder="Year" name="year"/>
+<input style="font-family:helvetica; font-size: 16px; color: red;" type="text" placeholder="Image Url" name="url"/>
+<button style="font-family:helvetica; font-size: 18px; color: red;">Art.me</button>
+</form>
+</div>

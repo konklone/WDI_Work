@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+   background: transparent url('http://www.texturezine.com/wp-content/uploads/2009/11/dark-wood-2.jpg') repeat-y center center;
+   background-size: cover;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 1000px;
+}
+
+nav {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(256, 256, 256, 0.8)
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  display: inline-block;
+  margin: 20px;
+}
+
+nav li a, li {
+  color: #000;
+  font-family: Arnoldboecklin, fantasy;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+.title {
+  position: relative;
+  top: -55px;
+}
+
+img {
+    border: 10px solid #fff;
+    border-bottom: 50px solid #fff;
+}
+
+.main-nav {
+  margin-bottom: 60px;
+}
+
+.movies  {
+  clear: both;
+}
+
+li img {
+  height: 250px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.polaroids  {
+
+  float: left;
+}
+ 
+/* Rotate all even images 2 degrees */
+.polaroids ul:nth-child(even)  {
+
+}
+ 
+/*/* Don't rotate every third image, but offset its position */
+.polaroids ul:nth-child(3n)  {
+ /* -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  position: relative;
+  top: 20px;*/
+}
+
+input {
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+ 
+
+ 

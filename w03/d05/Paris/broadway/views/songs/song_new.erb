@@ -1,0 +1,14 @@
+
+<div class="container">
+  <div class="form">
+     <% @show = Show.find_by(id: params[:show_id]) %>
+    <form action="/shows/<%= @show.id %>/songs" method="post">
+          <p><input type="text" placeholder="song title" name="song_title"></p>
+          <p><input type="url" placeholder="youtube url" name="embed_url"></p>
+      <button>"Create entry"</button>
+    </form>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,65 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+.body-wrapper {
+     background-color: #d6d6d6;
+}
+
+
+.box {
+     background-color: white;
+     width: 940px;
+     margin: 0 auto;
+     padding: 15px;
+}
+
+/* This represents a parent child relationship (using the comma) */
+.card-text, card-img {
+     display:inline-block;
+
+}
+
+.card-img {
+     width: 640px;
+}
+
+.card-text {
+     width: 250px;
+     float: right;
+     /*border: 1px solid black;*/
+     margin: 0;
+}
+
+img.logo {
+     margin: 0 auto;
+     display: block;
+}
+
+a {
+     text-decoration: none;
+     font-weight: bold;
+     color: red;
+}
+
+
+
+

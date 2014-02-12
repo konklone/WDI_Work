@@ -1,0 +1,12 @@
+<h1>Welcome to MOMA io</h1>
+
+<h3>Here are all the paintings:</h3>
+
+<ul>
+  <% @paintings.each do |painting| %>
+  <li><img src='<%= painting.image_url %>' height="500"></li>
+  <li><%= painting.title %></li>
+  <li><%= painting.year %></li>
+    <% end %>
+</ul>
+

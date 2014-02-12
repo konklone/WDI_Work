@@ -1,0 +1,11 @@
+<h1>Add Entry</h1>
+
+<form action="/entries" method="POST">
+	<input type="text" name="name" placeholder="Name">
+	<input type="url" name="photo_url" placeholder="URL">
+	<input type="date" name="date_taken" placeholder="Date Taken">
+
+	<input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+	
+	<button>Add Entry</button>
+</form>

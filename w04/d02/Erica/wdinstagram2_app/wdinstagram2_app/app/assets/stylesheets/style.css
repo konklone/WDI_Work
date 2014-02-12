@@ -1,0 +1,31 @@
+
+body {
+
+font-family: 'Lato', sans-serif;
+background-image: url("http://bit.ly/19MulDe");
+
+}
+
+.nav_bar  {
+  margin: 0 auto;
+  float: center;
+  letter-spacing: 10px;
+}
+
+
+#container {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.image {
+  
+  position: relative;
+  border-radius: 50%;
+}
+
+.button {
+  color: pink;
+  background-color: black;
+  text-decoration: 
+}

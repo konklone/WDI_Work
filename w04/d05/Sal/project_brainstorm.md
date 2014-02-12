@@ -1,0 +1,7 @@
+## Rotten Tomatoes App 
+
+-  Because Rotten Tomatoes tends to seem a bit cluttered with its many features, I would like to build a web application that would isolate and expand on one of its functions using their API. RT has a function that allows you to save movies that you would like to see, but I will take that a step further by allowing users to categorize movies into groups such as: Movies you would like to see; Movies you would watch again; and movies that you have no desire to see at all. I could then implement a sort feature that allows users to sort their pools of movies based on a number of different criteria and what they're looking for at any given time. I also intend to only display one movie on the index page that could either be found my searching a specific title, or hitting a random button to make it entertaining. 
+
+- In one week I believe I will be able to build out the main functionality of the site where users could search movies by choice or random, and separate them into different categories. Sorting the different pools by specific criteria might be a reach for the allotted time given for the project, but I would definitely like to try. 
+
+- I will be using the Rotten Tomatoes API  and the HTTParty gem to access the data from Rotten Tomatoes. 

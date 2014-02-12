@@ -1,0 +1,64 @@
+body{
+  background-image: url("photographer_img.jpg");
+  background-size: cover;
+  font-size: 35px;
+}
+
+body, a:link {
+    color: #6a00d7; 
+    text-decoration: none;
+  }
+
+  body, a:active  {
+    color: #6a00d7; 
+    text-decoration: underline; 
+  }
+
+  body, a:visited {
+    color: #6a00d7; 
+    text-decoration: none; 
+  }
+
+  body, a:hover {
+    color: #6a00d7; 
+    text-decoration: none; 
+  }
+
+.wrapper {
+  background: #ffffff;
+  font: normal 14px/1.4 "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+}
+
+section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 450px;
+  max-height: 630px;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: #eaedeb;*/
+  /*background-color: white;
+  border: 2px solid #ffffff;
+-moz-border-radius: 29px;
+-webkit-border-radius: 29px;
+border-radius: 29px;
+IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS
+-moz-box-shadow: 0px 0px 20px #000000;
+-webkit-box-shadow: 0px 0px 20px #000000;
+box-shadow: 0px 0px 20px #000000;*/
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+text-align: center;
+}
+
+img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+li {
+  list-style: none;
+  margin-right: 30px;
+  font: normal 14px/1.4 "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+  color: purple;
+  font-weight: bold;
+}

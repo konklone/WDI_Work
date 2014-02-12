@@ -1,0 +1,3 @@
+
+DSW,shoes,12
+DSW , shoes, 24

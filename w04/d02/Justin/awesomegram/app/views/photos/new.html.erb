@@ -1,0 +1,10 @@
+<h1>new photo yo</h1>
+<form action="/photos" method="POST">
+	<input type="text" name="name" placeholder="Your Name">
+	<input type="text" name="photo_url" placeholder="Photo URL">
+	<input type="date" name="date_taken">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+	<button>Make some awesome!</button>
+	<br>
+	<a href="/photos">Return to all photos</a>
+</form>

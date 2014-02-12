@@ -1,0 +1,16 @@
+   <style rel="stylesheet" type="text/css">
+   div.square {
+      background-color: <%= @color %>;
+   }
+   div.circle {
+      background-color: <%= @color %>;
+   }
+   </style>
+</head>
+<body>
+   <h1>Shape Maker</h1>
+
+   <% @num.to_i.times do %>   
+   <div class="<%= @shape %>"></div>
+   <% end %>
+

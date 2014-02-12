@@ -1,0 +1,53 @@
+.index {
+
+    font-size: 3em;
+    font-family: Helvetica;
+    margin: 0 auto;
+    width: 900px;
+    background-color: black;
+    color: white;
+}
+
+.error {
+    font-size: 3em;
+    font-family: Courier;
+    font-style: bold;
+    color: black;
+    background-color: yellow;
+    border: 10px solid black;
+}
+
+.search-movie {
+    background-color: black;
+    width: 700px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+/* trying to select input form */
+/*input.search-movie {
+    height: 3em;
+}*/
+
+.movie-wrapper {
+    width: 800px;
+    margin: 0, auto;
+    background: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.poster {
+    margin: 0 auto;
+    width: 500px;
+    display: inline-block;
+    text-align: right;
+}
+
+.information {
+    color: white;
+    width: 200px;
+    border: 1px solid white;
+    display: inline-block;
+    vertical-align: 300px;
+}

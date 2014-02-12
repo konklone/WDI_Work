@@ -1,0 +1,15 @@
+<h1>Add a new actor</h1>
+
+<form action="/actors" method="POST">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+  <p><label>
+    Name: <input type="text" name="name" placeholder="Carey Grant">
+  </label></p>
+  <p><label>
+    Photo link: <input type="url" name="photo_url" placeholder="bit.ly/img">
+  </label></p>
+  <p><label>
+    Birth date: <input type="date" name="birth_date" value="2000-01-01">
+  </label></p>
+  <button>Submit</button>
+</form>

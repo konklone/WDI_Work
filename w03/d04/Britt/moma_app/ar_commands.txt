@@ -1,0 +1,44 @@
+1. new artist van Gogh, save to db
+=> Artist.new(name: "Vincent van Gogh", nationality: "Dutch", date_of_birth: "March 30 1853")
+
+2. new painting starry night, save to db
+=> Painting.new(title: "Starry Night", year: "1889", image_url: "http://uploads2.wikipaintings.org/images/vincent-van-gogh/the-starry-night-1889(1).jpg")
+
+3. return all artists
+=> Artist.all
+
+4. return all paintings
+=> Painting.all
+
+5. return artist w/ id #2
+=> Artist.find(2)
+
+6. return artist w/ name van gogh
+=> Artist.find_by(name: "Vincent van Gogh")
+
+7. return all artists from spain
+=> Artist.where(nationality: "Spanish")
+
+8. return painting w/ id #1
+=> Painting.find(1)
+
+9. return paiting w/ name guernica
+=> Painting.find_by(title: "Guernica")
+
+10. return image url for starry night
+=> Painting.find_by(title: "Starry Night").image_url
+
+11. return all picasso paintings
+=> Artist.find_by(name: "Pablo Picasso").paintings
+
+12. return image urls for picasso paintings
+=> Artist.find_by(name: "Pablo Picasso").paintings.map {|painting| do painting.image_url}
+
+13. return artist of guernica
+=> Painting.find_by(title: "Guernica").artist
+
+14. change van gogh's nationality to USA
+=> Artist.find_by(name: "Vincent van Gogh").nationality="American"
+
+15. change starry night to be a picasso painting
+=> Painting.find_by(title: "Starry Night").artist_id = Artist.find_by(name:"Pablo Picasso").id

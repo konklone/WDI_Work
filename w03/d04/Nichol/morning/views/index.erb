@@ -1,0 +1,17 @@
+<div class="index">
+    <div class="title">
+    <h1> This Kitten! </h1>
+    </div>
+
+    <div class="picture">
+        <img src="<%= @my_url %>">
+    </div>
+    
+    <form action="/vote/meow/?<%=@my_url%>" method="POST" class="meow">
+    <button>Meow</button>
+    </form>
+
+    <form action="/vote/not_meow/?<%=@my_url%>" method="POST" class="notmeow">
+    <button>Not Meow</button>
+    </form>
+</div>

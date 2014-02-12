@@ -1,0 +1,15 @@
+<h1><%= @user.email %></h1>
+
+<%= link_to "Edit", edit_user_path(@user) %> |
+<%= link_to "Destroy", user_path(@user), :method => :delete %>
+
+< % @users.each do |user| %>
+  
+  < % if user.username != current_user.username %> 
+	<li>< %=h user.username %> </li>
+    <li>< %= link_to "Add Friend", friendships_path(:friend_id => user), :method => :post %> </li>
+
+    < % end %>
+< % end %> 
+
+</ul>

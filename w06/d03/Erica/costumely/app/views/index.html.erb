@@ -1,0 +1,7 @@
+<h1>Designer Halloween Costumes</h1>
+<p></p>
+
+<% @costumes.each do |costume| %>
+  <%= link_to costume.name, costume_path(costume) %>
+  <%= costume.image %>
+<% end %>

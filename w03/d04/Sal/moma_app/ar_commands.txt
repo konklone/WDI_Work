@@ -1,0 +1,43 @@
+1. van_gogh = Artist.new(name: 'Van Gogh', nationality: 'Dutch', dob: '03-30-1853')
+
+   van_gogh.save
+
+2. starry = Painting.new(title: 'Starry Night', year: '1889', image_url: 'http://www.moma.org/collection_images/resized/075/w500h420/CRI_133075.jpg')
+
+   starry.save
+
+3. Artist.all
+
+4. Painting.all
+
+5. Artist.find(2)
+
+6. Artist.find_by(name: "Van Gogh")
+
+7. Artist.find_by(nationality: "Spanish")
+
+8. Painting.find_by(id: 1)
+
+9. Painting.find_by(title: "Guernica")
+
+10. Painting.find_by(title: "Starry Night").image_url
+
+11. Artist.find_by(name: 'Pablo Picasso').paintings
+
+12. Artist.find_by(name: "Pablo Picasso").paintings.pluck(:image_url)
+
+13. 
+
+14. Artist.find_by(name: 'Van Gogh').update(nationality: 'USA')
+
+15.
+
+
+
+
+van_gogh.paintings.append(self_portrait)
+van_gogh.paintings.append(starry)
+
+
+
+http://www.pablopicasso.org/images/paintings/guernica.jpg

@@ -1,0 +1,11 @@
+<!-- Display All Searched Movies -->
+<h2>Previously Searched Movies</h2>
+
+<% @all_movies.each do |s| %>
+<% movie = s.split(",") %>
+<div>
+<h3><%= movie[1] %></h3>
+<p><%= movie[2] %></p>
+<a href="/movie/<%= movie[0] %>"><img src="<%= movie[3] %>" alt ="Movie Poster for <%= movie[1] %>" /></a>
+</div>
+<% end %>

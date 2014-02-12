@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: watchio_development
+  pool: 5
+  username: Paris
+  password:
+
+

@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: "Lato", "Times New Roman", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  background-image: url('/receipts.jpg');
+  background-size: cover;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  background-color: #C0C0C0 ;
+  color: white;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+}
+
+.menu ul li, .all-receipts li { 
+  list-style-type: none;
+  display: inline;
+  margin: 0 15px;
+  padding: 5px;
+}
+
+.menu ul li:hover { 
+  background-color: rgba(64, 229, 69, 0.8);
+}
+
+.menu ul li:first-child:hover, button { 
+  background-color: #C0C0C0;
+}
+
+.menu ul li:first-child {
+  margin-left: 0;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.welcome, .form, .all-receipts, .results, .search {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 225px;
+  padding: 80px;
+  background-color: rgba(64, 229, 69, 0.8);
+  color: white;
+}
+
+.results {
+  width: 10%;
+  font-weight: 400;
+}
+
+input, button, .form h1 {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+
+button {
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.form {
+  padding: 20px;
+  width: 30%;
+  margin-top: 180px;
+}
+
+.all-receipts {
+  margin-top: 180px;
+  color: white;
+  font-size: 22px;
+}
+
+.col2, .col3 {
+  width: 200px;
+}
+
+.col1, .col4 {
+  width: 100px;
+}
+
+td {
+  border-bottom: 1px solid white;
+}
+
+.search button {
+  margin-top: 40px;
+}
+
+
+

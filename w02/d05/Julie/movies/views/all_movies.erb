@@ -1,0 +1,5 @@
+ <!-- for each movie in the all_movies array split into elements and store into a movie array. routes to movies.erb -->
+ <% @all_movies.each do |movie| %>
+   <% @movie_array = movie.split(",") %>
+   <%= erb :movies %>
+ <% end %>

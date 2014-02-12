@@ -1,0 +1,61 @@
+Compare and Contrast
+
+
+Ruby                                              Javascript
+age(history)      1994
+            written for the web
+            ethic is be useful as possible
+            multi-paradigmatic
+            interpreted; dynmaicly-typed
+
+
+ruby based on Object                              Whereas JavaScript is Functional
+Orientation                                       There is One Global Object
+Syntax                                            Syntax
+everything is an Object                           primitive types and complex types
+                                                  Arrays and Objects = Hash
+                                                  The assignment operator works differently for both complex
+                                                  and primitives types
+                                                  Truth and false values are very different in these two
+                                                  equality operators (==) (===)
+
+                                                  JavaScript is the most popular language in the world
+
+                                                  JSON is a javascript object(hash).to_s
+
+Keep In Mind
+End Statements with semicolon ;
+Use Parenthesis with your functions!
+Comments!
+Doesnt Read Like English like Ruby
+Functions Have No implicit return
+
+
+Why JavaScript
+Written for the web
+implemented for the web
+Frameworks -- Jquery underscore backbone
+growing on the server side    MEAN Stack
+Speed and robustness, tools
+V8 engine
+JSON
+
+________________________
+REPL
+
+READ 
+Evaluate
+Print
+Loop
+
+varibale names
+lower camelCase
+case-sensitive
+include numbers
+
+pareseInt is the opposite of to_s
+
+== non type safe
+=== type safe
+
+

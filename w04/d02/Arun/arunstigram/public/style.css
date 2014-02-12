@@ -1,0 +1,29 @@
+body{
+	width: 500px;
+	margin: 0 auto;
+	background: #2F4F4F;
+	font: helvetica;
+}
+img{
+	width: 480px;
+	height: auto;
+	border: 10px solid black;
+	border-radius: 10px;
+}
+}
+section{
+	margin: 50px;
+
+}
+.logo{
+	font-size: 30px;
+	font-style: italic;
+
+}
+a{
+	color: white;
+}
+.nav{
+	font-size: 20px;
+
+}

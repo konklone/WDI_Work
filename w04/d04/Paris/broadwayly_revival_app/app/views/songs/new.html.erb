@@ -1,0 +1,24 @@
+<!-- <div class="container">
+  <div class="form">
+     <% @show = Show.find_by(id: params[:show_id]) %>
+    <form action="/shows/<%= @show.id %>/songs" method="post">
+          <p><input type="text" placeholder="song title" name="song_title"></p>
+          <p><input type="url" placeholder="youtube url" name="embed_url"></p>
+      <button>"Create entry"</button>
+    </form>
+  </div>
+</div> -->
+
+<div class="container">
+  <h1>Add a song:</h1>
+  <div class="form">
+    <form action="/shows/<%= @show.id %>/songs" method="post">
+          <input name="authenticity_token" type="hidden" value="<%=  form_authenticity_token %>" />
+          <p><input type="textarea" name="song[song_title]" placeholder="song title" /></p>
+     <p><input type="textarea" name="song[embed_url]" placeholder="embed url" /></p>
+          <div id="button">
+            <button id="button">Go!</button>
+          </div>  
+    </form>
+  </div>  
+</div> 

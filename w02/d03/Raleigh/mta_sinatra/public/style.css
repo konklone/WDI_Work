@@ -1,0 +1,76 @@
+/*** MTA Line Stylesheet ***/
+
+html {
+   background-color: #111199;
+}
+body {
+}
+div.wrapper {
+   margin: 50px auto;
+   padding: 20px;
+   background-color: #fff;
+   width: 80%;
+   -m-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   border-radius: 20px;
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   text-align: center;
+}
+h1 {
+}
+ul {
+   list-style: none;
+   padding: 20px;
+}
+ul li {
+   display: inline;
+   padding: 10px;
+}
+/* Links */
+a:link {
+   text-decoration: none;
+   color: #000;
+   background-color: #888;
+   padding: 10px 20px; 
+    -m-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   border-radius: 20px;
+}
+a:visited {
+   color: #fff;
+   background-color: #888;
+}
+a:hover {
+   color: #fff;
+   background-color: red;
+}
+a:active {
+   color: #fff;
+   background-color: red;
+}
+p.back {
+   text-align: right;
+   padding-right: 50px;
+}
+p.back a:link {
+   text-decoration: none;
+   color: #000;
+   background-color: #888;
+   padding: 10px 20px; 
+    -m-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   border-radius: 20px;
+}
+p.back a:visited {
+   color: #fff;
+   background-color: #888;
+}
+p.back a:hover {
+   color: #fff;
+   background-color: red;
+}
+p.back a:active {
+   color: #fff;
+   background-color: red;
+}

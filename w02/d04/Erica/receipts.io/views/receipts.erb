@@ -1,0 +1,11 @@
+<h1>Receipt history:</h1>
+<ul>
+  <%  file = File.new("receipts.txt", "r") %>
+  <%  file.each do |line| %>
+    <%  info = line.split(",") %>
+    <li><%=  "Store: #{info[0]}" %></li>
+    <li><%=   "Product: #{info[1]}" %></li>
+    <li><%=   "Price: $#{info[2]}\n" %></li>
+  <% end %>
+  <%  file.close %>
+</ul>

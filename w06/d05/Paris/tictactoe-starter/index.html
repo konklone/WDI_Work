@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/tic_tac_toe.js"></script>
+
+
+</head>
+<body>
+	<div id="main_container">
+		<h1 id="main_heading" class="heading" >Tic! Tac! Toe!</h1>
+		<div id="names">
+      <p class="nametext">
+          Player 1: &nbsp
+      </p>
+      
+      <input type="text" class="nameinput" id="name1"/>
+      
+      <br/>
+      
+      <p class="nametext">
+          Player 2: &nbsp
+      </p>
+      
+      <input type="text" class="nameinput" id="name2"/>
+  	</div>
+      
+      <p id="caption">
+          Press START GAME to play
+      </p>
+                
+		<table>
+			<tbody>
+				<!-- row 1 -->
+				<tr class="box_row" >					
+
+					<td id="r0c0" class="box_cell" onclick="Play('r0c0')"></td>
+
+					<td id="r0c1" class="box_cell" onclick="Play('r0c1')"></td>
+
+					<td id="r0c2" class="box_cell" onclick="Play('r0c2')"></td>
+				</tr>
+
+
+				<!-- row 2 -->
+				<tr class="box_row">
+					<td id="r1c0" class="box_cell" onclick="Play('r1c0')"></td>
+
+					<td id="r1c1" class="box_cell" onclick="Play('r1c1')"></td>
+
+					<td id="r1c2" class="box_cell" onclick="Play('r1c2')"></td>
+				</tr>
+
+
+				<!-- row 3 -->
+				<tr class="box_row">
+					<td id="r2c0" class="box_cell" onclick="Play('r2c0')"></td>
+
+					<td id="r2c1" class="box_cell" onclick="Play('r2c1')"></td>
+
+					<td id="r2c2" class="box_cell" onclick="Play('r2c2')"></td>
+				</tr>
+			</tbody>
+		</table>
+    <div id="starttab" onclick="Start()">
+        <p id="starttext">
+            START GAME
+        </p>
+    </div>
+	</div>
+
+</body>
+</html>

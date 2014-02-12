@@ -1,0 +1,13 @@
+<h1>Welcome to InstaHW !!!! </h1>
+<a href="/instaHW/new">Add your pic!</a>
+<h3>Check out the pics we have so far:</h3>
+
+<ul>
+  <% @entries.each do |entry| %>
+  <li>Name: <a href="<%= entry.id %>"
+    > <%= entry.name %></a></li>
+    <li>pic: <a href="<%= entry.photo %>"
+    > <%= entry.name %></a></li>
+  <!--# each goin to be instnces of our entry class-->
+  <% end %>
+</ul>

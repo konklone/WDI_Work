@@ -1,0 +1,14 @@
+   
+<!-- calls the first item in the movie_array which is equal to the id number. Passes this into the file path to show that indivudual movie -->
+<body id="movie">
+   <section>
+    <h2><a href="/movies/<%= @movie_array[0]%>">Entry:</a></h2>
+    <ul>
+      <li>Year: <%= @movie_array[1]%></li>
+      <li><img src="<%= @movie_array[2]%>"></li>
+      <li>Title: <%= @movie_array[3]%></li>
+    </ul>
+  </section>
+</body>
+
+

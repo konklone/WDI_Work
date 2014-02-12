@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script type="text/javaScript" src="intro.js"></script>
+</head>
+<body>
+  <h1>Intro to JavaScript!</h1>
+
+  <!-- js tags should be last before </body> -->
+  <script type="text/javascript">
+    function f() {
+      var message = "NOW!";
+      console.log( message );
+    }
+
+    // var f = function(){}
+    window.setTimeout( f , 8000 );
+
+    window.setTimeout( function(){console.log("AHA! I get it now!");}, 8000 );
+  </script>
+</body>
+</html>

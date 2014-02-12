@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Welcome to GuestBook.io.ly</h1>
+
+  <a href="/guest_book/new">Leave an Entry</a>
+
+    <ul>
+      <% @entries.each do |entry| %>
+      <li>Name: <a href="/guest_book/<%= entry.id %>"><%= entry.name %></a></li>
+      <% end %>
+    </ul>
+</body>
+</html>
+
+
+
+
+

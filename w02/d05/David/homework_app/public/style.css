@@ -1,0 +1,113 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background: grey;
+}
+
+li {
+  list-style: none;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-nav, .wrapper {
+  overflow: hidden;
+  position: relative;
+  background-color: #d4c4ad;
+  box-shadow: 0 -4px 4px -4px #666 inset;
+  z-index: 1;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  background: blue;
+  padding-bottom: 60px;
+}
+
+.main-nav {
+  margin-bottom: 60px;
+}
+
+
+
+nav li:first-child {
+  float: left;
+}
+
+nav li:last-child {
+  float: right;
+}
+
+nav li a {
+  color: #000;
+}
+
+.movies  {
+  clear: both;
+}
+
+li img {
+  margin-bottom: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.movies-btn {
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: inset 0px 0px 17px #000000;
+-webkit-box-shadow: inset 0px 0px 17px #000000;
+box-shadow: inset 0px 0px 17px #000000;
+/*Inner elements should not cover inner shadows*/
+/*IE 7 AND 8 DO NOT SUPPORT INSET SHADOWS*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#000000');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#000000')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #ffffff, #000000);
+background-image: -ms-linear-gradient(top, #ffffff, #000000);
+background-image: -o-linear-gradient(top, #ffffff, #000000);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#000000));
+background-image: -webkit-linear-gradient(top, #ffffff, #000000);
+background-image: linear-gradient(top, #ffffff, #000000);
+/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+opacity: 0.82;
+-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 82);
+/*-ms-filter must come before filter*/
+filter: alpha(opacity = 82);
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*All filters must be placed together*/
+
+  margin: 0 auto;
+}
+
+
+/************* NOISE FILTER ***************/
+ .noise:before { 
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAFhUlEQVRo3t2a60qsORBF82j9/q8hIiIiIiIi4rCF1Sw3lW7PjHJ0fnz0d0kqVbvuSa/r6+vDw8PD4e3t7fjLdX9/f3h6enq/v729Pb6/uro6PD4+Hsff3d0dXl9fDy8vL+/3phH6GR9a+Z57vmUOv6xzc3PzYa0855fvnh96oZv7lYUvLy/fHy4uLj4wkYF+3l0hBg2eYSY0IvRuLmA8Pz8fQbFQ0IM3A8i3d0GaoBmCMATyDRStHb4H/Vz+nvFemO+hGyFh9k8vQEbLiwckRsIslHszHoYQtFFmfjRhdPMM87xvIHKFNmNhEiENrk3XIKxT6oqKM7hR5mIBvkcYzKL9CrqMhVm0GB7CJMLCQ94DWnixz5jnhUmADItnYLTRyIcQAuTXCLVZGkUEyJgI7EDCvDAWQUwTE8RMbT3QOmoE6VG1UW1z6MjmdwEBWhHYZrkTMnNZr0GzVqbAE95yZd1lM4Bgh9AQdNjzZfNhMaNoUCZG+J77aQ3eZR1H1QZ0MRDkyQXNQFCxc2VeEDfxzO0F/Jw18gxQoWd/7IjotTI3YzvKfYhaIQBBmxLmgG1CFOZPod2mZqEyj0Bi5p2cO4TbMlpzAeZoWiHsCOEIgh1OTuxFWoMsiB8EmNCZEuQu+fJ+mmO/W+cGO+FhDhkPepM5ZAGiVOZjSg7jhNsdjY5SmNSOx8XCDMj9lLiM/rnSJQyHDojZrnNPyDfq0ZijVAsEGA48GYd5L9vgZ2orShUzuCszdom0g4DzwhT2HUV30W39m0ldIrT/5Bm/aN+BnhPbzrnzva0jtDOXCAify0hPiSuD2oewa8pzlx8sPOUXaANQfjFlaFNlNC9974Izz8sRikiTQTi0q99JGzsttSZB2bVUhA0T0ZwFJ1GCuoXNe4pM01pThdnXZALkAgTsnBK61FRhshsmAGpTnnxp8rUOUEdnZ9EmbhvHFFyJYqcgTvk/lTEWlsSWsQhgk4pFOCzDNJ1mC73aH9AQKGRiiOwSYpvN1BHy/J0VxOpS2463C6lZAE1QDfztVmBhh6h1ske0ZBRhbic0ewFsVJyrnCOwGzUyv9ftCsB5b9msLISjlc3F9j85uhGGMeorV7uu6aaka+GnMV43v2tXhE0EvG2zQ3lXYHY4du1GSN3VWqEXXmj6mq/36te7EV4EhrtsCVFU/JN6mbVrZMwgqLVWaHRikrk3UjZHaxrmDdBX1Hrrt9ZWXQqtdtTuP05d3d3t+mnMrYX8zNVmauAN6PpJOyHTnKn13Uat31iSdO223JpOoROTMVOt7s5Bk+mR8JyNTzVhtMGTdgEBDWfc2jn0tOPuQOAd94lxL9xHEpPmpi3bU5WAQ/EHjUCo8wqDwwCoTYHAEQVmzaCZ8FZnA5H3uzDsuq3HrFNamLq9Xd+w61tO0Z1CNZ3nVAEYwN4VXX/jdMlbRY6QVAZdwBIobDkceZAgjx1i2zeFG734ZP8Oz+5fTiXT7/K99ds24nY7kYuwe648aZR8ENqJ8txxWsZT9E0asB913trtjK7vOAYzAwanG7MWgLV2wYR6i7nxRbaFVjPnA02EsVOeq8HYymnt7vruTnpugz3P2z8WlnXW/+Fo+kM/MnVdPi3iPKMjG07sHcdzJc4usrk3nxq4U1X48i77ThCjuos8pyJMO+p0LrnT3K767eZv/aQtnf9yuru+6jDyb/9zYn22A+MwcjJFbJ78AIPkil58yhP0Ot7Rhxf+iMD7DlDvZbx33EluLtAcipmETU8hFUfFJPlLR1et1i6MuTqg1utcY3PGpENrfUUJDXEfj02Z/jvrucUG2HRWuCvu/N8TC7PLyN6Y7vNxwAkt+CAR/8n/yNbkHyECirvwd+p88NTV9BwcMNsOGO7fvY+Aeef9PxP44jFlv0aHAAAAAElFTkSuQmCC); 
+  bottom:0; 
+  content:""; 
+  left:0; 
+  position:absolute; 
+  right:0; 
+  top:0; 
+  z-index: -1;
+}
+
+
+

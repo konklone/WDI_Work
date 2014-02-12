@@ -1,0 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Unkempt);
+
+#controls {
+  margin: 50px;
+  text-align: center;
+}
+
+h1 {
+  font-family: Unkempt;
+  font-size: 72px;
+  text-align: center;
+}
+
+button {
+  margin: 20px;
+  font-family: Unkempt;
+  font-size: 50px;
+  text-align: center;
+}
+

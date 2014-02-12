@@ -1,0 +1,11 @@
+<h1>See all of your costumes</h1>
+
+<%= link_to "Add New Costume", new_costume_path(@costume.id), :method => :POST %>
+
+<ul>
+  <% @costume.each do |costume| %>
+  <li><%= costume.name %></li>
+  <img src="<%= costume.image %>"/>
+</ul>
+<% end %>
+

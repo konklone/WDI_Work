@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: listly2_development
+  pool: 5
+  username: thomasbrennan
+  password:

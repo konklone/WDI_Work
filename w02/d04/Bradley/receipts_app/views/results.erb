@@ -1,0 +1,11 @@
+<div class="results">
+  <% if @result.is_a?(String) %>
+    <%= @result %>
+  <% else %>
+    <center><p style="border-bottom: 2px solid white;">Receipt found!</p></center>
+    <p>ID:  <%= @result[0] %></p>
+    <p>Store:   <%= @result[1] %></p>
+    <p>Item:  <%= @result[2] %></p>
+    <p>Price:  <%= @result[3] %></p>
+  <% end %>
+</div>

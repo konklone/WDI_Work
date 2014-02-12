@@ -1,0 +1,18 @@
+<h1>Listing todos</h1>
+
+<% @todos.each do |todo| %>
+  <li data-todo-id="<%=todo.id%>" class="<%= todo.completed ? "completed" : "" %>">
+
+    <%= todo.task %>
+    <%= todo.completed %>
+    <%= check_box_tag :completed, 'yes', todo.completed%>
+
+     
+  </li>
+<% end %>
+  
+
+
+<br>
+
+<%= link_to 'New Todo', new_todo_path %>

@@ -1,0 +1,95 @@
+Terminal
+
+Bash is the actual program you use to interact w/OS
+
+
+Sinatra Conventions
+
+sinatra counts the number of slashes
+if its not a symbol it tries to match otherwise it automatically matches it if it has a symbol
+
+what ever data has been sent
+
+ERB files use the file_name.erb live in the directory /views and are referenced with erb(:name_of_file)
+
+ERB = Embbed Ruby
+
+get "/x/y/:z" do
+  "String"
+end
+
+http: 
+protocol
+
+example.com = domain name
+
+/path/next/ = path
+
+pj.html = file type
+
+?=google+this = query string
+
+old_style = path:directory structure of the server everything is a GET, except form submission(POST)
+the way you used to info with a 
+
+Get is you put it in query string
+Post:input tags(hidden)
+
+new_style = (REST) path is semantic with the new style you can use the HTTP VERBS!
+
+
+                          SQL
+POST = Create   Insert
+GET = Read       Select
+PUT = Update    Update
+Delete = Delete Delete
+
+
+Representational State Transfer (REST) = is an architectural style that abstracts the architectural elements within a distributed hypermedia system.
+
+
+HTML
+<tags hold meta data>
+tags have open and close & attributes
+
+the idea behind XHTML was to make html a stricter language
+ meta charset = "utf-8" is very important
+
+ Paul Irish
+
+ DOM
+ BOX-Model
+ HTML = box model
+
+
+ DISPLAY :
+ block
+ inline
+ img = inline block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

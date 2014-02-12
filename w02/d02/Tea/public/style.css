@@ -1,0 +1,128 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*END CSS RESET*/
+
+body {
+  background-color: black;
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/8/8a/Jack_Casady_Jefferson_Airplane_1972.JPG);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+div.right {
+  margin: 6em 10% 0 0;
+  width: 30%;
+  height: 25%;
+  float: right;
+}
+
+div.button_box {
+  position: relative;
+  margin: 30% -20% 0 0;
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+
+.question {
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+  color: white;
+  font-size: 4em;
+}
+
+.buttons {
+  color: gray;
+  float: left;
+}
+
+a{
+  text-decoration: none;
+   display: inline;
+   color: gray;
+}
+
+a:hover {
+  color:white;
+}
+
+li {
+  font-size: 3em;
+  margin: 10px;
+  color: gray;
+  display: inline;
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+}
+
+@media (max-width: 600px) {
+  .right {
+    margin-top: 2em;
+  }
+  .question {
+    font-size: 30px;
+  }
+
+  div.button_box {
+    position: absolute;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+}
+
+@media (max-width: 900px) {
+  .right {
+    margin-top: 2em;
+  }
+  .question {
+    font-size: 3em;
+  }
+}

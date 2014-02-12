@@ -1,0 +1,17 @@
+// file is table of contents formatted in JSON
+{
+  "manifest_version": 2, //mandatory v2 for manifest (v1 deprecated)
+
+  "name": "Dat Stockness Monsta",
+  "description": "The illest stock app known to the world.",
+  "version": "1.0",
+
+  // need permission to access from another source
+  "permissions": [
+    "http://dev.markitondemand.com/Api/Quote/json?&amp;symbol=*"
+  ],
+  "browser_action": { //icon that appears on browser
+    "default_icon": "icon.png",
+    "default_popup": "popup.html" //when icon clicked
+  }
+}

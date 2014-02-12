@@ -1,0 +1,35 @@
+<!-- <div class="container">
+  <h1>Create a new student:</h1>
+  <div class="form">
+    <form action="/students" method="post">
+          <input name="authenticity_token" type="hidden" value="<%=  form_authenticity_token %>" />
+          <p><input type="text" placeholder="student's name" name="name"></p>
+          <p><input type="text" placeholder="project description" name="project_description"></p>
+          <p><input type="url" placeholder="github link" name="github_link"></p>
+          <div id="button">
+            <button id="button">Go!</button>
+          </div>  
+    </form>
+  </div>  
+</div>   -->
+
+<!-- WHITELISTED WAY -->
+
+<div class="container">
+  <h1>Create a new student:</h1>
+  <div class="form">
+    <form action="/students" method="post">
+          <input name="authenticity_token" type="hidden" value="<%=  form_authenticity_token %>" />
+          <p><input type="textarea" name="student[name]" placeholder="student's name" /></p>
+     <p><input type="textarea" name="student[project_description]" placeholder="project description" /></p>
+          <p><input type="textarea" name="student[github_link]" placeholder="github link" /></p>
+          <div id="button">
+            <button id="button">Go!</button>
+          </div>  
+    </form>
+  </div>  
+</div> 
+
+
+
+ 

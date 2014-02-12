@@ -1,0 +1,23 @@
+<div class="all-receipts">
+  <% file = File.new("receipts.txt", "r") %>
+  <center>
+    <table>
+      <th><tr>
+        <td>ID</td>
+        <td>Store</td>
+        <td>Item</td>
+        <td>Price</td>
+        </tr></th>
+    <% file.each do |line| %><tr>
+      <% values = line.split(",") %>
+        <td class="col1"><%= "#{values[0]}" %></td>
+        <td class="col2"><%= "#{values[1]}" %></td>
+        <td class="col3"><%= "#{values[2]}" %></td>
+        <td class="col4"><%= "#{values[3]}" %></td>
+        </tr>
+    <% end %>
+    </table>
+  </center>
+  <% file.close %>
+</div>
+

@@ -1,0 +1,7 @@
+<h2>Past Instagrams:</h2>
+   <% @entries.each do |entry| %>
+      <img src="<%= entry.photo %>" alt="<%= entry.author %>'s Instagram" />
+      <p><%= entry.author %> took photo on <%= entry.date %> </p>
+   <% end %> 
+
+<a href="insta/new">Create a new entry</a>

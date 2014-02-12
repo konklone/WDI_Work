@@ -1,0 +1,4 @@
+<% @all_receipts.each do |receipt| %>
+  <% @receipt_array = receipt.split(",") %>
+  <%= erb :receipt %>
+<% end %>

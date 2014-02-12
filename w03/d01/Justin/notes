@@ -1,0 +1,96 @@
+CREATE TABLE movies (
+  id serial PRIMARY KEY,
+  title varchar(50) NOT NULL,
+  year integer NOT NULL,
+  poster_url varchar(100) NOT NULL,
+);
+
+
+
+CREATE TABLE receipts (
+  id serial PRIMARY KEY,
+  store varchar(50) NOT NULL,
+  item varchar(50) NOT NULL,
+  number_of_item integer DEFAULT 1,
+  price money NOT NULL,
+  buy_date date DEFAULT current_date
+);
+
+
+###########################
+
+$ psql
+psql (9.3.0)
+Type "help" for help.
+
+Julie=# CREATE DATABASE receipts_db;
+CREATE DATABASE
+Julie=# \c receipts_db
+You are now connected to database "receipts_db" as user "Julie".
+receipts_db=# 
+create/delete a database
+
+
+####################################
+
+receipts_db=# CREATE TABLE receipts (
+receipts_db(#   id serial PRIMARY KEY,
+receipts_db(#   store varchar(50) NOT NULL,
+receipts_db(#   item varchar(50) NOT NULL,
+receipts_db(#   number_of_item integer DEFAULT 1,
+receipts_db(#   price money NOT NULL,
+receipts_db(#   buy_date date DEFAULT current_date
+receipts_db(# );
+CREATE TABLE
+
+
+
+
+receipts_db=# \dt
+         List of relations
+ Schema |   Name   | Type  | Owner 
+--------+----------+-------+-------
+ public | receipts | table | Julie
+(1 row)
+
+receipts_db=# 
+create a schema
+
+
+###########################################
+
+db_conn = PG.connect( :dbname => "receipts_db", :host => "localhost")
+=> #<PG::Connection:0x007f8a1280bb98
+ @notice_processor=nil,
+ @notice_receiver=nil,
+ @socket_io=nil>
+[5] pry(main)> db_conn.db
+=> "receipts_db"
+[6] pry(main)> result = db_conn.exec( "SELECT * FROM receipts;" )
+=> #<PG::Result:0x007f8a11837af0
+ @connection=
+  #<PG::Connection:0x007f8a1280bb98
+   @notice_processor=nil,
+   @notice_receiver=nil,
+   @socket_io=nil>>
+[7] pry(main)> result.values
+=> [["1", "Best Buy", "DVD", "1", "$12.50", "2013-10-07"]]
+[8] pry(main)> db_conn.exec( "INSERT INTO receipts (store, item, price) VALUES ('foot locker','Keds',40);" )
+=> #<PG::Result:0x007f8a110710c8
+ @connection=
+  #<PG::Connect
+ion:0x007f8a1280bb98
+   @notice_processor=nil,
+   @notice_receiver=nil,
+   @socket_io=nil>>
+[9] pry(main)> results = db_conn.exec( "SELECT * FROM receipts;" )
+=> #<PG::Result:0x007f8a1102b320
+ @connection=
+  #<PG::Connection:0x007f8a1280bb98
+   @notice_processor=nil,
+   @notice_receiver=nil,
+   @socket_io=nil>>
+[10] pry(main)> results.values
+=> [["1", "Best Buy", "DVD", "1", "$12.50", "2013-10-07"],
+ ["2", "foot locker", "Keds", "1", "$40.00", "2013-10-07"]]
+[11] pry(main)> 

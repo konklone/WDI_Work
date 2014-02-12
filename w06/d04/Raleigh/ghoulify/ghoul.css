@@ -1,0 +1,23 @@
+body {
+   margin: 0 auto;
+   width: 90%;
+   background-color: orange;
+   padding: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Creepster', cursive;
+}
+h1 {
+   font-size: 4em;
+   text-align: center;
+}
+h2 {
+   font-size: 3em;
+}
+h3 {
+   font-size: 2.5em;
+}
+
+ul.containment_unit {
+   color: maroon;
+}

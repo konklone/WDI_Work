@@ -1,0 +1,10 @@
+<div class="entries">
+  <% @entries.each do |entry| %>
+    <div class="entry" style="background-image:url(<%= entry.photo_url %>)">
+      <div class="info">
+        <p>Author : <%= entry.author %></p>
+        <p>Date Taken : <%= entry.date_taken %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

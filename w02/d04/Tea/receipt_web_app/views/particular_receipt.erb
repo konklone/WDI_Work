@@ -1,0 +1,16 @@
+<% file = File.new("receipts.txt", "r") %>
+
+<% file.each do |line|%>
+  <% item = line.split(", ")%>
+  <% if item[0] == @id_num%>
+  
+    <li><%=  "ID#: #{item[0]}"%></li>
+    <li><%=  "Store: #{item[1]}"%></li>
+    <li><%=  "Product: #{item[2]}"%></li>
+    <li><%=  "Price: #{item[3]}"%></li>
+    <% else %> 
+    <%= "We can't find what you're looking for"%>
+<% end %>
+<% end %>
+
+<% file.close %>

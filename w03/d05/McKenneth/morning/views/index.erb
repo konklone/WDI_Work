@@ -1,0 +1,14 @@
+<div style="background: url(http://rack.2.mshcdn.com/media/ZgkyMDEzLzEwLzAzL2UyL082VG1waTUuY2Y3NWMuanBnCnAJdGh1bWIJODUweDU5MD4KZQlqcGc/e432d76d/b02/O6Tmpi5.jpg); width:850px; height: 560px;">
+  <h1 style="color: white;">Trippy Dippy Lickety Splitsy</h1>
+
+<% persons = @people.order('num_trips desc') %>
+<% persons.each do |tripper| %>
+  <h3 style="color: white;"><%= name = tripper.name %></h3>
+  <h3 style="color: white;"><%= num = tripper.num_trips %></h3>
+  
+  <form action="/<%= tripper.id %>" method="POST">
+  <button style="color: blue;">HAHA YOU TRIPPED! LULZ</button>
+  </form>
+  <% end %>
+
+</div>

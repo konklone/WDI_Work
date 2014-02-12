@@ -1,0 +1,9 @@
+<a href="/entries">Home</a>
+<a href="/entries/new">Add A Picture</a>
+<% if @entry.author.nil? %>
+<p>We have Nothing To Show You</p>
+<%else %>
+<h1><%= @entry.author %></h1>
+<img src="<%= @entry.photos %>" />
+<p><%= @entry.my_date %></p>
+<%end %>

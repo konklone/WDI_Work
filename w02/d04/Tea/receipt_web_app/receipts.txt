@@ -1,0 +1,4 @@
+0, Silk Road, Opium, 5 bitcoins
+1, GameStop, Zelda, 50
+2, Soul Food Kitchen, Gumbo, 10
+3, Barnes & Nobel, So you think you can Kill, 20

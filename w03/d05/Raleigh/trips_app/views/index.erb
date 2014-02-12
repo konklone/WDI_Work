@@ -1,0 +1,9 @@
+<!-- Home Page -->
+   <% @people.each do |person| %>
+      <p><%= "#{person.name}:" %>
+      <%= "#{person.num_trips} trips" %></p>
+
+      <form action="/<%= person.name %>" method="POST">
+         <button>Tripped again!</button>
+      </form>
+   <% end %>

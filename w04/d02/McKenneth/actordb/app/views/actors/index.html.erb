@@ -1,0 +1,9 @@
+<h1>Here are the actors in our database:</h1>
+
+<ul>
+  <% for actors in @actor %>
+<li><a href="/actors/<%= actors.id %>"><%= actors.name %></a></li>
+<% end %>
+</ul>
+
+<a href="/actors/new">NEW</a>

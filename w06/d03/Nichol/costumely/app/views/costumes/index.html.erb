@@ -1,0 +1,30 @@
+<h1>Listing costumes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Img url</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @costumes.each do |costume| %>
+      <tr>
+        <td><%= costume.name %></td>
+<!--         <td><%= costume.img_url %></td> -->
+        <td><img src="<%=costume.img_url %>" width=200px</td>
+        <td><%= link_to 'Show', costume %></td>
+        <td><%= link_to 'Edit', edit_costume_path(costume) %></td>
+        <td><%= link_to 'Destroy', costume, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Costume', new_costume_path %>

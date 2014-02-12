@@ -1,0 +1,11 @@
+<h2><%= @entry.name %>:</h2>
+
+<% if @entry.comment.nil? %>
+	<p>
+		No comment left.
+	</p>
+<% else %>
+	<p>
+		<%= @entry.comment %></a>
+	</p>
+<% end %>

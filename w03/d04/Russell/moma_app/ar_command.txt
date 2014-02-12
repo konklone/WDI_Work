@@ -1,0 +1,29 @@
+van_gogh=Artist.new(name: "Vincent Van Gogh", nationality: "Spain");
+van_gogh.save
+
+starry_night= Painting.new(title: "Starry Night", year: "1889", image: "http://uploads2.wikipaintings.org/images/vincent-van-gogh/the-starry-night-1889(1).jpg");
+starry_night.save
+
+Artist.all
+=> [#<Artist id: 2, name: "Van Gogh", nationality: "Dutch", dob: "01/12/1990">,
+ #<Artist id: 3, name: "Picasso", nationality: "Spain", dob: "10/25/1881">,
+ #<Artist id: 4, name: "Magritte", nationality: "Belgian", dob: "11/21/1898">]
+
+Painting.all
+ =>[#<Painting id: 1, title: "Starry Night", year: 1889, image: "http://uploads2.wikipaintings.org/images/vincent-va...">,
+ #<Painting id: 2, title: "Guernica", year: 1937, image: "http://upload.wikimedia.org/wikipedia/en/7/74/Picas...">,
+ #<Painting id: 3, title: "Sunflowers", year: 1932, image: "http://upload.wikimedia.org/wikipedia/commons/4/46/...">,
+ #<Painting id: 4, title: "Self", year: 1928, image: "http://kaankahraman.com/pictures/paintings/original...">,
+ #<Painting id: 5, title: "Empire", year: 1902, image: "http://upload.wikimedia.org/wikipedia/en/b/b6/The_E...">,
+ #<Painting id: 6, title: "Empire", year: 1965, image: "http://upload.wikimedia.org/wikipedia/en/e/e5/Magri...">]
+
+
+=>[35] pry(main)> Artist.find_by(id:"2")
+ #<Artist id: 2, name: "Van Gogh", nationality: "Dutch", dob: "01/12/1990">
+
+=>[39] pry(main)> Painting.find_by(id:"1")
+=> #<Painting id: 1, title: "Starry Night", year: 1889, image: "http://uploads2.wikipaintings.org/images/vincent-va...">
+
+[41] pry(main)> Painting.find_by(title: "Guernica")
+=> #<Painting id: 2, title: "Guernica", year: 1937, image: "http://upload.wikimedia.org/wikipedia/en/7/74/Picas...">
+

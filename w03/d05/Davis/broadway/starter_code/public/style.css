@@ -1,0 +1,28 @@
+body {
+	background-color: #388746;
+}
+
+h1 {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	border: 2px solid white;
+	padding: 1px;
+	color: black;
+	border-style: outset;
+}
+
+a:hover {
+	background-color: #88952B;
+}
+
+a:active {
+	border-style: inset;
+	color: white;
+}
+
+div {
+	margin-top: 5px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movies.io</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="box">
+      <div class="menu">
+        <ul>
+          <li>What would you like to do?</li>
+          <li><a href="/movies/search">ADD MOVIE</a></li>
+          <li><a href="/movies">VIEW COLLECTION</a></li>
+          <li><a href="/movies/find">SEARCH COLLECTION</a></li>
+          <li><a href="/movies/recent">RECENT</a></li>
+          <li><a href="/movies/good">HIGH-RATED</a></li>
+          <li><a href="/movies/funny">FUNNY</a></li>
+        </ul>
+      </div>
+    <%= yield %>
+    </div>
+  </body>
+</html>

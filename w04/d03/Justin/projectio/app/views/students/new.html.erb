@@ -1,0 +1,10 @@
+<h1>Welcome Mr. New-Student</h1>
+<form action="/students" method="POST">
+	<input type="text" name="name" placeholder="Your Name">
+	<input type="text" name="project_description" placeholder="Describe your project">
+	<input type="text" name="github_url" Placeholder="Enter the Github link to your project">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+	<button>Make some awesome!</button>
+	<br>
+	<a href="/students">Return to all photos</a>
+</form>

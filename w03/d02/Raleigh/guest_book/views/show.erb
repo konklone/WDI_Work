@@ -1,0 +1,9 @@
+<h3><%= @entry.name %>:</h3>
+
+   <% if @entry.comment.nil? %>
+      <p>They didn't leave a comment.</p>
+   <% else %>
+      <p><%= @entry.comment %></p>
+   <% end %>
+
+<p><a href="/guest_book">Home</a></p>

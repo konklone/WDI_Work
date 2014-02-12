@@ -1,0 +1,100 @@
+body{
+  background-image: url("hollywood.jpg");
+}
+
+a, h1{
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+}
+
+div, header, form  {
+  padding: 30px;
+  font: normal 14px/1.4 "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+}
+
+h1{
+  font-size: 50px;
+}
+
+header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body, a:link {
+    color: #ffffff; 
+    text-decoration: none;
+  }
+
+  body, a:active  {
+    color: #ffffff; 
+    text-decoration: none; 
+  }
+
+  body, a:visited {
+    color: #ffffff; 
+    text-decoration: none; 
+  }
+
+  body, a:hover {
+    color: #ffffff; 
+    text-decoration: none; 
+  }
+
+
+
+
+#movie {
+  background: #000000;
+  font: normal 14px/1.4 "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #c4e4ff, #8da1b8);
+background-image: -ms-linear-gradient(top, #c4e4ff, #8da1b8);
+background-image: -o-linear-gradient(top, #c4e4ff, #8da1b8);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#c4e4ff), to(#8da1b8));
+background-image: -webkit-linear-gradient(top, #c4e4ff, #8da1b8);
+background-image: linear-gradient(top, #c4e4ff, #8da1b8);
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+/*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+/*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+color: black;
+}
+
+
+section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 450px;
+  max-height: 630px;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: #eaedeb;*/
+  background-color: black;
+  border: 2px solid #ffffff;
+-moz-border-radius: 29px;
+-webkit-border-radius: 29px;
+border-radius: 29px;
+/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+-moz-box-shadow: 0px 0px 20px #000000;
+-webkit-box-shadow: 0px 0px 20px #000000;
+box-shadow: 0px 0px 20px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+text-align: center;
+}
+
+img {
+margin: 10px;
+-moz-box-shadow: 0px 0px 20px #000000;
+-webkit-box-shadow: 0px 0px 20px #000000;
+box-shadow: 0px 0px 20px #000000;
+}
+
+
+li {
+  list-style: none;
+  margin-right: 30px;
+  font: normal 14px/1.4 "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+  color: white;
+  font-weight: bold;
+}

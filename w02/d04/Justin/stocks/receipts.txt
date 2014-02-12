@@ -1,0 +1,6 @@
+bob,thing,34
+bob,thing,34
+purchase.join(
+)
+bob,thing,34
+bob,thing,34

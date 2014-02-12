@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: roomly_development
+  pool: 5
+  username: sal
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: roomly_test
+  pool: 5
+  username: sal
+  password:

@@ -1,0 +1,110 @@
+1. Create a new Artist (Vincent Van Gogh) and save him to your database
+[1] pry(main)> gogh = Artist.new
+=> #<Artist id: nil, name: nil, nationality: nil, date_of_birth: nil>
+[2] pry(main)> gogh.nationality = "Dutch"
+=> "Dutch"
+[3] pry(main)> gogh.date_of_birth = "March 30, 1853"
+=> "March 30, 1853"
+[5] pry(main)> gogh.name = "Vincent van Gogh"
+=> "Vincent van Gogh"
+[6] pry(main)> gogh.save
+
+###############
+
+
+2. Create a new Painting (Starry Night) and save it to your database
+
+starry = Painting.new
+starry.title = "Starry Night"
+starry.year = 1889
+starry.img_url "http://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+
+##############
+
+
+3. Return all Artists
+
+Artist.all
+
+##############
+
+
+4. Return all Paintings
+
+Painting.all
+
+##############
+
+
+5. Return the artist with an id of 2
+
+Artist.find(2)
+
+
+6. Return the artist with a name of "Vincent Van Gogh"
+
+gogh = Artist.find_by(name:"Vincent van Gogh")
+
+
+7. Return all the artists from "Spain"
+
+spain = Artist.find_by(nationality:"Spanish")
+
+8. Return the painting with an id of 1
+
+ painting = Painting.find_by(id:1)
+
+9. Return the painting with a name of "Guernica"
+
+g = Painting.find_by(title: "Guernica")
+
+10. Return the image url for the painting with title "Starry Night"
+
+sn = Painting.find_by(title: "Starry Night")
+sn.image_url
+
+
+11. Return all the paintings that "Pablo Picasso" painted
+
+p = Artist.find_by(name: "Pablo Picasso")
+g = Painting.find_by(title: "Guernica")
+r = Painting.find_by(title: "Still Life with a Bottle of Rum")
+
+p .paintings << g
+p.paintings << r
+p.paintings
+
+12. Return the image urls for all the paintings that "Pablo Picasso" painted in an array
+
+picassospaintings = []
+picassospaintings << g.image_url
+picassospaintings << r.image_url
+picassospaintings
+
+
+13. Return the artist of "Guernica"
+
+g.artist_id
+Artist.find_by(id: 1)
+
+14. Change Vincent Van Gogh's nationality to USA
+
+[37] pry(main)> p.nationality = "USA"
+=> "USA"
+[38] pry(main)> p.save
+=> true
+[39] pry(main)> p.reload
+
+15. Change "Starry Night" to be one of Pablo Picasso's paintings
+
+s = Painting.find_by(title: "Starry Night")
+s.artist_id = 1
+s.save
+
+
+bonus
+sinata app
+
+
+
+

@@ -1,0 +1,10 @@
+<h1>All Costumes</h1>
+
+<ul>
+  <% @costumes.each do |costume| %>
+    <li><%= link_to costume.name, costume_path(costume) %></li>
+    <li><img src="<%= costume.image %>"></li>
+  <% end %>
+</ul>
+
+

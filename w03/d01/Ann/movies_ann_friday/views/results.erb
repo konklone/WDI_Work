@@ -1,0 +1,9 @@
+<h1>Here are all the movies people have searched!</h1>
+
+<% @result.each do |row| %>
+
+  <h1><%=row['title']%></h1>
+  <p><img src="<%=row['poster']%>"></p>
+  <p>Year:<%=row['year']%></p>
+
+<% end %>

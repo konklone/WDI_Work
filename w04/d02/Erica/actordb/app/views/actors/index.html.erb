@@ -1,0 +1,9 @@
+<h1>Here are the actors in our database</h1>
+
+<ul>
+  <li><% @actors.each do |actor| %>
+  <li><a href="actors/<%= actor.id%>"></li>
+  <%= actor.name %></a></li>
+  <% end %> 
+</ul>
+

@@ -1,0 +1,84 @@
+-- 1. All columns for all players FROM the New York Knicks (NYK)
+SELECT * FROM players WHERE team = 'NYK';
+
+-- 2. All columns for all players FROM the Indiana Packers (IND) who are under 26 years old
+SELECT * FROM players WHERE team = 'NYK' AND age < 26;
+
+-- 3. All columns for all players, ordered FROM least points scored to most points scored
+SELECT * FROM players ORDER BY points ASC;
+
+-- 4. Name and Points per game (points/games), for the players with the top 20 scoring averages (points per game)
+SELECT name, (points/games) FROM players ORDER BY (points/games) DESC LIMIT 20;
+
+-- 5. The average age for all players
+SELECT avg(age) FROM players;
+
+-- 6. The average age for all players on the Oklahoma City Thunder (OKC)
+SELECT avg(age) FROM players WHERE team = 'OKC';
+
+-- 7. The average age for all players who played more than 40 games
+SELECT avg(age) FROM players WHERE games > 40;
+
+-- 8. The team and total points scored FROM all players on that team (team points), ordered FROM most team points to least
+SELECT team, sum(points) FROM players GROUP BY team ORDER BY sum(points) DESC LIMIT 1;
+
+
+
+-- #####Bonus
+-- 1. Age and the the average points per game for that age, ordered from youngest to oldest
+SELECT age, avg(points/games) FROM players GROUP BY age ORDER BY age;
+
+-- 2. Team and the the number of players who have a scoring average (points per game) above 12 on that team, ordered from most to least
+SELECT team, count(name) FROM players WHERE (points/games)>12 GROUP BY team ORDER BY count(name) DESC;
+
+-- SELECT team, count(avg(points/games)>12) from players order by  name desc;
+-- select team from players where avg(points/games)>12
+-- SELECT name, (points/games) FROM players ORDER BY (points/games) DESC LIMIT 20;
+-- SELECT name, (points/games), team FROM players GROUP BY team, (points/games), name ORDER BY (points/games) DESC LIMIT 20;
+-- select team, (points/game)
+-- goal - get one table that has players who have scoring avg > 12....
+-- SELECT name, (points/games), team FROM players GROUP BY team, (points/games), name ORDER BY team DESC join 
+-- select name from players as p1 join count(points/games) from players as p2 group by team;
+
+
+
+
+
+-- attempts at deleting...
+SELECT players 
+FROM players
+LEFT OUTER JOIN (
+   SELECT MIN(id) as id, name, age, team, games, points
+   FROM players 
+   GROUP BY name, age, team, games, points
+) as KeepRows ON
+   players.id = KeepRows.id
+   WHERE
+   KeepRows.id IS NULL
+   ;
+
+DELETE players
+FROM players
+LEFT OUTER JOIN (
+   SELECT MIN(id) as id, name, age, team, games, points
+   FROM players 
+   GROUP BY name, age, team, games, points
+) as KeepRows ON
+   players.id = KeepRows.id
+   WHERE
+   KeepRows.id IS NULL
+   ;
+
+#will return unique records
+select name from players where name=name group by name;
+
+#nah - too simple.
+delete from players where name=name group by name;
+
+#IT WORKS - DELETE DUPLICATES!
+DELETE FROM players
+WHERE id IN (SELECT id
+              FROM (SELECT id,
+                             row_number() over (partition BY name, age, team, games, points ORDER BY id) AS rnum
+                     FROM players) t
+              WHERE t.rnum > 1);

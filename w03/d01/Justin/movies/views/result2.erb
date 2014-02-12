@@ -1,0 +1,11 @@
+<h1>IT'S A MOVIE!!!!!!</h1>
+<p>
+	<ul>
+		<li>Title: <%= @movies_array[@id]['title'] %></li>
+		<li>Released: <%= @movies_array[@id]['year'] %></li>
+		<li><img src="<%= @movies_array[@id]['poster_url'] %>"></li>
+	</ul>
+</p>
+<p>
+	<a href="/movies/search">click here to search again</a>
+</p>

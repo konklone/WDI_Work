@@ -1,0 +1,21 @@
+require 'sinatra'
+require 'sinatra/reloader'
+
+
+
+# GET /
+# => User to be presented with "Welcome to our stock app."
+
+# GET /stocks?symbol=0000
+# => 845.45
+
+get "/" do
+
+erb :index
+end
+
+get "/stocks" do
+
+end 
+
+

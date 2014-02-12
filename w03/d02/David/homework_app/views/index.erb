@@ -1,0 +1,11 @@
+<div class="polaroids">
+<% @instagrams.each do |row| %>
+    <ul>
+      <li><a href="#"><img src="<%=  row.photo %>" alt=""></a></li>
+      <div class="title">
+      <li><%=  row.author %></li>
+      <li><%=  row.date %></li>
+      </div>
+    </ul>
+  <% end %>
+  </div>

@@ -1,0 +1,14 @@
+<div class="container">
+<div class="top"></div>
+
+<a class="nav" href="/entries/new">New Entry</a>
+
+<% for entry in @all %>
+ <div class="pics">
+  <h1><%= entry.author %></h1>
+  <h3><%= entry.date %></h3>
+  <a href="/entries/<%= entry.id %>"><img class="entry" src="<%= entry.image %>" width="640"></a>
+</div>
+<%end%>  
+<h3 class="footer">Product of Skunkmaster Industries</h3>
+</div>

@@ -1,0 +1,131 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ /* VARIABLES */
+ $primarycolor: palevioletred;
+ $complementcolor: complement ( $primarycolor );
+ $animatewidth: 100;
+
+body {
+  text-align: center;
+}
+
+/*** MIXINS ****/
+
+@mixin round {
+  @include round;
+}
+
+@mixin center( $max ) {
+  max-width: $max;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**** INHERITANCE ****/
+
+.basic-div {
+  background: lighten ( $primarycolor, 10);
+  @include round;
+}
+
+#first-example {
+  @extend .basic-div;
+  background: $primarycolor;
+  margin-top: 20px;
+  padding: 10px;
+  @include center( 500px );
+}
+
+h1 {
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.animate-line{
+  width: 100px;
+  height: 4px;
+  border-radius: 4px;
+  background: black;
+  position: relative;
+  margin: 0 auto;
+}
+
+.ui-slider {
+  font-size: 8px;
+  width: 300px;
+  margin: 20px auto 0;
+}
+
+#cats {
+  height: 320px;
+  width: 320px;
+  @include round;
+  margin: 10px auto;
+  border: 3px solid gold;
+  background: lavenderblush;
+
+  img {
+    @include round;
+    margin: auto auto;
+    display: block;
+  }
+
+}
+
+.ui-sortable {
+  font-size: 12px;
+  list-style-type: none;
+  padding-left: 0;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.ui-sortable li {
+  border-radius: 2px;
+  height: 1.5em;
+  margin: 4px auto;
+  padding-left: 1em;
+  text-align: left;
+}
+
+.hideable {
+  border: 1px solid white;
+}
+
+.ui-progressbar {
+  font-size: 8px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.progress-label {
+  position: absolute;
+  text-align: center;
+  width: 50px;
+  left: 50%;
+  top: 4px;
+  margin-left: -25px;
+  font-weight: bold;
+}
+
+canvas {
+  border: 1px solid gainsboro;
+  margin-top: 20px;
+  @include round;
+}

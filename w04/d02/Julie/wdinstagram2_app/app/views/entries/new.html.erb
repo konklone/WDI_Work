@@ -1,0 +1,14 @@
+
+
+<h1>Post a new Picture:</h1>
+<form action="/entries" method="POST">
+  <input type="text" placeholder="enter artist" name="author">
+<!-- name will grab a parameter that can be assigned with param[:num] -->
+  <input type="url" placeholder="photo url" name="photo_url">
+   <input type="text" placeholder="post date" name="post_date">
+   <input name="authenticity_token" type='hidden' value="<%= form_authenticity_token%>" />
+
+
+  <button>Submit</button>
+
+</form>

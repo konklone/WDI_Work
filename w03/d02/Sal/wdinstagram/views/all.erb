@@ -1,0 +1,13 @@
+<div class="container">
+	<% @instagrams.each do |instagram| %>
+		<section>
+			<p> Author: <%= instagram.author %> </p>
+			<img src="<%= instagram.url %>">
+			<p> Date Published: <%= instagram.published %> </p>
+		</section>
+	<% end %>
+</div>
+
+
+
+

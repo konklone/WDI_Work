@@ -1,0 +1,12 @@
+<h1><%= @photo.name %>:</h1>
+<% if @photo.img_url.nil? %>
+	<p>
+		What?! No photo!
+	</p>
+<% else %>	
+	<p>
+		<img src="<%= @photo.img_url %>">
+		<br>
+		<%= @photo.date_taken %>
+	</p>
+<% end %>

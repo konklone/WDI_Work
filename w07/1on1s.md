@@ -1,0 +1,1 @@
+In lieu of individual 1 on 1's this week, we will be setting up times to talk to each group about their project proposal. Of course, if there's anything you'd like to talk to one of us about individually, just let us know and we can set up a time.

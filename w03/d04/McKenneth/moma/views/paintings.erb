@@ -1,0 +1,12 @@
+<a href="/moma"><h1 style="font-family:helvetica; font-size: 80px; color: red;">The Mo.ma</h1></a>
+
+<% art = @the_painting.where(artist_id: @id) %>
+
+ <% for art in art do %>
+  <div>
+  <img src="<%=art.image_url %>" width="1000" />
+
+  <h3 style="font-family:helvetica; font-size:30px; color: blue;"><%= art.title %></h3>
+  <h5 style="font-family:helvetica; font-size: 20px; color: red;"><%= art.year %></h5>
+  </div>
+  <%end%>

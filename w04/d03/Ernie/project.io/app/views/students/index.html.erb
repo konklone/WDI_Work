@@ -1,0 +1,11 @@
+<a href="/">Home</a>
+
+<h1>List Of Students</h1>
+
+<ul>
+<% @students.each do |student| %>
+  <li>Student Name: <a href="/students/<%= student.id %>"><%= student.name %></a></li>
+  <li>Project Description: <%= student.project_description %></li>
+  <li>Github Link: <%= student.github_link %></li>
+<% end %>    
+</ul>

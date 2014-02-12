@@ -1,0 +1,11 @@
+<!-- show.erb displays one resource -->
+
+<h1><%= @entry.name %>: </h1>
+
+<% if @entry.comment.nil?  %>
+<p>How mean! They didn't say anything...</p>
+
+<% else %>
+<p><%= @entry.comment %></p>
+
+<% end %>

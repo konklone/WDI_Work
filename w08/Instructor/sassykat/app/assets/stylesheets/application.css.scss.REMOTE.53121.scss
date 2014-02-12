@@ -1,0 +1,127 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *=
+ */
+
+/* VARIABLES */
+$primarycolor: indianred;
+$complementcolor: complement( $primarycolor );
+$animatewidth: 50;
+
+/* MIXINS */
+@mixin round {
+  border-radius: 10px;
+}
+
+@mixin center( $max ){
+  max-width: $max;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  text-align: center;
+}
+
+.basic-div {
+  margin: 10px;
+  padding: 10px;
+  @include center( 500px );
+  @include round;
+}
+
+#second-example, #fourth-example {
+  background-color: $complementcolor;
+}
+
+.hideable {
+  @extend .basic-div;
+  background: $primarycolor;
+  border: 1px solid white;
+}
+
+h1 {
+  color: $primarycolor;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.animate-line{
+  @include center(null);
+  width: 2px * $animatewidth;
+  height: 4px;
+  border-radius: 4px;
+  background: black;
+  position: relative;
+}
+
+.ui-slider {
+  font-size: 8px;
+  @include center(300px);
+  margin-bottom: 10px;
+}
+
+#cats {
+  height: 320px;
+  @include round;
+  @include center( 320px );
+  border: 3px solid $complementcolor;
+  background: lighten( $primarycolor, 30 );
+
+  img {
+    border-radius: 10px;
+    @include center(null);
+  }
+}
+
+.ui-sortable {
+  font-size: 12px;
+  list-style-type: none;
+  padding-left: 0;
+  @include center( 200px );
+  margin-top: 20px;
+
+  li {
+    color: $primarycolor;
+    border-radius: 5px;
+    height: 1.5em;
+    margin: 4px auto;
+    padding-left: 1em;
+    padding-top: 0.2em;
+    text-align: left;
+    font: 1em/1.5em;
+  }
+}
+
+.ui-progressbar {
+  font-size: 8px;
+  @include center( 50% );
+  margin-top: 20px;
+  position: relative;
+}
+
+.progress-label {
+  position: absolute;
+  text-align: center;
+  width: 50px;
+  left: 50%;
+  top: 4px;
+  margin-left: -25px;
+  font-weight: bold;
+}
+
+canvas {
+  border: 3px solid $primarycolor;
+  margin-top: 20px;
+  @include round;
+}

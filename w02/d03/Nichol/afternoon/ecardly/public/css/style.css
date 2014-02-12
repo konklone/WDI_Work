@@ -1,0 +1,76 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/* ===================== */
+.body-wrapper  {
+     background-color: #d6d6d6;
+     color: #000000;
+     height: 100%;
+     padding: 2em;
+     position: relative;
+
+}
+
+.logo {
+     margin: 0 auto;
+     display: block;
+     padding: 30px;
+}
+
+.box {
+     background-color: white;
+     width: 940px;
+     margin: 0 auto;
+     padding: 15px;
+}
+
+.card-header {
+     font-size: 20px;
+
+}
+
+.card-img {
+     display: inline-block;
+     
+}
+
+.card-text {
+     display: inline-block;
+    width: 280px;
+    float: right;
+    margin: 0;
+    text-align: justify;
+    font-size: 12px;
+    position: relative;
+}
+
+.card-a {
+     color: #cc6633;
+     font-weight: bold;
+}
+/*.body-wrapper
+.logo
+.box
+.card-header
+.card-img
+.card-text
+.card-link
+*/

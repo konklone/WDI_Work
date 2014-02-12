@@ -1,0 +1,15 @@
+van_gogh = Artist.new(name: "Vincent Van Gogh")
+starry_night = Painting.new(title: "Starry Night")
+
+Artist.all
+painting.all
+
+Artist.where(id: 2)
+Artist.where(name: "Vincent Van Gogh")
+Artist.where(nationality: "Spain")
+
+Painting.where(id: 1)
+
+Painting.where(title: "Guernica")
+
+Painting.where(url: 1)

@@ -1,0 +1,38 @@
+.container {
+   border: 3px solid blue;
+   text-align: center;
+}
+
+div { 
+  border: 1px solid black; 
+  border-radius: 5px;
+}
+
+.background-cyan{
+  background-color: cyan;
+  padding: 15px;
+  float: left;
+ 
+
+}
+
+.background-gray {
+background-color: gray;
+float: right;
+  } 
+
+  .box {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  p {
+    display: inline-block;
+  }
+
+  div.second-div{
+    height: 100px;
+    background-color: red;
+    clear: both;
+  }

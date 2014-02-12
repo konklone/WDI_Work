@@ -1,0 +1,20 @@
+.yes {
+    border: 3px #0a0 solid;
+    border-bottom: 3px #040 solid;
+    border-right: 3px #040 solid;
+    background: #080;
+  }
+
+  .no {
+    border: 3px #c00 solid;
+    border-bottom: 3px #600 solid;
+    border-right: 3px #600 solid;
+    background: #a00;
+  }
+
+   .done {
+    border: 3px #c00 solid;
+    border-bottom: 3px #600 solid;
+    border-right: 3px #600 solid;
+    background: blue;
+  }

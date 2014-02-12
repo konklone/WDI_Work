@@ -1,0 +1,256 @@
+body {
+  font-family: 'Life Savers', cursive;
+  font-size: 18px;
+  color: gray;
+  font-weight: 700;
+  background-image: url('/puppytiled.jpg');
+  background-size: cover;
+}
+
+.welcome, .new, .all {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.all {
+  height: 100%;
+}
+
+.message {
+  background-color: rgba(255, 255, 255, 0.93);
+  height: 300px;
+  width: 600px;
+  position:absolute;
+  top: 50%;
+  margin-top: -150px;
+  left: 50%;
+  margin-left: -300px;
+  border-radius: 50px;
+}
+
+
+.message img {
+  width: 500px;
+  padding-top: 40px;
+}
+
+.option1, .option2 {
+  background-image: url('/bone.png');
+  background-size: cover;
+  width: 265px;
+  height: 110px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.option1 p, .option2 p{
+  position: absolute;
+  top: 61%;
+  font-size: 26px;
+  margin-left: 85px;
+  font-family: 'Life Savers', cursive;
+  font-weight: 700;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover, a:hover{
+  border-bottom: 3px solid gray;
+}
+
+
+.option1 {
+  float: left;
+  margin-left: 30px;
+}
+
+.option2 {
+  float: right;
+  margin-right: 30px;
+}
+
+button {
+  height: 60px;
+  width: 80px;
+  border: none;
+  background-image: url('/bone.png');
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.13);
+  display: block;
+  color: gray;
+  font-family: 'Life Savers', cursive;
+  font-size: 18px;
+  font-weight: 700;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  right: 10px;
+  top: 8px;
+  padding-bottom: 4px;
+
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.93);
+  width: 25%;
+  height: 300px;
+  padding-top: 30px;
+  margin-top: 120px;
+  border-radius: 25px;
+}
+
+input {
+/*  background-color: rgba(255, 255, 255, 0.93) !important;*/
+  background: none;
+  border: none;
+  border-bottom: 2px dashed gray;
+  width: 180px;
+  height: 30px;
+  display: block;
+  margin: 20px;
+  text-align: center;
+}
+
+.new .box img {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  position: relative;
+  bottom: 30px;
+}
+
+.new .box p{
+  background-color: gray;
+  color: white;
+}
+
+.show {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.show .box {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  padding: none;
+  margin: none;
+  bottom: 0;
+}
+
+.puppypic, .info {
+  height: 300px;
+  width: 300px;
+  border-radius: 35px;
+}
+
+
+.info {
+  color: rgba(255, 255, 255, 0);
+}
+
+.info h2 {
+  font-size: 26px;
+  position: relative;
+  top: 100px;
+}
+
+.info:hover{
+  background-color: rgba(200, 200, 200, 0.85);
+  color: rgba(255, 255, 255, 1)
+
+}
+
+.new .clearbox .puppypic {
+  margin-top: 15px;
+}
+
+.clearbox h1 {
+  margin-top: 140px;
+  width: 20%;
+  border-bottom: 2px dashed gray;
+  padding-bottom: 4px;
+}
+
+.clearbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100%;
+  overflow: auto;
+}
+
+.new .menu img, .new .menu .option1, .new .menu .option2 {
+  display: inline;
+  height: 70px;
+}
+
+.new .menu .option1, .new .menu .option2 {
+  width: 160px;
+}
+
+.new .menu .option1 {
+  margin-left: 40px;
+}
+
+.new .menu .option2 {
+  margin-right: 40px;
+}
+
+.new .menu {
+  position: relative;
+  bottom: 500px;
+  margin: auto auto;
+  width: 70%;
+  height: 110px;
+  background-color: rgba(255, 255, 255, 0.93);
+  border-radius: 30px;
+}
+
+.new .menu img {
+  margin-top: 15px;
+}
+
+.menu .option1 p, .menu .option2 p{
+  font-size: 14px;
+  margin-left: 25px;
+  top: 35%;
+  font-family: 'Life Savers', cursive;
+  font-weight: 700;
+  margin-top: 0px;
+  position: relative;
+  bottom: 80px;
+}
+
+.puppies .puppypic, .puppies .puppypic .info {
+  display: inline-block;
+}
+
+.puppies .puppypic {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.all .new .clearbox .menu {
+  position: fixed;
+  margin-left: 190px;
+}  
+
+.puppies {
+  margin-top: 120px;
+}

@@ -1,0 +1,8 @@
+<% @artists.each do |artist| %>
+	<a href="/artist/<%= artist.name %>"><%= artist.name %></a>
+	<br>
+	<%= artist.birth_date %>
+	<br>
+	<%= artist.nationality %>
+	<br>
+<% end %>

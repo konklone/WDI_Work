@@ -1,0 +1,32 @@
+<h1>Listing notes</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Text</th>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  
+
+  <tbody>
+    <% @notes.each do |note| %>
+      <tr>
+        <td><%= note.text %></td>
+        
+    
+        <td><%= link_to 'my show', costume_note_path(note.costume, note) %></td>
+        <td><%= link_to 'edit', edit_costume_note_path(note.costume, note) %></td>
+        <td></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+<!--     magazine_ad_path(@magazine, @ad) -->

@@ -1,0 +1,7 @@
+<form action="/actors" method="POST">
+  <input type="text" placeholder="Actor's Name" name="name">
+  <input type="url" placeholder="Photo URL" name="photo_url">
+  <input type="date" placeholder="Actors DOB" name="date_of_birth">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <button>Submit</button>
+</form>

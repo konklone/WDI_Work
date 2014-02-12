@@ -1,0 +1,11 @@
+<h3>Songs from <%= @show.title %></h3>
+
+<ul>
+  <% @songs.each do |song| %>
+  <li>Song id: <%= song.id %></li>
+  <li>Song Title: <%= song.song_title %></li>
+  <% song.embed_url.slice!("http:")  %>
+  <% song.embed_url.gsub!("watch?v=","embed/") %>
+  <li><iframe width="425" height="349" src="<%= song.embed_url %>" frameborder="0" allowfullscreen></iframe></li>
+    <% end %>
+</ul>

@@ -1,0 +1,6 @@
+<h1>All Costumes</h1>
+<ul>
+  <% Costume.all.each do |costume| %>
+    <li><a href="costumes/<%= costume.id %>"><%= costume.name %></a></li>
+  <% end %>
+</ul>

@@ -1,0 +1,69 @@
+body {
+  background-color: orange;
+  font-family: Creepster;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.containment-unit {
+  width: 30%;
+  border: double orange 10px;
+  border-top-right-radius: 150px;
+  border-top-left-radius: 150px;
+  min-height: 16em;
+  padding-top: 2em;
+  background-color: black;
+  color: white;
+  margin-top: 0;
+}
+
+ul.containment-unit li {
+  font-size: 30px;
+}
+
+h3 {
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.top-bar {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  color: orange;
+
+}
+
+.bottom-bar {
+  background-color: black;
+  color: orange;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  margin: 0;
+  height: 3em;
+}
+
+input {
+  width: 15%;
+}
+
+button {
+  background-color: orange;
+  border: none;
+  font-family: Creepster;
+  font-size: 12px;
+}
+
+form {
+  position: relative;
+  top: 30%;
+}

@@ -1,0 +1,26 @@
+
+<a class ="greeting" href="/">movie submarine</a>
+
+  <% @result.each do |row| %>
+
+      <% id = "#{row['id']}" %>
+    <% title = "#{row['title']}" %>
+    <% date =  "(#{row['date']})" %>
+    <% poster_url =  "#{row['poster']}" %>
+    <% plot =  "(#{row['plot']})" %>
+      <div class="single-movie">
+        <div class="left">
+          <ul>
+            <li class="title"><%= title %></li>
+            <li class="sub"><%= date %></li>
+            <li><a href="/movies/<%=id%>"><img src=<%=poster_url%>/></a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <li class ="plot"><%= plot %></li>
+        </div>
+      </div>
+
+
+<% end %>
+<% db_conn.close %>

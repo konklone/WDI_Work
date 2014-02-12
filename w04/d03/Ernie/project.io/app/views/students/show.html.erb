@@ -1,0 +1,9 @@
+<a href="/">Home</a>
+<a href="/students/new">Add A Picture</a>
+<% if @students.name.nil? %>
+<p>We have Nothing To Show You</p>
+<%else %>
+<h1><%= @students.name %></h1>
+<p><%= @students.project_description %>" </p>
+<p><%= @students.github_link %></p>
+<%end %>

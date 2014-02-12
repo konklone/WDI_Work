@@ -1,0 +1,21 @@
+<form action="/students" method="POST">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+
+  <label>
+    Name : 
+    <input type="text" name="name" placeholder="student's name" />
+  </label>
+
+  <label>
+    Project Description : 
+    <input type="text" name="project_description" placeholder="description of project" />
+  </label>
+
+  <label>
+    Photo Url
+    <input type="text" name="photo_url" placeholder="url of photo" />
+  </label>
+
+  <button>submit</button>
+
+</form>

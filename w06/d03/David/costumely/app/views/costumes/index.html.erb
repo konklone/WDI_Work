@@ -1,0 +1,10 @@
+<h1>All Costumes</h1>
+
+<%= link_to("Add a costume", new_costume_path) %>
+
+<% @costumes.each do |costume| %>
+<ul>
+  <li><%= costume.name %></li>
+  <li><%=  image_tag(costume.image) %></li>
+</ul>
+<% end %>

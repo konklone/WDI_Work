@@ -1,0 +1,11 @@
+<div id = "container">
+<center><h1>Add your dog:</h1></center>
+<form action="/dogs" method="POST">
+<input type="text" name="name" placeholder="Name:"/>
+<input type ="text" name= "breed" placeholder = "Breed"/>
+<input type="url" name="photo_url" placeholder="Photo:" />
+<input type="date" name="birth_date" placeholder="Birth Day: "/> 
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+<button class= "button">Submit</button>
+</form>
+</div>

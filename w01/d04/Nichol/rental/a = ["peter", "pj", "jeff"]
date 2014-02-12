@@ -1,0 +1,11 @@
+a = ["peter", "pj", "jeff"]
+
+peter_string = a[0]
+puts peter_string
+
+a << "nichol"
+puts a
+
+a.delete "pj"
+puts a
+

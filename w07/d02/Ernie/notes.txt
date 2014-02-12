@@ -1,0 +1,6 @@
+TCP/IP = transmission control protocol
+HTTP = hyper text transmission protocol
+
+client =  request (curl,chrome,HTTParty)
+server =  response(sinatra,rails,webbrick)
+

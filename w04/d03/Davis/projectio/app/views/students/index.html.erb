@@ -1,0 +1,13 @@
+<h1>All Students</h1>
+
+<% Student.all.each do |student| %>
+	<%= student.name %>
+	<br>
+	<%= student.project_description %>
+	<br>
+	<%= student.github_link %>
+	<br>
+	<%= student.created_at %>
+	<br>
+	<%= student.updated_at %>
+<% end %>

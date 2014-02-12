@@ -1,0 +1,13 @@
+<h1>Meow or Not Meow!</h1>
+
+<form action="/vote/meow" method="POST">
+  <input type="hidden" name="url" value="<%= @random_kitty %>" />
+  <button>Meowwww</button>
+  </form>
+
+<form action="/vote/not_meow" method="POST">
+  <input type="hidden" name="url" value="<%= @random_kitty %>" />
+  <button>Meoutch!</button>
+  </form>
+
+<img src="<%= @random_kitty %>"/>

@@ -1,0 +1,8 @@
+<h1>Welcome to the Sorting Hat!</h1>
+<%= image_tag "http://flavorwire.files.wordpress.com/2009/06/sorting-hat.jpg" %>
+
+<%= form_for("/students/new", method: "post") do %>
+  <%= text_field_tag(:img_url, "Name") %>
+  <%= text_field_tag(:name, "Image") %>
+  <%= submit_tag("Submit") %>
+<% end %>

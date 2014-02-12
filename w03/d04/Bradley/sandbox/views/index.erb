@@ -1,0 +1,15 @@
+<span style="margin-top:150px">
+<center>
+<form action="/vote/meow" method="POST">
+  <input type="hidden" name="url" value="<%= @url %>" />
+  <button>Meow!</button>
+</form><br/>
+<form action="/vote/now_meow" method="POST">
+  <input type="hidden" name="url" value="<%= @url %>" />
+  <button>Not Meow!</button>
+</form>
+<br/>
+
+<img src="<%= @url %>" height="200" width="200">
+</center>
+</span>

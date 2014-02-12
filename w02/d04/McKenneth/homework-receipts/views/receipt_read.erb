@@ -1,0 +1,30 @@
+<div>
+<h1 class="head">All Receipts</h1>
+
+  <% file = File.new("views/receipts.txt", "r") %>
+
+      
+
+      <% file.each do |lines| %>
+
+       <% if lines.split(",")[0] == params[:index]%>
+          
+          <h3 class="receipt">Store:</h3><h4 class="receipt"><%= lines.split(",")[1] %></h4>
+          <h3 class="receipt">Item:</h3><h4 class="receipt"><%= lines.split(",")[2] %></h4>
+          <h3 class="receipt">Cost:</h3><h4 class="receipt"><%= lines.split(",")[3] %></h4>
+
+      <% elsif params[:index] == nil%>
+            <% each_one = lines.split(",") %>
+            
+            <h3 class="receipt">Store:</h3><h4 class="receipt"><%= each_one[1] %></h4>
+            <h3 class="receipt">Item:</h3><h4 class="receipt"><%= each_one[2] %></h4>
+            <h3 class="receipt">Cost:</h3><h4 class="receipt"><%= each_one[3] %></h4>
+      
+      <%  end %>
+      <br>
+      <br>
+      <% end %>
+   <% file.close %>
+
+   <a href="/receipts/new">Add more receipts!</a>
+</div>

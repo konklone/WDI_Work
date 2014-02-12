@@ -1,0 +1,4 @@
+<% @all_movies.each do |movie| %>
+  <% @movie_array = movie.split(",") %>
+  <%= erb :movie %>
+<% end %>

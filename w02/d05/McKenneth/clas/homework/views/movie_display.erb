@@ -1,0 +1,34 @@
+<div class= "upper"><h1>The Movie Monster</h1>
+<a class="top" href="/">Home</a>
+<a class="top" href="/movies">View All</a>
+<a class="top" href="/movies/search">Search</a>
+</div>
+<div>
+<% movie_file = File.new("views/movies.txt", "r") %>
+
+      
+
+      <% movie_file.each do |films| %>
+
+       <% if films.split(",")[0] == params[:id]%>
+          <br>
+          <h4 class="title">Title:</h4><h2><%= films.split(",")[1] %></h2>
+          <br>
+          <h4 class="title">Year:</h4><h2><%= films.split(",")[2] %></h2>
+          <br>
+          <img src="<%= films.split(",")[3] %>"/>
+
+      <% elsif params[:id] == nil%>
+          <% id = films.split(",")[0].to_i %>
+          <br>
+          <h4 class="title">Title:</h4><h2><%= films.split(",")[1] %></h2>
+        <br>
+          <h4 class="title">Year:</h4><h2><%= films.split(",")[2] %></h2>
+          <br>
+          <a href="/movies/<%= id %>"><img src="<%= films.split(",")[3] %>"/></a>
+
+      <%  end %>
+      
+      <% end %>
+  <% movie_file.close %>
+</div>

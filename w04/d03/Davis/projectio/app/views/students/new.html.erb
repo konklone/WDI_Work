@@ -1,0 +1,9 @@
+<form action="/students" method="POST">
+	<input type="text" name="student[name]" placeholder="Name">
+	<input type="text" name="student[project_description]" placeholder="Project Description">
+	<input type="url" name="student[github_link]" placeholder="Github Link">
+
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+
+	<button>Submit Entry</button>
+</form>

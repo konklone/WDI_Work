@@ -1,0 +1,20 @@
+
+ body {
+      text-align: left;
+      background: url("http://yorkcity.org/user-files/image/Public%20Works/Recreation/Family%20Movie%20Night.jpg");
+      background-size: cover;
+      color: black;
+      font-family: helvetica;
+      font-size: 30px;
+    }
+
+ h1 {
+ 	color: black;
+ 	font-size: 30px;
+ }
+
+ h2 {
+ 	color: black;
+ 	font-size: 30px;
+ }
+

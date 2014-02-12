@@ -1,0 +1,22 @@
+<h1>Search Through Entries</h1>
+
+<div class="content">
+   <form action="/search" method="GET">
+      <p>Search for an author:
+         <input type="text" name="search" placeholder="Instagram username" /></p>
+         <button>Search</button>
+   </form><br />
+
+      <% if !@response.nil? %>
+         <h2><%= @response.author %></h2>
+         <img src="<%= @response.photo_url %>" alt="Instagram taken by <%= @response.author %>" />
+         <p><%= @response.date_taken %></p>
+      <% end %>
+
+      <% if !@no_entries.nil?&& @response.nil? %>
+         <%= @no_entries %>
+      <% end %>
+
+      <p class="right"><a href="/entries">Home</a></p>
+</div>
+<!-- <% debug params %> -->

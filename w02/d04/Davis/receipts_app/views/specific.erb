@@ -1,0 +1,17 @@
+<% receipts = File.new("receipts.txt", "r") %>
+<% receipts.each do |line| %>
+	<% @array = line.split(",") %>
+	<% if line[0] == params[:id] %>
+		<%= "ID: #{@array[0]}" %>
+		<br>
+		<%= "Store: #{@array[1]}" %>
+		<br>
+		<%= "Product: #{@array[2]}" %>
+		<br>
+		<%= "Price: $#{@array[3]}" %>
+		<br>
+		<br>
+	<% else %>
+		<% nil %>
+	<% end %>
+<% end %>

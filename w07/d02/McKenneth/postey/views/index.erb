@@ -1,0 +1,17 @@
+<h1>POSTE.y</h1>
+
+<form method= "POST" action= "/">
+  <label>Title
+  <input name= "title" type= "text"></label>
+  <label>
+  <textarea name= "content"></textarea></label>
+  <button>SAVE</button>
+</form>
+
+<h4>POSTS</h4>
+<ul>
+  <%for post in @posts do%>
+  <li><%= post[:title] %> | <%= post[:content]%></li>
+  <%end%>
+
+</ul>

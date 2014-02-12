@@ -1,0 +1,9 @@
+borders are good to see the realtionships elements have with each other
+
+border= width,type,color || or can do them seperately 
+
+border-radius of 5px is the same as a perfectly rounded circle
+
+horziantally overflow is set to off and it spans the entire width by default
+
+margin with auto computes the width of the containing parents box and its own width and divdes in order to center its self

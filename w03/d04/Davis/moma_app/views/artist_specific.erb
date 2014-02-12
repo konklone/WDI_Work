@@ -1,0 +1,10 @@
+<% paintings = Painting.where(artist_id: @target_artist.id)  %>
+
+<% paintings.each do |painting| %>
+	<%= painting.title %>
+	<br>
+	<%= painting.year %>
+	<br>
+	<img src="<%= painting.image_url %>" alt="" width="300">
+	<br>
+<% end %>

@@ -1,0 +1,29 @@
+1.
+new_artist2 = Artist.new(name: "Pablo Picasso", nationality: "Spanish", dob: 25101881)
+=> #<Artist id: nil, name: "Pablo Picasso", nationality: "Spanish", dob: 25101881>
+2.
+newPaintingMD2 = Painting.new(title: "In Advance of a Broken Arm", year: 1915, img_url: "http://www.moma.org/collection_images/resized/282/w500h420/CRI_110282.jpg", artist_id: 3);
+3.
+Artists.all
+
+4.
+Paintings.all
+
+5.
+Artist.find(2)
+
+6.
+Artist.find_by name:'Vincent VanGogh'
+
+7.
+Artist.all.find_by nationality: 'Spanish'
+
+8.
+Painting.find_by id: 1
+
+9. i didn't add "guernica" so..
+Painting.find_by title: 'Wheat Field w/Crows'
+
+10.
+
+

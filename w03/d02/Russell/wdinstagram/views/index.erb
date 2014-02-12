@@ -1,0 +1,11 @@
+<h1>Welcome to WDInstagram.io.ly</h1>
+
+<a href="/wdinstagram/new">Post a Picture</a>
+
+<h3>Here are the pictures that have been posted:</h3>
+
+<ul>
+  <% @pictures.each do |picture| %>
+    <li>Author: <a href="/wdinstagram/<%= picture.id %>"></a><img src = "<%= @pictures.url %>"></li>
+  <% end %>
+</ul>

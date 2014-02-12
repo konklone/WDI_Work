@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome to Backbone</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+
+  <script src="javascript/jquery-2.0.0.js"></script>
+  <script src="javascript/underscore.js"></script>
+  <script src="javascript/backbone.js"></script>
+</head>
+
+<body>
+  <div id="container">
+  </div>
+
+  <script type="text/template" id="welcome-message">
+    <h1><%= message %></h1>
+    <h2><%= secondary %></h2>
+    <% if (showParagraph == true) { %>
+    <p>You showed me!</p>
+    <% } %>
+  </script>
+
+  <script type="text/javascript">
+    var fakeModelJSON = {
+      message: "Welcome!",
+      secondary: "It works I hope!",
+      showParagraph: true};
+
+    WelcomeView = Backbone.View.extend({
+      className: "welcome",
+      id: "the-welcome-view",
+      initialize: function(){
+        this.$el.appendTo( $("#container") );
+        this.render();
+      },
+      template: _.template( $("#welcome-message").html() ),
+      events: {
+        "click h1": "render",
+        "click p": "tellEmHowYouFeel"
+      },
+      render: function(){
+        if( fakeModelJSON.showParagraph == true ) {
+          fakeModelJSON.showParagraph = false;
+        } else {
+          fakeModelJSON.showParagraph = true;
+        }
+        this.$el.html( this.template(fakeModelJSON) );
+      },
+      tellEmHowYouFeel: function(){
+        alert("I feel great!");
+      }
+    });
+
+    window.onload = function(){
+      intro = new WelcomeView();
+    };
+  </script>
+</body>
+
+</html>

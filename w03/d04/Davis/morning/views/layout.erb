@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Morning Kittens</title>
+</head>
+<body>
+	<nav>
+		<a href="/">Home</a>
+		<a href="/meow">Meow</a>
+		<a href="/not_meow">Not_Meow</a>
+	</nav>
+
+	<img src="<%= @@placekitten %>">
+	<%= erb :forms %>
+
+	<%= yield %>
+</body>
+</html>

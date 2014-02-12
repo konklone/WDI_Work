@@ -1,0 +1,17 @@
+Active Record
+
+Active Record = ORM = Obeject Relation Mapper
+
+Architecture
+
+REST - resources via urls
+
+Model View Controller
+
+Model = Is the part of the app that holds data operated on data gets data
+
+View = It holds the UI for the user (presenting data to the user)
+
+Controller = Meditaes between the view and the model
+
+Controller Actions

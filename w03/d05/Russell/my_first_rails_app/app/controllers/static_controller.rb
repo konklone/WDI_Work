@@ -1,0 +1,17 @@
+#needs to have corresponding instance methods to routes
+
+class StaticController < ApplicationController
+
+	def index
+		@year = params[:year]
+
+		render :index
+	end
+
+	def woah
+		render :woah
+
+	end
+
+
+end

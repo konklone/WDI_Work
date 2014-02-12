@@ -1,0 +1,17 @@
+<div class="top">
+<h1>McKstagr.am</h1>
+<h3>The Hottest Gr.am on the Ne.tz</h3>
+
+<a href="/welcome/add">Add an entry</a>
+</div>
+
+<div class="entry">
+<% @pictures.each do |picture|%>
+<h3><%= picture.author %></h3><h4><%= picture.date %></h4>
+<a href="/welcome/<%= picture.id %>"><img src="<%= picture.photo %>"/></a>
+<% end %>
+</div>
+
+<div class="tail">
+<h5>Another Skunkmaster Industries Product</h5>
+</div>

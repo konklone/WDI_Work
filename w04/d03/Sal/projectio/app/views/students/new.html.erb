@@ -1,0 +1,10 @@
+<h1><a href="/students">PROJECT.IO</a></h1>
+	<h2>New Student</h2>
+	<form action="/students" method="post">
+		<input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+		<input type="text" placeholder="Name" name="student[name]">
+		<textarea name="student[project_description]" placeholder="Project Description.."> Description </textarea>
+		<input type="text" placeholder="Github Link" name="student[github_link]">
+		<button>Submit</button>
+	</form>
+</div>

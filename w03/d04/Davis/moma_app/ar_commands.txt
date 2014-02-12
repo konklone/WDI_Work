@@ -1,0 +1,56 @@
+#1
+	def create_artist(name, birth_date)
+		artist = Artist.new(name: name, birth_date: birth_date)
+		artist.save
+	end
+	
+	create_artist("Vincent Van Gogh", "18900330")
+
+#2
+	def connect_painting(title, year, image_url, artist_id = nil)
+		painting = Painting.new(title: title, year: year, image_url: image_url, artist_id: artist_id)
+		painting.save
+	end
+	
+	connect_painting("Starry Night",1889,"http://uploads2.wikipaintings.org/images/vincent-van-gogh/the-starry-night-1889(1).jpg", Artist.where(name: "Vincent Van Gogh")[0].id)
+
+#3
+	Artist.all
+
+#4
+	Painting.all
+
+#5
+	Artist.where(id: 2)
+#6
+	Artist.where(name: "Vincent Van Gogh")
+#7
+	Artist.where(nationality: "Spain")
+
+#8
+	Painting.where(id: 1)
+#9
+	Painting.where(title: "Guernica")
+#10
+	Painting.where(title: "Starry Night")[0].image_url
+
+#11
+	picasso = Artist.where(name: "Pablo Picasso")[0]
+	Painting.where(artist_id: picasso.id)
+#12
+	array_of_url = []
+	paintings = Painting.where(artist_id: picasso)
+	paintings.each { |painting| array << painting.image_url }
+	array_of_url
+#13
+	guernica = Painting.where(title: "Guernica")
+	Artist.where(id: guernica[0].artist_id)
+
+#14
+	van = Artist.where(name: "Vincent Van Gogh")
+	van.nationality = "USA"
+	van[0].save
+#15
+	starry = Painting.where(title: "Starry Night")
+	starry[0].artist_id = picasso.id
+	starry[0].save

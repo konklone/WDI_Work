@@ -1,0 +1,15 @@
+principiles of backbone
+
+many small views with small functionality.
+
+router swaps big views
+
+views listen for events from
+  model
+  collections
+  dom
+
+views can nest
+
+whoever instantiates the view, appends it.
+

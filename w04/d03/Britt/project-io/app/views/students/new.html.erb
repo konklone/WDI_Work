@@ -1,0 +1,15 @@
+<h1>Add a new student</h1>
+
+<form action="/students" method="POST">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"/>
+  <p><label>
+    <input name="stundent[name]" type="text" placeholder="Remy"/>
+  </label></p>
+  <p><label> 
+    <textarea name="student[project_description]" placeholder="Describe the project here"></textarea/>
+  </label></p>
+  <p><label>
+    <input name="student[github_link]" type="text" placeholder="optional: bit.ly/github">
+  </label></p>
+  <button>Add 'em!</button>
+</form>

@@ -1,0 +1,112 @@
+create database sandbox;
+\c - to connect
+psql -d sandbox -f schema.sql
+psql -d sandbox
+
+select * from musicals;
+\d
+title = gets.chomp(varchar not null)
+year = gets.chomp(varchar not null)
+composer = gets.chomp(varchar not null)
+comments = gets.chomp (optional)
+(maybe we have a txt columns that users) 
+
+managing the order of these things going n can get crazy
+
+the purpse is th get the data that is entered.
+its bout aqcuiring new musicals
+
+musicals is the tble with the title year and composer in the table.
+
+to insert query strings would get insane if yo have to make changes.
+
+tryong to use ruby to abstract
+
+psql -d sandbox
+psql (9.3.0)
+Type "help" for help.
+
+sandbox=# select * from musicals;
+ id |  title  | year | composer 
+----+---------+------+----------
+  1 | Follies | 1971 | Sondheim
+(1 row)
+
+sandbox=# select * from musicals where id = 1;
+ id |  title  | year | composer 
+----+---------+------+----------
+  1 | Follies | 1971 | Sondheim
+(1 row)
+
+ruby musicals_crude.rb
+{"id"=>"1", "title"=>"Follies", "year"=>"1971", "composer"=>"Sondheim"}
+an @@ variable is bound to the class itself. so subclasses will have access to it.
+setting up a convention to connect to the tables.
+name you class to the same name as the tabledb
+if you want to use this class this is how you do it
+class is musicals of classs taking it to-s to a string so you can use a class name to interact with a table in that db.
+
+the first module we will work with in Railss Active record. 
+active record is an object relational mapper (ORM)
+
+relational<-SQL
+object<-Ruby
+mapper abstracts out db management system and encapsuataes into convenient obj.s we can interact with.
+.insert method maps to table.
+sunday = Musical.new( { :title => "Sunday in the park w/ george", :year => 1971, :composer =>:"Sonheim" } )
+=> #<Musical id: nil, title: "Sunday in the park w/ george", year: 1971, composer: :Sonheim>
+[6] pry(main)> sunday.persisted?
+=> false
+pry(main)> sunday.save
+=> true
+[8] pry(main)> sunday.persisted?
+=> true
+[9] pry(main)> sunday
+=> #<Musical id: 3, title: "Sunday in the park w/ george", year: 1971, composer: :Sonheim>
+[10] pry(main)> 
+
+
+pry(main)> sunday.title
+=> "Sunday in the park w/ george"
+[11] pry(main)> sunday.year
+=> 1971
+[12] pry(main)> 
+
+Active record defines the interface.it is mapping between pbject and sql stuff.
+
+rent = Musical.new({title:"Rent",year:"1994",composer:"Larsen"})
+rent.save
+
+Musical.all 
+returns records. Active records way of SELECT * from database.
+Takes each record and cretes an instnce of the musical class.
+
+class method interacting with table. the datastructure is an array. technically not an array buy Array-like.
+
+study the ActiveRecords docs for all methods
+Musical.first 
+
+musicals = Musical.all
+musicals[0] will get the first instance or object in the array.
+
+Now code along.
+
+
+
+
+REST - resources via semantic urls, operate using HTTP verbs
+
+MVC - Model, View, Controller.
+
+Models holds the data.
+
+operating on recieiving and transforming data. using the APIetc. 
+
+Views- presenting data to the user (UI)
+
+Controller mediates between the view and the model.
+
+Controller Actions.
+
+index is for all the resources show is for one
+

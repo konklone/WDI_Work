@@ -1,0 +1,11 @@
+<h1>Help yourself to some awesome!</h1>
+<p><a href="/photos/new">Add some awesome</a></p>
+<ul>
+	<% @photos.each do |photo| %>
+		<li>Name: <%= photo.name %></a></li>
+		<%= photo.date_taken %>
+		<br>
+		<a href="/photos/<%= photo.id %>"><img src="<%= photo.photo_url %>"></a>
+		<br><br>
+	<% end %>
+</ul>

@@ -1,0 +1,65 @@
+/* WDInstagram Stylesheet */
+
+body {
+  background: #ddd;
+}
+nav {
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  font-family: helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 20px;
+}
+/* Links */
+nav a:link {
+   text-decoration: none;
+   color: #fff;
+   background-color: navy;
+   padding: 10px 20px;
+   -m-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   border-radius: 20px;
+}
+nav a:visited {
+   color: #fff;
+   background-color: navy;
+}
+nav a:hover {
+   color: #666;
+   background-color: lightblue;
+}
+nav a:active {
+   color: #666;
+   background-color: lightblue;
+}
+img {
+  width: 450px;
+  height: 450px;
+  -m-border-radius: 5%;
+  -webkit-border-radius: 5%;
+  border-radius: 5%;
+  border: 5px solid #fff;
+}
+
+/* CSS Classes */
+div.wrapper {
+  margin: 20px auto;
+  text-align: center;
+}
+div.content {
+   margin: 20px auto;
+   text-align: left;
+   width: 500px;
+}
+.right {
+   position: relative;
+   float: right;
+}
+.clear {
+  clear: both;
+}

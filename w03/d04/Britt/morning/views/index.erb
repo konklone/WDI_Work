@@ -1,0 +1,12 @@
+<h2>kitty.</h2>
+
+<form action="/vote/meow" method="POST">
+  <input type="hidden" name="url" value="<%= @url %>"/>
+  <button>MEOW!</button>
+</form>
+<form action="/vote/not_meow" method="POST">
+  <input type="hidden" name="url" value="<%= @url %>"/>
+  <button>!NOT meow</button>
+</form>
+<br/>
+<img src="<%= @url %>"/>

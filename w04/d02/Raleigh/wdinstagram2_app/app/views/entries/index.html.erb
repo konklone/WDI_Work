@@ -1,0 +1,13 @@
+<h1>WDInstagram 2.0</h1>
+   <nav>
+      <ul>
+         <li><a href="entries/new">Add a New Entry</a></li>
+         <li><a href="search">Search for an Entry</a></li>
+      </ul>
+   </nav>
+<h2>Past Instagram Entries:</h2>
+
+<% @instagrams.each do |gram| %>
+   <a href="entries/<%= gram.id %>"> <img src="<%= gram.photo_url %>" /></a>
+   <p><a href="http://instagram.com/<%= gram.author %>"><%= gram.author %></a></p>
+  <% end %>

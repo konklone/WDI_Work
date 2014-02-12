@@ -1,0 +1,12 @@
+<h1>Please Enter Your Favorite Actor!</h1>
+
+<form action="/actors" method="post">
+  <input name="authenticity_token" type="hidden" value="<% form_authenticity_token %>">
+  <label>Name
+  <input type="text" placeholder="Actors Name" name="name"></label>
+  <label> Photo
+  <input type="url" placeholder="Photo URL" name="photo"></label>
+  <label> Date
+  <input type="date" placeholder="Birthday" name="date"></label>
+  <button>Submit</button>
+</form>

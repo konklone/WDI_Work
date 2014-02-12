@@ -1,0 +1,19 @@
+<h1>Movie.Io!</h1>
+<form action="">
+  <input type="text" name="title" placeholder="The Lion King">
+  <input type="submit"></input>
+</form>
+<script type="text/html">
+  <h2><%%= this.title %></h2>
+  <button type="button" class="add">Add to Watch List</button><br>
+  <img src="<%%= this.poster %>" alt="">
+  <p><%%= this.plot %></p>
+  <select name="rating">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  </select>
+  <button type="button" class="seen">Seen!</button><br>
+</script>

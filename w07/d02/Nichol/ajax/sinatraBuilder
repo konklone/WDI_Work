@@ -1,0 +1,26 @@
+#!/bin/sh
+mkdir app
+cd app
+mkdir public
+mkdir views
+touch server.rb
+
+echo "require 'pry' \n require 'sinatra' \n \n get '/' do \n erb :index \n end \n" >> server.rb
+
+cd public
+
+touch app.js
+
+echo "window.onload = function(){ \n console.log('ready to ajax'); \n } \n" >> app.js
+
+cd ../views
+
+touch index.erb
+echo "<h1>Hello World</h1>" >> index.erb
+
+touch layout.erb
+echo " <!doctype html> \n <html lang='en'> \n <head> \n <meta charset='UTF-8'> \n <title>postey</title> \n <script type='text/javascript' src="app.js"></script> \n </head> \n <body> \n <%= yield %> \n </body> \n </html>" >> layout.erb
+
+cd ..
+ruby server.rb
+exit
