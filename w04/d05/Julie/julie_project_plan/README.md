@@ -2,7 +2,7 @@
 >## Scope:
 >Sometimes our politicians seem more like cartoon characters than the selfless cogs
 >of democracy that we hope them to be. This very patriotic app would utilize an api 
->released by the sunlight foundation (http://sunlightlabs.github.io/congress/) and do the following:
+>released by the sunlight foundation (https://sunlightlabs.github.io/congress/) and do the following:
 
 *   Find users' senator using zipcode.
 
@@ -28,7 +28,7 @@
 
 >## Resources:
 
-* http://sunlightlabs.github.io/congress/ is an API. 
+* https://sunlightlabs.github.io/congress/ is an API. 
 
 * https://github.com/codeforamerica/congress is a Gem which acts as an API wrapper.
 
